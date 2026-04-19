@@ -1,0 +1,17 @@
+type Query {
+  me: User
+}
+
+type User @key(fields: "id") {
+  id: ID!
+  username: String! @shareable
+}
+
+# (Subgraph schemas include
+# this to opt in to
+# Federation 2 features.)
+extend schema
+  @link(
+    url: "https://specs.apollo.dev/federation/v2.3"
+    import: ["@key", "@shareable"]
+  )
