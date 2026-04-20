@@ -1,0 +1,87 @@
+> nx run user:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/21e43d9a-de9b-482e-ba2e-3b2aa793c9bb
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+Apollo Server started
+[1m[31m
+/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:713
+      throw new Error(
+            ^
+[39m[22m
+[1m[31mError: You must `await server.start()` before calling `expressMiddleware()`
+    at ApolloServer.assertStarted (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:713:13)
+    at expressMiddleware (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:33:10)
+    at Object.<anonymous> (/home/venky/repos/servitude/apps/user/src/main.ts:30:37)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1969:10)
+    at Module.load (node:internal/modules/cjs/loader:1552:32)
+    at Module._load (node:internal/modules/cjs/loader:1354:12)
+    at Module._load (/home/venky/repos/servitude/node_modules/.pnpm/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:327:3)
+[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTop-level await is currently not supported with the "cjs" output format[0m
+
+    apps/user/src/main.ts:26:0:
+[37m      26 │ [32mawait[37m apolloServer.start().then(() => {
+         ╵ [32m~~~~~[0m
+
+[4m[34mapps/user/src/main.ts:26:1[39m[24m - [31m[1merror[22m[39m [90mTS1378[39m: Top-level 'await' expressions are only allowed when the 'module' option is set to 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', 'nodenext', or 'preserve', and the 'target' option is set to 'es2017' or higher.
+
+[0m [90m 24 | [39m})[33m;[39m
+ [90m 25 | [39m
+[31m[1m>[22m[39m[90m 26 | [39mawait apolloServer[33m.[39mstart()[33m.[39mthen(() [33m=>[39m {
+ [90m    | [39m[31m[1m^[22m[39m
+ [90m 27 | [39m  console[33m.[39mlog([32m'Apollo Server started'[39m)[33m;[39m
+ [90m 28 | [39m})[33m;[39m
+ [90m 29 | [39m[0m
+
+Found 1 error.
+[ [31mwatch[39m ] build finished with errors (see above), watching for changes...
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/590acacd-447a-4f63-9c70-e90720804f97
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[ ready ] http://localhost:3000
+[1m[31m
+[39m[22m
+[1m[31m/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:713
+      throw new Error(
+            ^
+Error: You must `await server.start()` before calling `expressMiddleware()`
+    at ApolloServer.assertStarted (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:713:13)
+    at expressMiddleware (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:33:10)
+    at Server.<anonymous> (/home/venky/repos/servitude/apps/user/src/main.ts:33:39)
+    at Server.f (/home/venky/repos/servitude/node_modules/.pnpm/once@1.4.0/node_modules/once/once.js:25:25)
+    at Object.onceWrapper (node:events:630:28)
+    at Server.emit (node:events:521:24)
+    at emitListeningNT (node:net:2051:10)
+    at processTicksAndRejections (node:internal/process/task_queues:89:21)
+[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/302b8f34-9f71-4425-ac47-aab4a7a5b45a
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+🚀 Server ready at http://localhost:3000/graphql
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/4b120be9-4926-4867-9529-664f3ae89027
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/b279fc07-0ddd-40b7-9b69-86dd57912908
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[ ready ] http://localhost:3000

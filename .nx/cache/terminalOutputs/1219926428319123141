@@ -1,0 +1,3 @@
+> nx run accounts:build:production
+
+

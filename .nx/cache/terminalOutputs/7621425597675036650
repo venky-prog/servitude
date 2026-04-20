@@ -1,0 +1,38 @@
+> nx run user:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/2e81c4b1-2936-4646-a8b7-b8f3a87c619f
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+[1m[31m
+[39m[22m
+[1m[31m/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/validation/validate.js:147
+    throw new Error(errors.map((error) => error.message).join('\n\n'));
+          ^
+Error: Unknown directive "@key".
+
+Unknown directive "@shareable".
+
+Unknown directive "@shareable".
+
+Unknown directive "@shareable".
+
+Unknown directive "@shareable".
+
+Unknown directive "@shareable".
+
+Unknown directive "@link".
+    at assertValidSDL (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/validation/validate.js:147:11)
+    at buildASTSchema (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/utilities/buildASTSchema.js:44:34)
+    at makeExecutableSchema (/home/venky/repos/servitude/node_modules/.pnpm/@graphql-tools+schema@10.0.32_graphql@16.13.2/node_modules/@graphql-tools/schema/cjs/makeExecutableSchema.js:73:47)
+    at ApolloServer.constructSchema (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:752:32)
+    at new ApolloServer (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:269:37)
+    at Object.<anonymous> (/home/venky/repos/servitude/apps/user/src/main.ts:12:22)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1969:10)
+    at Module.load (node:internal/modules/cjs/loader:1552:32)
+    at Module._load (node:internal/modules/cjs/loader:1354:12)
+[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+

@@ -4,7 +4,6 @@
     "outDir": "../../dist/out-tsc",
     "module": "commonjs",
     "types": ["node"],
-    "baseUrl": "./src"
   },
   "include": ["src/**/*.ts"],
   "exclude": [

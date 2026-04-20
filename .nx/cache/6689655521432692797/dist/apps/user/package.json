@@ -1,0 +1,14 @@
+{
+  "name": "user",
+  "version": "0.0.1",
+  "dependencies": {
+    "@apollo/server": "5.5.0",
+    "@apollo/subgraph": "2.13.3",
+    "@as-integrations/express5": "1.1.2",
+    "express": "5.2.1",
+    "graphql": "16.13.2",
+    "graphql-tag": "2.12.6"
+  },
+  "main": "./main.js",
+  "type": "commonjs"
+}

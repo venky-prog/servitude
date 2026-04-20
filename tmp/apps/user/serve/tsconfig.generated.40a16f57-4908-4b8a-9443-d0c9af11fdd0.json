@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@servitude/apollo-config": [
+        "libs/apollo-config/src/index.ts"
+      ]
+    }
+  },
+  "extends": "../../../../apps/user/tsconfig.app.json"
+}

@@ -16,10 +16,7 @@
         "bundle": true,
         "main": "apps/user/src/main.ts",
         "tsConfig": "apps/user/tsconfig.app.json",
-        "assets": [
-          "apps/user/src/assets",
-          "apps/user/src/schema"
-        ],
+        "assets": ["apps/user/src/assets"],
 
         "generatePackageJson": true,
         "esbuildOptions": {
@@ -89,12 +86,10 @@
         "passWithNoTests": true
       }
     },
-    
+
     "codegen": {
       "executor": "@servitude/my-plugin:apollo-codegen",
-      "options": {
-        
-      }
+      "options": {}
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx serve accounts",
+    "startTime": "2026-04-20T15:53:50.752Z",
+    "endTime": "2026-04-20T15:59:30.637Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "accounts:build:production",
+      "target": "build",
+      "projectName": "accounts",
+      "hash": "1219926428319123141",
+      "startTime": "2026-04-20T15:53:50.766Z",
+      "endTime": "2026-04-20T15:53:51.935Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "accounts:serve:development",
+      "target": "serve",
+      "projectName": "accounts",
+      "hash": "16370484388595689179",
+      "startTime": "2026-04-20T15:53:51.949Z",
+      "endTime": "2026-04-20T15:59:30.636Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

@@ -1,0 +1,1512 @@
+{
+  "apps/accounts": {
+    "root": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "apps/accounts/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.metadata": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/accounts/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.platform": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.format": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.bundle": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.generatePackageJson": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.esbuildOptions": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.esbuildOptions": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.dependsOn": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.cache": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.executor": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.outputs": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.options": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.options.buildTarget": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.dependsOn": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.cache": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.outputs": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.executor": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.options": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.options.buildTarget": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune.dependsOn": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune.executor": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/transactions": {
+    "root": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "apps/transactions/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.metadata": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/transactions/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.platform": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.format": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.bundle": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.generatePackageJson": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.esbuildOptions": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.esbuildOptions": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.dependsOn": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.cache": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.executor": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.outputs": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.options": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.options.buildTarget": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.dependsOn": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.cache": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.outputs": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.executor": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.options": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.options.buildTarget": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune.dependsOn": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune.executor": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/user": {
+    "root": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "apps/user/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.metadata": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/user/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.platform": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.format": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.bundle": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.generatePackageJson": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.esbuildOptions": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.esbuildOptions": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.dependsOn": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.cache": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.executor": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.outputs": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.options": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune-lockfile.options.buildTarget": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.dependsOn": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.cache": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.outputs": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.executor": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.options": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.copy-workspace-modules.options.buildTarget": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune.dependsOn": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.prune.executor": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.dependsOn": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.runBuildTargetDependencies": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.executor": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.options": [
+      "apps/user/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/apollo-config": {
+    "root": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "libs/apollo-config/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "libs/apollo-config/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "name": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "libs/apollo-config/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.packageJson": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "libs/apollo-config/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "tools/my-plugin": {
+    "root": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "tools/my-plugin/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "name": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:private": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "tools/my-plugin/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "tools/my-plugin/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}
