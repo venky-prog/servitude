@@ -16,7 +16,18 @@
         "bundle": true,
         "main": "apps/user/src/main.ts",
         "tsConfig": "apps/user/tsconfig.app.json",
-        "assets": ["apps/user/src/assets"],
+        "assets": [
+          {
+            "input": "apps/user/src/assets",
+            "glob": "**/*",
+            "output": "./assets"
+          },
+          {
+            "input": "apps/user/src/schema",
+            "glob": "**/*",
+            "output": "./schema"
+          }
+        ],
 
         "generatePackageJson": true,
         "esbuildOptions": {

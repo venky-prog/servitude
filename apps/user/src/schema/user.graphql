@@ -1,7 +1,4 @@
-import gql from 'graphql-tag';
-
-export const typeDefs = gql`
-  type Query {
+type Query {
     me: User
   }
 
@@ -22,4 +19,3 @@ export const typeDefs = gql`
       url: "https://specs.apollo.dev/federation/v2.3"
       import: ["@key", "@shareable"]
     )
-`;

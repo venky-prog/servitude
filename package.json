@@ -4,12 +4,15 @@
   "private": true,
   "devDependencies": {
     "@eslint/js": "^9.8.0",
+    "@graphql-codegen/cli": "^6.3.1",
+    "@nx/devkit": "22.6.5",
     "@nx/esbuild": "22.6.5",
     "@nx/eslint": "22.6.5",
     "@nx/eslint-plugin": "22.6.5",
     "@nx/jest": "22.6.5",
     "@nx/js": "22.6.5",
     "@nx/node": "22.6.5",
+    "@nx/plugin": "22.6.5",
     "@swc-node/register": "~1.11.1",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
@@ -38,6 +41,7 @@
     "axios": "^1.6.0",
     "express": "^5.2.1",
     "graphql": "^16.13.2",
-    "graphql-tag": "^2.12.6"
+    "graphql-tag": "^2.12.6",
+    "mongoose": "^9.4.1"
   }
 }

@@ -4,12 +4,12 @@
   "analytics": true,
   "targetDefaults": {
     "@nx/esbuild:esbuild": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build"],
       "inputs": ["default", "^default"]
     },
     "@nx/js:tsc": {
-      "cache": true,
+      "cache": false,
       "dependsOn": ["^build"],
       "inputs": ["default", "^default"]
     }

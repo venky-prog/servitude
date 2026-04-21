@@ -23,34 +23,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 
 // apps/user/src/main.ts
 var import_express = __toESM(require("express"));
-
-// apps/user/src/schema/user.schema.ts
-var import_graphql_tag = __toESM(require("graphql-tag"));
-var typeDefs = import_graphql_tag.default`
-  type Query {
-    me: User
-  }
-
-  type User @key(fields: "id") {
-    id: ID!
-    email: String! @shareable
-    firstName: String! @shareable
-    lastName: String! @shareable
-    dob: String! @shareable
-    hashedPassword: String! @shareable
-  }
-
-  # (Subgraph schemas include
-  # this to opt in to
-  # Federation 2 features.)
-  extend schema
-    @link(
-      url: "https://specs.apollo.dev/federation/v2.3"
-      import: ["@key", "@shareable"]
-    )
-`;
-
-// apps/user/src/main.ts
+var import_node_fs = require("node:fs");
 var import_server = require("@apollo/server");
 
 // apps/user/src/resolvers/me.ts
@@ -68,13 +41,16 @@ var me = () => {
 // apps/user/src/main.ts
 var import_express5 = require("@as-integrations/express5");
 var import_subgraph = require("@apollo/subgraph");
+var import_graphql_tag = __toESM(require("graphql-tag"));
+var import_node_path = __toESM(require("node:path"));
 var port = process.env.PORT ? Number(process.env.PORT) : 3e3;
+var typeDefs = (0, import_node_fs.readFileSync)(import_node_path.default.join(__dirname, "schema", "user.graphql"), "utf8");
 (async () => {
   const app = (0, import_express.default)();
   const apolloServer = new import_server.ApolloServer({
     schema: (0, import_subgraph.buildSubgraphSchema)([
       {
-        typeDefs,
+        typeDefs: (0, import_graphql_tag.default)(typeDefs),
         resolvers: {
           Query: {
             me

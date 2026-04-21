@@ -1,11 +1,15 @@
 import express from 'express';
-import { typeDefs } from './schema/user.schema';
+import { readFileSync, readSync } from 'node:fs';
 import { ApolloServer } from '@apollo/server';
 import { me } from './resolvers/me';
 import { expressMiddleware } from '@as-integrations/express5';
 import { buildSubgraphSchema } from '@apollo/subgraph';
+import gql from 'graphql-tag';
+import path from 'node:path';
 
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+
+const typeDefs = readFileSync(path.join(__dirname, 'schema', 'user.graphql'), 'utf8');
 
 (async () => {
   const app = express();
@@ -13,7 +17,7 @@ const port = process.env.PORT ? Number(process.env.PORT) : 3000;
   const apolloServer = new ApolloServer({
     schema: buildSubgraphSchema([
       {
-        typeDefs,
+        typeDefs: gql(typeDefs),
         resolvers: {
           Query: {
             me: me!,
