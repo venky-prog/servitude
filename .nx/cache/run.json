@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx serve user",
+    "startTime": "2026-04-22T04:13:01.306Z",
+    "endTime": "2026-04-22T04:19:55.835Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "user:build:production",
+      "target": "build",
+      "projectName": "user",
+      "hash": "17513340481298863956",
+      "startTime": "2026-04-22T04:13:01.328Z",
+      "endTime": "2026-04-22T04:13:04.678Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "user:serve:development",
+      "target": "serve",
+      "projectName": "user",
+      "hash": "2447252386335145052",
+      "startTime": "2026-04-22T04:13:04.686Z",
+      "endTime": "2026-04-22T04:19:55.832Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

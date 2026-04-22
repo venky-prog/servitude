@@ -2,9 +2,6 @@
   "version": "6.0",
   "nxVersion": "22.6.5",
   "pathMappings": {
-    "@servitude/apollo-config": [
-      "libs/apollo-config/src/index.ts"
-    ],
     "@servitude/my-plugin": [
       "tools/my-plugin/src/index.ts"
     ]
@@ -26,206 +23,207 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".github/skills/nx-import/references/GRADLE.md",
-        "hash": "15868511153961490698"
-      },
-      {
-        "file": ".github/skills/nx-import/references/ESLINT.md",
-        "hash": "7412016826831212653"
-      },
-      {
-        "file": "dist/apps/user/schema/user.schema.ts",
-        "hash": "17470780848289099955"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
+        "file": "dist/tools/my-plugin/src/apollo-codegen/index.js.map",
+        "hash": "1233079838410511068"
       },
       {
         "file": ".github/skills/monitor-ci/scripts/ci-state-update.mjs",
         "hash": "13401974159889364904"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "10864202800147109377"
-      },
-      {
-        "file": ".github/agents/ci-monitor-subagent.agent.md",
-        "hash": "6573591679819005545"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
         "file": "jest.config.ts",
         "hash": "6870352021923392442"
-      },
-      {
-        "file": ".github/skills/nx-generate/SKILL.md",
-        "hash": "16801959272346088877"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": ".github/skills/nx-plugins/SKILL.md",
-        "hash": "4717624081372438208"
-      },
-      {
-        "file": ".github/skills/nx-import/references/JEST.md",
-        "hash": "8022966628634571060"
-      },
-      {
-        "file": "dist/apps/user/assets/readme.txt",
-        "hash": "13163100149506441076"
-      },
-      {
-        "file": "package.json",
-        "hash": "15068672115096182389"
-      },
-      {
-        "file": ".github/skills/monitor-ci/SKILL.md",
-        "hash": "8399173415832764241"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "4636080942823702410"
-      },
-      {
-        "file": "tmp/accounts/main-with-require-overrides.js",
-        "hash": "6780784871311067496"
-      },
-      {
-        "file": ".github/skills/nx-workspace/references/AFFECTED.md",
-        "hash": "10577828056523124002"
-      },
-      {
-        "file": ".github/skills/monitor-ci/references/fix-flows.md",
-        "hash": "14499115380699629375"
-      },
-      {
-        "file": ".github/skills/nx-run-tasks/SKILL.md",
-        "hash": "10723914446406921246"
-      },
-      {
-        "file": ".github/skills/nx-import/SKILL.md",
-        "hash": "9709061508228126022"
-      },
-      {
-        "file": "dist/apps/user/package.json",
-        "hash": "10127526344577668059"
-      },
-      {
-        "file": ".github/prompts/monitor-ci.prompt.md",
-        "hash": "373234804653081784"
-      },
-      {
-        "file": ".github/skills/monitor-ci/scripts/ci-poll-decide.mjs",
-        "hash": "5080978990847760627"
       },
       {
         "file": ".github/skills/link-workspace-packages/SKILL.md",
         "hash": "6638592300654417978"
       },
       {
-        "file": ".vscode/launch.json",
-        "hash": "2604526484156576834"
+        "file": ".github/skills/nx-import/references/ESLINT.md",
+        "hash": "7412016826831212653"
       },
       {
-        "file": ".github/skills/nx-import/references/NEXT.md",
-        "hash": "8705422121624482541"
+        "file": ".github/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
       },
       {
-        "file": "eslint.config.mjs",
-        "hash": "12926286793420397906"
+        "file": ".github/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/apollo-codegen/index.d.ts",
+        "hash": "13986826492006007116"
+      },
+      {
+        "file": ".github/skills/nx-import/SKILL.md",
+        "hash": "9709061508228126022"
       },
       {
         "file": ".github/skills/nx-workspace/SKILL.md",
         "hash": "56694506768298655"
       },
       {
-        "file": ".gitignore",
-        "hash": "2633700893954941114"
-      },
-      {
-        "file": "AGENTS.md",
-        "hash": "18234343250335250711"
+        "file": ".github/skills/monitor-ci/scripts/ci-poll-decide.mjs",
+        "hash": "5080978990847760627"
       },
       {
         "file": "dist/apps/user/assets/.gitkeep",
         "hash": "3244421341483603138"
       },
       {
+        "file": "dist/tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.js",
+        "hash": "7057666441894016885"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "dist/tools/my-plugin/README.md",
+        "hash": "12505939002744208438"
+      },
+      {
+        "file": ".github/skills/nx-generate/SKILL.md",
+        "hash": "16801959272346088877"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6712395778258239247"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "12926286793420397906"
+      },
+      {
+        "file": ".github/skills/nx-import/references/GRADLE.md",
+        "hash": "15868511153961490698"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "18234343250335250711"
+      },
+      {
         "file": ".github/skills/nx-import/references/TURBOREPO.md",
         "hash": "6654032474246573297"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/apollo-codegen/index.js",
+        "hash": "2785730809026575865"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2633700893954941114"
+      },
+      {
+        "file": ".github/skills/nx-import/references/VITE.md",
+        "hash": "5793928500507593678"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "4814650581917454691"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/index.js.map",
+        "hash": "5209531805110110018"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.js.map",
+        "hash": "5756021056324429981"
       },
       {
         "file": "nx.json",
         "hash": "14069730223483982355"
       },
       {
-        "file": ".github/skills/nx-import/references/VITE.md",
-        "hash": "5793928500507593678"
+        "file": "dist/tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.d.ts",
+        "hash": "4595979742548113990"
+      },
+      {
+        "file": "dist/tools/my-plugin/executors.json",
+        "hash": "10889209025923371609"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".github/skills/monitor-ci/SKILL.md",
+        "hash": "8399173415832764241"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/apollo-codegen/schema.d.ts",
+        "hash": "1919283545202777730"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/apollo-codegen/schema.json",
+        "hash": "15492841523934152026"
+      },
+      {
+        "file": ".github/skills/nx-import/references/NEXT.md",
+        "hash": "8705422121624482541"
+      },
+      {
+        "file": ".github/skills/nx-import/references/JEST.md",
+        "hash": "8022966628634571060"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "dist/apps/user/schema/user.graphql",
+        "hash": "9252941755194672877"
+      },
+      {
+        "file": "tmp/accounts/main-with-require-overrides.js",
+        "hash": "6780784871311067496"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "2604526484156576834"
+      },
+      {
+        "file": "package.json",
+        "hash": "562243467921929178"
+      },
+      {
+        "file": ".github/prompts/monitor-ci.prompt.md",
+        "hash": "373234804653081784"
+      },
+      {
+        "file": ".github/agents/ci-monitor-subagent.agent.md",
+        "hash": "6573591679819005545"
+      },
+      {
+        "file": ".github/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": "dist/apps/user/assets/readme.txt",
+        "hash": "13163100149506441076"
+      },
+      {
+        "file": "dist/apps/user/package.json",
+        "hash": "4990505761665647669"
+      },
+      {
+        "file": "dist/tools/my-plugin/package.json",
+        "hash": "16020020288641709947"
+      },
+      {
+        "file": ".github/skills/monitor-ci/references/fix-flows.md",
+        "hash": "14499115380699629375"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/index.js",
+        "hash": "16612259154801856517"
+      },
+      {
+        "file": "dist/tools/my-plugin/src/index.d.ts",
+        "hash": "3244421341483603138"
       }
     ],
     "projectFileMap": {
-      "apollo-config": [
-        {
-          "file": "libs/apollo-config/README.md",
-          "hash": "4506001741448455542"
-        },
-        {
-          "file": "libs/apollo-config/eslint.config.mjs",
-          "hash": "4313095032450400554",
-          "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "libs/apollo-config/jest.config.cts",
-          "hash": "13583742533024344696"
-        },
-        {
-          "file": "libs/apollo-config/package.json",
-          "hash": "13007748597111247433",
-          "deps": [
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "libs/apollo-config/project.json",
-          "hash": "12187966600194729604"
-        },
-        {
-          "file": "libs/apollo-config/src/index.ts",
-          "hash": "18302958997389042333"
-        },
-        {
-          "file": "libs/apollo-config/src/lib/apollo-config.spec.ts",
-          "hash": "11016719368952282656"
-        },
-        {
-          "file": "libs/apollo-config/src/lib/apollo-config.ts",
-          "hash": "629727361420236455"
-        },
-        {
-          "file": "libs/apollo-config/tsconfig.json",
-          "hash": "2840670722752396445"
-        },
-        {
-          "file": "libs/apollo-config/tsconfig.lib.json",
-          "hash": "13731893420473560347"
-        },
-        {
-          "file": "libs/apollo-config/tsconfig.spec.json",
-          "hash": "11011431583980985399"
-        }
-      ],
       "transactions": [
         {
           "file": "apps/transactions/eslint.config.mjs",
@@ -261,146 +259,6 @@
         {
           "file": "apps/transactions/tsconfig.spec.json",
           "hash": "11011431583980985399"
-        }
-      ],
-      "user": [
-        {
-          "file": "apps/user/codegen.ts",
-          "hash": "1256498369933825422",
-          "deps": [
-            "npm:@graphql-codegen/cli"
-          ]
-        },
-        {
-          "file": "apps/user/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "apps/user/jest.config.cts",
-          "hash": "14687080529254815420"
-        },
-        {
-          "file": "apps/user/project.json",
-          "hash": "7043805036721906279"
-        },
-        {
-          "file": "apps/user/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/user/src/assets/readme.txt",
-          "hash": "13163100149506441076"
-        },
-        {
-          "file": "apps/user/src/generated/graphql.ts",
-          "hash": "953680743858341189",
-          "deps": [
-            "npm:graphql"
-          ]
-        },
-        {
-          "file": "apps/user/src/main.ts",
-          "hash": "6809879065247582258",
-          "deps": [
-            "npm:express",
-            "npm:@apollo/server",
-            "npm:@as-integrations/express5",
-            "npm:@apollo/subgraph",
-            "npm:graphql-tag"
-          ]
-        },
-        {
-          "file": "apps/user/src/models/user.model.ts",
-          "hash": "3065422845312517265",
-          "deps": [
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "apps/user/src/resolvers/me.ts",
-          "hash": "9650521528698517518"
-        },
-        {
-          "file": "apps/user/src/schema/user.graphql",
-          "hash": "4506518936967521900"
-        },
-        {
-          "file": "apps/user/tsconfig.app.json",
-          "hash": "8243827714327388955"
-        },
-        {
-          "file": "apps/user/tsconfig.json",
-          "hash": "3490524966360018312"
-        },
-        {
-          "file": "apps/user/tsconfig.spec.json",
-          "hash": "11011431583980985399"
-        }
-      ],
-      "my-plugin": [
-        {
-          "file": "tools/my-plugin/README.md",
-          "hash": "12505939002744208438"
-        },
-        {
-          "file": "tools/my-plugin/eslint.config.mjs",
-          "hash": "15383257627638319511",
-          "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "tools/my-plugin/executors.json",
-          "hash": "10889209025923371609"
-        },
-        {
-          "file": "tools/my-plugin/package.json",
-          "hash": "5482366254203684335",
-          "deps": [
-            "npm:@nx/devkit",
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "tools/my-plugin/project.json",
-          "hash": "16540655493032823421"
-        },
-        {
-          "file": "tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.ts",
-          "hash": "16708176637181540978",
-          "deps": [
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "tools/my-plugin/src/apollo-codegen/index.ts",
-          "hash": "10342525784577220065",
-          "deps": [
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "tools/my-plugin/src/apollo-codegen/schema.d.ts",
-          "hash": "1919283545202777730"
-        },
-        {
-          "file": "tools/my-plugin/src/apollo-codegen/schema.json",
-          "hash": "15492841523934152026"
-        },
-        {
-          "file": "tools/my-plugin/src/index.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "tools/my-plugin/tsconfig.json",
-          "hash": "14490782888307098276"
-        },
-        {
-          "file": "tools/my-plugin/tsconfig.lib.json",
-          "hash": "12722383387264320257"
         }
       ],
       "accounts": [
@@ -439,8 +297,173 @@
           "file": "apps/accounts/tsconfig.spec.json",
           "hash": "11011431583980985399"
         }
+      ],
+      "my-plugin": [
+        {
+          "file": "tools/my-plugin/README.md",
+          "hash": "12505939002744208438"
+        },
+        {
+          "file": "tools/my-plugin/eslint.config.mjs",
+          "hash": "15383257627638319511",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "tools/my-plugin/executors.json",
+          "hash": "10889209025923371609"
+        },
+        {
+          "file": "tools/my-plugin/package.json",
+          "hash": "5482366254203684335",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "tools/my-plugin/project.json",
+          "hash": "16540655493032823421"
+        },
+        {
+          "file": "tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.ts",
+          "hash": "1917666188426970379",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "tools/my-plugin/src/apollo-codegen/index.ts",
+          "hash": "6568575205388343695",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "tools/my-plugin/src/apollo-codegen/schema.d.ts",
+          "hash": "1919283545202777730"
+        },
+        {
+          "file": "tools/my-plugin/src/apollo-codegen/schema.json",
+          "hash": "15492841523934152026"
+        },
+        {
+          "file": "tools/my-plugin/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "tools/my-plugin/tsconfig.json",
+          "hash": "14490782888307098276"
+        },
+        {
+          "file": "tools/my-plugin/tsconfig.lib.json",
+          "hash": "12722383387264320257"
+        }
+      ],
+      "user": [
+        {
+          "file": "apps/user/.env",
+          "hash": "2782046584542953893"
+        },
+        {
+          "file": "apps/user/codegen.ts",
+          "hash": "6131912078270793320",
+          "deps": [
+            "npm:@graphql-codegen/cli"
+          ]
+        },
+        {
+          "file": "apps/user/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/user/jest.config.cts",
+          "hash": "14687080529254815420"
+        },
+        {
+          "file": "apps/user/project.json",
+          "hash": "7043805036721906279"
+        },
+        {
+          "file": "apps/user/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/user/src/assets/readme.txt",
+          "hash": "13163100149506441076"
+        },
+        {
+          "file": "apps/user/src/generated/graphql.ts",
+          "hash": "8799007123296886421",
+          "deps": [
+            "npm:graphql"
+          ]
+        },
+        {
+          "file": "apps/user/src/main.ts",
+          "hash": "48454851442851580",
+          "deps": [
+            "npm:express",
+            "npm:@apollo/server",
+            "npm:@as-integrations/express5",
+            "npm:@apollo/subgraph",
+            "npm:graphql-tag"
+          ]
+        },
+        {
+          "file": "apps/user/src/models/user.model.ts",
+          "hash": "12941101145691344758",
+          "deps": [
+            "npm:mongoose",
+            "npm:bcrypt",
+            "npm:jose"
+          ]
+        },
+        {
+          "file": "apps/user/src/resolvers/create-user.ts",
+          "hash": "6024968100254043442"
+        },
+        {
+          "file": "apps/user/src/resolvers/login.ts",
+          "hash": "4021012874577872997"
+        },
+        {
+          "file": "apps/user/src/resolvers/me.ts",
+          "hash": "1027162010760641149"
+        },
+        {
+          "file": "apps/user/src/resolvers/update-user.ts",
+          "hash": "3456833305030489596"
+        },
+        {
+          "file": "apps/user/src/schema/user.graphql",
+          "hash": "9252941755194672877"
+        },
+        {
+          "file": "apps/user/src/utils/mongo-connect.ts",
+          "hash": "5368955745887019159",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/user/tsconfig.app.json",
+          "hash": "8243827714327388955"
+        },
+        {
+          "file": "apps/user/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/user/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
       ]
     }
   },
-  "externalNodesHash": "12867232173651078371"
+  "externalNodesHash": "11755328834202011651"
 }

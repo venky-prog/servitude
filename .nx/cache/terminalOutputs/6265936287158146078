@@ -1,0 +1,56 @@
+> nx run user:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/3214308a-d2ee-428e-b2b4-97242d5a25fa
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+Connected to MongoDB
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/7109a2de-7ece-4af5-8cdf-e7d24acf75a3
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+Connected to MongoDB
+[ ready ] http://localhost:3000
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1m"await" can only be used inside an "async" function[0m
+
+    apps/user/src/models/user.model.ts:57:16:
+[37m      57 │   const token = [32mawait[37m new SignJWT({ userId: this._id.toHexString() })
+         ╵                 [32m~~~~~[0m
+
+  Consider adding the "async" keyword here:
+
+    apps/user/src/models/user.model.ts:56:39:
+[37m      56 │ userSchema.method('generateAuthToken', [32m[37mfunction () {
+         │                                        [32m^[37m
+         ╵                                        [32masync[0m
+
+[4m[34mapps/user/src/models/user.model.ts:57:17[39m[24m - [31m[1merror[22m[39m [90mTS1308[39m: 'await' expressions are only allowed within async functions and at the top levels of modules.
+
+[0m [90m 55 | [39m
+ [90m 56 | [39muserSchema[33m.[39mmethod([32m'generateAuthToken'[39m[33m,[39m [36mfunction[39m () {
+[31m[1m>[22m[39m[90m 57 | [39m  [36mconst[39m token [33m=[39m await [36mnew[39m [33mSignJWT[39m({ userId[33m:[39m [36mthis[39m[33m.[39m_id[33m.[39mtoHexString() })
+ [90m    | [39m                [31m[1m^[22m[39m
+ [90m 58 | [39m    [33m.[39msetProtectedHeader({ alg[33m:[39m [32m'HS256'[39m })
+ [90m 59 | [39m    [33m.[39msetExpirationTime([32m'12h'[39m)
+ [90m 60 | [39m    [33m.[39msign([36mnew[39m [33mTextEncoder[39m()[33m.[39mencode(process[33m.[39menv[33m.[39m[33mJWT_SECRET[39m [33m||[39m [32m'default-secret'[39m))[33m;[39m[0m
+
+Found 1 error.
+[ [31mwatch[39m ] build finished with errors (see above), watching for changes...
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/95d657b6-cf4c-4e23-a782-68bb6ff4cf35
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+Connected to MongoDB
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/db689cbe-6fcc-4fa5-8d36-388cb16375b5
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+Connected to MongoDB
+[ ready ] http://localhost:3000

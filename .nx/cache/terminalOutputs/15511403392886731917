@@ -1,0 +1,32 @@
+> nx run user:build:production
+
+[4m[34mapps/user/src/resolvers/me.ts:3:14[39m[24m - [31m[1merror[22m[39m [90mTS2322[39m: Type '() => { id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' is not assignable to type 'Resolver<ResolverTypeWrapper<User>, Record<PropertyKey, never>, any, Record<PropertyKey, never>>'.
+  Type '() => { id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' is not assignable to type 'ResolverFn<ResolverTypeWrapper<User>, Record<PropertyKey, never>, any, Record<PropertyKey, never>>'.
+    Type '{ id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' is not assignable to type 'ResolverTypeWrapper<User> | Promise<ResolverTypeWrapper<User>>'.
+      Property '_id' is missing in type '{ id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' but required in type 'User'.
+
+[0m [90m 1 | [39m[36mimport[39m { [33mQueryResolvers[39m } from [32m"../generated/graphql"[39m[33m;[39m
+ [90m 2 | [39m
+[31m[1m>[22m[39m[90m 3 | [39m[36mexport[39m [36mconst[39m me[33m:[39m [33mQueryResolvers[39m[[32m'me'[39m] [33m=[39m () [33m=>[39m {
+ [90m   | [39m             [31m[1m^[22m[39m
+ [90m 4 | [39m    [36mreturn[39m {
+ [90m 5 | [39m        id[33m:[39m [32m'1'[39m[33m,[39m
+ [90m 6 | [39m        email[33m:[39m [32m'user@example.com'[39m[33m,[39m[0m
+
+[4m[34mapps/user/src/resolvers/update-user.ts:4:14[39m[24m - [31m[1merror[22m[39m [90mTS2322[39m: Type '(parent: Record<PropertyKey, never>, args: RequireFields<MutationUpdateUserArgs, "input">, context: any) => Promise<...>' is not assignable to type 'Resolver<ResolverTypeWrapper<User>, Record<PropertyKey, never>, any, RequireFields<MutationUpdateUserArgs, "input">>'.
+  Type '(parent: Record<PropertyKey, never>, args: RequireFields<MutationUpdateUserArgs, "input">, context: any) => Promise<...>' is not assignable to type 'ResolverFn<ResolverTypeWrapper<User>, Record<PropertyKey, never>, any, RequireFields<MutationUpdateUserArgs, "input">>'.
+    Type 'Promise<Document<unknown, {}, { email: string; firstName: string; lastName: string; dob: string; password: string; }, {}, DefaultSchemaOptions> & { email: string; firstName: string; lastName: string; dob: string; password: string; } & { ...; } & { ...; } & { ...; }>' is not assignable to type 'ResolverTypeWrapper<User> | Promise<ResolverTypeWrapper<User>>'.
+      Type 'Promise<Document<unknown, {}, { email: string; firstName: string; lastName: string; dob: string; password: string; }, {}, DefaultSchemaOptions> & { email: string; firstName: string; lastName: string; dob: string; password: string; } & { ...; } & { ...; } & { ...; }>' is not assignable to type 'Promise<User>'.
+        Type 'Document<unknown, {}, { email: string; firstName: string; lastName: string; dob: string; password: string; }, {}, DefaultSchemaOptions> & { email: string; firstName: string; lastName: string; dob: string; password: string; } & { ...; } & { ...; } & { ...; }' is not assignable to type 'User'.
+          Types of property '_id' are incompatible.
+            Type 'ObjectId' is not assignable to type 'string'.
+
+[0m [90m 2 | [39m[36mimport[39m [33mUser[39m from [32m"../models/user.model"[39m[33m;[39m
+ [90m 3 | [39m
+[31m[1m>[22m[39m[90m 4 | [39m[36mexport[39m [36mconst[39m updateUser[33m:[39m [33mMutationResolvers[39m[[32m'updateUser'[39m] [33m=[39m async (parent[33m,[39m args[33m,[39m context) [33m=>[39m {
+ [90m   | [39m             [31m[1m^[22m[39m
+ [90m 5 | [39m    [36mconst[39m {input} [33m=[39m args[33m;[39m
+ [90m 6 | [39m    [36mconst[39m updateUser [33m=[39m await [33mUser[39m[33m.[39mfindByIdAndUpdate(input[33m.[39m_id[33m,[39m input[33m,[39m {[36mnew[39m[33m:[39m [36mtrue[39m})[33m;[39m
+ [90m 7 | [39m[0m
+
+Found 2 errors.

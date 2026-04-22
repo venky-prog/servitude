@@ -1,0 +1,46 @@
+> nx run user:codegen
+
+(node:183118) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[?25l[2m◼[22m Parse Configuration
+[2K[1A[2K[G[2m◼[22m Parse Configuration
+[2m◼[22m Generate outputs
+[2K[1A[2K[1A[2K[G[33m⠋[39m Parse Configuration
+[2m◼[22m Generate outputs
+[2K[1A[2K[1A[2K[G[31m✖[39m Parse Configuration
+[31m◼[39m Generate outputs
+[2K[1A[2K[1A[2K[G[31m✖[39m Invalid Codegen Configuration!
+
+          Please make sure that your codegen config file contains either the "schema" field
+          or every generated file has its own "schema" field.
+
+          It should looks like that:
+          schema:
+            - my-schema.graphql
+
+          or:
+          generates:
+            path/to/output:
+              schema: my-schema.graphql
+
+[31m◼[39m Generate outputs
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G[31m✖[39m Invalid Codegen Configuration!
+
+          Please make sure that your codegen config file contains either the "schema" field
+          or every generated file has its own "schema" field.
+
+          It should looks like that:
+          schema:
+            - my-schema.graphql
+
+          or:
+          generates:
+            path/to/output:
+              schema: my-schema.graphql
+
+[31m◼[39m Generate outputs
+[?25h[?25h⠙[1G[0K
+[7m[1m[31m NX [39m[22m[27m  [31mgraphql-codegen process exited with code 1[39m
+
+Pass --verbose to see the stacktrace.
+

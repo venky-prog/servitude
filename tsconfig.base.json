@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@servitude/apollo-config": ["libs/apollo-config/src/index.ts"],
       "@servitude/my-plugin": ["tools/my-plugin/src/index.ts"]
     }
   },

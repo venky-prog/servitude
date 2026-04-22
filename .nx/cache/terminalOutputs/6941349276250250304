@@ -1,0 +1,16 @@
+> nx run user:build:production
+
+[4m[34mapps/user/src/resolvers/me.ts:3:14[39m[24m - [31m[1merror[22m[39m [90mTS2322[39m: Type '() => { id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' is not assignable to type 'Resolver<ResolverTypeWrapper<User>, Record<PropertyKey, never>, any, Record<PropertyKey, never>>'.
+  Type '() => { id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' is not assignable to type 'ResolverFn<ResolverTypeWrapper<User>, Record<PropertyKey, never>, any, Record<PropertyKey, never>>'.
+    Type '{ id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' is not assignable to type 'ResolverTypeWrapper<User> | Promise<ResolverTypeWrapper<User>>'.
+      Property '_id' is missing in type '{ id: string; email: string; firstName: string; lastName: string; dob: string; password: string; }' but required in type 'User'.
+
+[0m [90m 1 | [39m[36mimport[39m { [33mQueryResolvers[39m } from [32m"../generated/graphql"[39m[33m;[39m
+ [90m 2 | [39m
+[31m[1m>[22m[39m[90m 3 | [39m[36mexport[39m [36mconst[39m me[33m:[39m [33mQueryResolvers[39m[[32m'me'[39m] [33m=[39m () [33m=>[39m {
+ [90m   | [39m             [31m[1m^[22m[39m
+ [90m 4 | [39m    [36mreturn[39m {
+ [90m 5 | [39m        id[33m:[39m [32m'1'[39m[33m,[39m
+ [90m 6 | [39m        email[33m:[39m [32m'user@example.com'[39m[33m,[39m[0m
+
+Found 1 error.

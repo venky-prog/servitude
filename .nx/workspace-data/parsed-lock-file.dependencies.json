@@ -2845,6 +2845,41 @@
     "type": "static"
   },
   {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:@graphql-codegen/plugin-helpers",
+    "type": "static"
+  },
+  {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:@graphql-codegen/typescript",
+    "type": "static"
+  },
+  {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:@graphql-codegen/visitor-plugin-common",
+    "type": "static"
+  },
+  {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:@graphql-tools/utils",
+    "type": "static"
+  },
+  {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:auto-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:graphql",
+    "type": "static"
+  },
+  {
+    "source": "npm:@graphql-codegen/typescript-resolvers",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
     "source": "npm:@graphql-codegen/typescript",
     "target": "npm:@graphql-codegen/plugin-helpers",
     "type": "static"
@@ -5470,6 +5505,11 @@
     "type": "static"
   },
   {
+    "source": "npm:@types/bcrypt",
+    "target": "npm:@types/node",
+    "type": "static"
+  },
+  {
     "source": "npm:@types/body-parser",
     "target": "npm:@types/connect",
     "type": "static"
@@ -6282,6 +6322,16 @@
   {
     "source": "npm:babel-preset-jest",
     "target": "npm:babel-preset-current-node-syntax",
+    "type": "static"
+  },
+  {
+    "source": "npm:bcrypt",
+    "target": "npm:node-addon-api",
+    "type": "static"
+  },
+  {
+    "source": "npm:bcrypt",
+    "target": "npm:node-gyp-build",
     "type": "static"
   },
   {

@@ -1665,6 +1665,15 @@
         "hash": "sha512-JlmjbFl0EnsfMDIYvTE1Q0kAOrntVEZ+ZfBqWTP91g4e0F/TzuwJ/V4tiFmeDf5dx/rf9AK4VkPehIdxu7TYhw=="
       }
     },
+    "npm:@graphql-codegen/typescript-resolvers": {
+      "type": "npm",
+      "name": "npm:@graphql-codegen/typescript-resolvers",
+      "data": {
+        "version": "5.1.8",
+        "packageName": "@graphql-codegen/typescript-resolvers",
+        "hash": "sha512-aimBhh/XIoMD9SAif8F1NUQQeQNR4RaDZnso/tZHzX8OpNzp7kLr3lRQM12p4L7+zekOFkouaDbsoKbLoaIAQA=="
+      }
+    },
     "npm:@graphql-codegen/typescript": {
       "type": "npm",
       "name": "npm:@graphql-codegen/typescript",
@@ -3186,6 +3195,15 @@
         "hash": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q=="
       }
     },
+    "npm:@types/bcrypt": {
+      "type": "npm",
+      "name": "npm:@types/bcrypt",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "@types/bcrypt",
+        "hash": "sha512-/oJGukuH3D2+D+3H4JWLaAsJ/ji86dhRidzZ/Od7H/i8g+aCmvkeCc6Ni/f9uxGLSQVCRZkX2/lqEFG2BvWtlQ=="
+      }
+    },
     "npm:@types/body-parser": {
       "type": "npm",
       "name": "npm:@types/body-parser",
@@ -4129,6 +4147,15 @@
         "version": "2.10.20",
         "packageName": "baseline-browser-mapping",
         "hash": "sha512-1AaXxEPfXT+GvTBJFuy4yXVHWJBXa4OdbIebGN/wX5DlsIkU0+wzGnd2lOzokSk51d5LUmqjgBLRLlypLUqInQ=="
+      }
+    },
+    "npm:bcrypt": {
+      "type": "npm",
+      "name": "npm:bcrypt",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "bcrypt",
+        "hash": "sha512-cU8v/EGSrnH+HnxV2z0J7/blxH8gq7Xh2JFT6Aroax7UohdmiJJlxApMxtKfuI7z68NvvVcmR78k2LbT6efhRg=="
       }
     },
     "npm:bl": {
@@ -6489,6 +6516,15 @@
         "hash": "sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ=="
       }
     },
+    "npm:jose": {
+      "type": "npm",
+      "name": "npm:jose",
+      "data": {
+        "version": "6.2.2",
+        "packageName": "jose",
+        "hash": "sha512-d7kPDd34KO/YnzaDOlikGpOurfF0ByC2sEV4cANCtdqLlTfBlw2p14O/5d/zv40gJPbIQxfES3nSx1/oYNyuZQ=="
+      }
+    },
     "npm:js-levenshtein": {
       "type": "npm",
       "name": "npm:js-levenshtein",
@@ -7146,6 +7182,15 @@
         "hash": "sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg=="
       }
     },
+    "npm:node-addon-api": {
+      "type": "npm",
+      "name": "npm:node-addon-api",
+      "data": {
+        "version": "8.7.0",
+        "packageName": "node-addon-api",
+        "hash": "sha512-9MdFxmkKaOYVTV+XVRG8ArDwwQ77XIgIPyKASB1k3JPq3M8fGQQQE3YpMOrKm6g//Ktx8ivZr8xo1Qmtqub+GA=="
+      }
+    },
     "npm:node-domexception": {
       "type": "npm",
       "name": "npm:node-domexception",
@@ -7162,6 +7207,15 @@
         "version": "3.3.2",
         "packageName": "node-fetch",
         "hash": "sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA=="
+      }
+    },
+    "npm:node-gyp-build": {
+      "type": "npm",
+      "name": "npm:node-gyp-build",
+      "data": {
+        "version": "4.8.4",
+        "packageName": "node-gyp-build",
+        "hash": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=="
       }
     },
     "npm:node-int64": {
@@ -9611,6 +9665,9 @@
     "@graphql-codegen/typescript-operations@5.1.0(graphql@16.13.2)": [
       "npm:@graphql-codegen/typescript-operations"
     ],
+    "@graphql-codegen/typescript-resolvers@5.1.8(graphql@16.13.2)": [
+      "npm:@graphql-codegen/typescript-resolvers"
+    ],
     "@graphql-codegen/typescript@5.0.10(graphql@16.13.2)": [
       "npm:@graphql-codegen/typescript"
     ],
@@ -10118,6 +10175,9 @@
     "@types/babel__traverse@7.28.0": [
       "npm:@types/babel__traverse"
     ],
+    "@types/bcrypt@6.0.0": [
+      "npm:@types/bcrypt"
+    ],
     "@types/body-parser@1.19.6": [
       "npm:@types/body-parser"
     ],
@@ -10432,6 +10492,9 @@
     ],
     "baseline-browser-mapping@2.10.20": [
       "npm:baseline-browser-mapping"
+    ],
+    "bcrypt@6.0.0": [
+      "npm:bcrypt"
     ],
     "bl@4.1.0": [
       "npm:bl"
@@ -11219,6 +11282,9 @@
     "jiti@2.6.1": [
       "npm:jiti"
     ],
+    "jose@6.2.2": [
+      "npm:jose"
+    ],
     "js-levenshtein@1.1.6": [
       "npm:js-levenshtein"
     ],
@@ -11438,11 +11504,17 @@
     "no-case@3.0.4": [
       "npm:no-case"
     ],
+    "node-addon-api@8.7.0": [
+      "npm:node-addon-api"
+    ],
     "node-domexception@1.0.0": [
       "npm:node-domexception"
     ],
     "node-fetch@3.3.2": [
       "npm:node-fetch"
+    ],
+    "node-gyp-build@4.8.4": [
+      "npm:node-gyp-build"
     ],
     "node-int64@0.4.0": [
       "npm:node-int64"

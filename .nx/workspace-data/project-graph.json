@@ -1,137 +1,5 @@
 {
   "nodes": {
-    "apollo-config": {
-      "name": "apollo-config",
-      "type": "lib",
-      "data": {
-        "root": "libs/apollo-config",
-        "targets": {
-          "lint": {
-            "cache": true,
-            "options": {
-              "cwd": "libs/apollo-config",
-              "command": "eslint ."
-            },
-            "inputs": [
-              "default",
-              "^default",
-              "{workspaceRoot}/eslint.config.mjs",
-              "{workspaceRoot}/libs/apollo-config/eslint.config.mjs",
-              "{workspaceRoot}/tools/eslint-rules/**/*",
-              {
-                "externalDependencies": [
-                  "eslint"
-                ]
-              }
-            ],
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "metadata": {
-              "technologies": [
-                "eslint"
-              ],
-              "description": "Runs ESLint on project",
-              "help": {
-                "command": "pnpm exec eslint --help",
-                "example": {
-                  "options": {
-                    "max-warnings": 0
-                  }
-                }
-              }
-            },
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          },
-          "test": {
-            "options": {
-              "cwd": "libs/apollo-config",
-              "env": {
-                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
-              },
-              "command": "jest"
-            },
-            "metadata": {
-              "technologies": [
-                "jest"
-              ],
-              "description": "Run Jest Tests",
-              "help": {
-                "command": "pnpm exec jest --help",
-                "example": {
-                  "options": {
-                    "coverage": true
-                  }
-                }
-              }
-            },
-            "cache": true,
-            "inputs": [
-              "default",
-              "^default",
-              "{workspaceRoot}/jest.preset.js",
-              {
-                "externalDependencies": [
-                  "jest",
-                  "@nx/jest",
-                  "ts-jest"
-                ]
-              }
-            ],
-            "outputs": [
-              "{workspaceRoot}/coverage/libs/apollo-config"
-            ],
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          },
-          "build": {
-            "executor": "@nx/js:tsc",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/libs/apollo-config",
-              "tsConfig": "libs/apollo-config/tsconfig.lib.json",
-              "packageJson": "libs/apollo-config/package.json",
-              "main": "libs/apollo-config/src/index.ts",
-              "assets": [
-                "libs/apollo-config/*.md"
-              ]
-            },
-            "configurations": {},
-            "parallelism": true,
-            "cache": false,
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "default",
-              "^default"
-            ]
-          }
-        },
-        "name": "apollo-config",
-        "tags": [
-          "npm:private"
-        ],
-        "metadata": {
-          "targetGroups": {},
-          "js": {
-            "packageName": "@servitude/apollo-config",
-            "packageVersion": "0.0.1",
-            "packageMain": "./src/index.js",
-            "isInPackageManagerWorkspaces": false
-          }
-        },
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/apollo-config/src",
-        "projectType": "library",
-        "implicitDependencies": []
-      }
-    },
     "transactions": {
       "name": "transactions",
       "type": "app",
@@ -2541,6 +2409,15 @@
         "hash": "sha512-JlmjbFl0EnsfMDIYvTE1Q0kAOrntVEZ+ZfBqWTP91g4e0F/TzuwJ/V4tiFmeDf5dx/rf9AK4VkPehIdxu7TYhw=="
       }
     },
+    "npm:@graphql-codegen/typescript-resolvers": {
+      "type": "npm",
+      "name": "npm:@graphql-codegen/typescript-resolvers",
+      "data": {
+        "version": "5.1.8",
+        "packageName": "@graphql-codegen/typescript-resolvers",
+        "hash": "sha512-aimBhh/XIoMD9SAif8F1NUQQeQNR4RaDZnso/tZHzX8OpNzp7kLr3lRQM12p4L7+zekOFkouaDbsoKbLoaIAQA=="
+      }
+    },
     "npm:@graphql-codegen/typescript": {
       "type": "npm",
       "name": "npm:@graphql-codegen/typescript",
@@ -4062,6 +3939,15 @@
         "hash": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q=="
       }
     },
+    "npm:@types/bcrypt": {
+      "type": "npm",
+      "name": "npm:@types/bcrypt",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "@types/bcrypt",
+        "hash": "sha512-/oJGukuH3D2+D+3H4JWLaAsJ/ji86dhRidzZ/Od7H/i8g+aCmvkeCc6Ni/f9uxGLSQVCRZkX2/lqEFG2BvWtlQ=="
+      }
+    },
     "npm:@types/body-parser": {
       "type": "npm",
       "name": "npm:@types/body-parser",
@@ -5005,6 +4891,15 @@
         "version": "2.10.20",
         "packageName": "baseline-browser-mapping",
         "hash": "sha512-1AaXxEPfXT+GvTBJFuy4yXVHWJBXa4OdbIebGN/wX5DlsIkU0+wzGnd2lOzokSk51d5LUmqjgBLRLlypLUqInQ=="
+      }
+    },
+    "npm:bcrypt": {
+      "type": "npm",
+      "name": "npm:bcrypt",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "bcrypt",
+        "hash": "sha512-cU8v/EGSrnH+HnxV2z0J7/blxH8gq7Xh2JFT6Aroax7UohdmiJJlxApMxtKfuI7z68NvvVcmR78k2LbT6efhRg=="
       }
     },
     "npm:bl": {
@@ -7365,6 +7260,15 @@
         "hash": "sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ=="
       }
     },
+    "npm:jose": {
+      "type": "npm",
+      "name": "npm:jose",
+      "data": {
+        "version": "6.2.2",
+        "packageName": "jose",
+        "hash": "sha512-d7kPDd34KO/YnzaDOlikGpOurfF0ByC2sEV4cANCtdqLlTfBlw2p14O/5d/zv40gJPbIQxfES3nSx1/oYNyuZQ=="
+      }
+    },
     "npm:js-levenshtein": {
       "type": "npm",
       "name": "npm:js-levenshtein",
@@ -8022,6 +7926,15 @@
         "hash": "sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg=="
       }
     },
+    "npm:node-addon-api": {
+      "type": "npm",
+      "name": "npm:node-addon-api",
+      "data": {
+        "version": "8.7.0",
+        "packageName": "node-addon-api",
+        "hash": "sha512-9MdFxmkKaOYVTV+XVRG8ArDwwQ77XIgIPyKASB1k3JPq3M8fGQQQE3YpMOrKm6g//Ktx8ivZr8xo1Qmtqub+GA=="
+      }
+    },
     "npm:node-domexception": {
       "type": "npm",
       "name": "npm:node-domexception",
@@ -8038,6 +7951,15 @@
         "version": "3.3.2",
         "packageName": "node-fetch",
         "hash": "sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA=="
+      }
+    },
+    "npm:node-gyp-build": {
+      "type": "npm",
+      "name": "npm:node-gyp-build",
+      "data": {
+        "version": "4.8.4",
+        "packageName": "node-gyp-build",
+        "hash": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=="
       }
     },
     "npm:node-int64": {
@@ -9932,18 +9854,6 @@
     }
   },
   "dependencies": {
-    "apollo-config": [
-      {
-        "source": "apollo-config",
-        "target": "npm:jsonc-eslint-parser",
-        "type": "dynamic"
-      },
-      {
-        "source": "apollo-config",
-        "target": "npm:tslib",
-        "type": "static"
-      }
-    ],
     "transactions": [
       {
         "source": "transactions",
@@ -10014,6 +9924,16 @@
       {
         "source": "user",
         "target": "npm:mongoose",
+        "type": "static"
+      },
+      {
+        "source": "user",
+        "target": "npm:bcrypt",
+        "type": "static"
+      },
+      {
+        "source": "user",
+        "target": "npm:jose",
         "type": "static"
       }
     ],
@@ -13148,6 +13068,43 @@
         "type": "static"
       }
     ],
+    "npm:@graphql-codegen/typescript-resolvers": [
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:@graphql-codegen/plugin-helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:@graphql-codegen/typescript",
+        "type": "static"
+      },
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:@graphql-codegen/visitor-plugin-common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:@graphql-tools/utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:auto-bind",
+        "type": "static"
+      },
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:graphql",
+        "type": "static"
+      },
+      {
+        "source": "npm:@graphql-codegen/typescript-resolvers",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
     "npm:@graphql-codegen/typescript": [
       {
         "source": "npm:@graphql-codegen/typescript",
@@ -15969,6 +15926,13 @@
         "type": "static"
       }
     ],
+    "npm:@types/bcrypt": [
+      {
+        "source": "npm:@types/bcrypt",
+        "target": "npm:@types/node",
+        "type": "static"
+      }
+    ],
     "npm:@types/body-parser": [
       {
         "source": "npm:@types/body-parser",
@@ -16891,6 +16855,18 @@
       {
         "source": "npm:babel-preset-jest",
         "target": "npm:babel-preset-current-node-syntax",
+        "type": "static"
+      }
+    ],
+    "npm:bcrypt": [
+      {
+        "source": "npm:bcrypt",
+        "target": "npm:node-addon-api",
+        "type": "static"
+      },
+      {
+        "source": "npm:bcrypt",
+        "target": "npm:node-gyp-build",
         "type": "static"
       }
     ],
@@ -22535,5 +22511,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1776780092938
+  "computedAt": 1776831187016
 }

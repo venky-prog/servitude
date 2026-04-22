@@ -11,9 +11,13 @@ const runExecutor: PromiseExecutor<ApolloCodegenExecutorSchema> = async (
   }
   const projectConfig = context.projectsConfigurations.projects[context.projectName];
 
+  console.log(`Running GraphQL Codegen for project: ${context.projectName}`);
+
+  console.log('loading config from', projectConfig.root + '/codegen.ts');
+
   await new Promise<void>((resolve, reject) => {
-    const process = spawn('npx', ['graphql-codegen', '--config', projectConfig.root + '/codegen.ts'], {
-      cwd: context.root,
+    const process = spawn('npx', ['graphql-codegen', '--config',  './codegen.ts'], {
+      cwd: projectConfig.root,
       stdio: 'inherit',
       shell: true,
     });
