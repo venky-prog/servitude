@@ -27107,3 +27107,29 @@ Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.039499999999861
 [NX v22.6.5 Daemon Client] - 2026-04-22T04:19:59.134Z - [Messenger] Received message, length: 490269
 [NX v22.6.5 Daemon Server] - 2026-04-22T04:19:59.157Z - Closed a connection. Number of open connections: 2
 DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.152Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.152Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.152Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.152Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.152Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.152Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.153Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.153Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.153Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.153Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.153Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.153Z - [Messenger] Received message, length: 7248
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.193Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.193Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.195Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.195Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.195Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.195Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:00.195Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.195Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.195Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.195Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:00.196Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:33.094Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Client] - 2026-04-22T04:20:33.095Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Server] - 2026-04-22T04:20:36.656Z - Closed a connection. Number of open connections: 0
