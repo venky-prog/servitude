@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx serve user",
-    "startTime": "2026-04-22T04:13:01.306Z",
-    "endTime": "2026-04-22T04:19:55.835Z",
+    "startTime": "2026-04-27T16:08:29.067Z",
+    "endTime": "2026-04-27T16:10:00.917Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "user:build:production",
       "target": "build",
       "projectName": "user",
-      "hash": "17513340481298863956",
-      "startTime": "2026-04-22T04:13:01.328Z",
-      "endTime": "2026-04-22T04:13:04.678Z",
+      "hash": "1234477398560307031",
+      "startTime": "2026-04-27T16:08:29.104Z",
+      "endTime": "2026-04-27T16:08:32.749Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -21,9 +21,9 @@
       "taskId": "user:serve:development",
       "target": "serve",
       "projectName": "user",
-      "hash": "2447252386335145052",
-      "startTime": "2026-04-22T04:13:04.686Z",
-      "endTime": "2026-04-22T04:19:55.832Z",
+      "hash": "11387654501664062695",
+      "startTime": "2026-04-27T16:08:32.765Z",
+      "endTime": "2026-04-27T16:10:00.916Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
