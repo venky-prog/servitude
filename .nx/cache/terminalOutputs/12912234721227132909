@@ -1,0 +1,311 @@
+> nx run user:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+2026-05-05T16:52:03.479Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+2026-05-05T16:52:08.720Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+2026-05-05T16:52:13.762Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+2026-05-05T16:52:18.769Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+2026-05-05T16:52:20.616Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+2026-05-05T16:52:23.741Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+2026-05-05T16:52:28.789Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:28)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+2026-05-05T17:03:21.670Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+2026-05-05T17:04:39.527Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- from user service 69e7b269d9d92e31e9cd73b8
+2026-05-05T17:04:43.227Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:11:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+^[^[[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:11:29.495Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- from user service 69e7b269d9d92e31e9cd73b8
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:11:33.446Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:20:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:12:53.761Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:12:57.888Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:02.900Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:04.082Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+-------------------userId while generating token new ObjectId([32m'69e7b269d9d92e31e9cd73b8'[39m) object
+----------------------- from user service 69e7b269d9d92e31e9cd73b8
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:07.891Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:12.892Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+[ [32mwatch[39m ] build succeeded, watching for changes...
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:44.931Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:49.961Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:13:50.023Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+-------------------userId while generating token 69e7b269d9d92e31e9cd73b8 string
+----------------------- from user service 69e7b269d9d92e31e9cd73b8
+----------------------- token from header [90mundefined[39m
+2026-05-05T17:14:11.312Z [[31merror[39m]: JWSInvalid: Invalid Compact JWS
+    at compactVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jws/compact/verify.js:13:15)
+    at jwtVerify (file:///home/venky/repos/servitude/node_modules/.pnpm/jose@6.2.2/node_modules/jose/dist/webapi/jwt/verify.js:5:28)
+    at verifyToken (/home/venky/repos/servitude/libs/config/src/lib/token.ts:21:31)
+    at context (/home/venky/repos/servitude/libs/config/src/lib/create-app.ts:12:29)
+    at context (/home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:89:22)
+    at ApolloServer.executeHTTPGraphQLRequest (/home/venky/repos/servitude/node_modules/.pnpm/@apollo+server@5.5.0_graphql@16.13.2/node_modules/@apollo/server/src/ApolloServer.ts:1118:30)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at /home/venky/repos/servitude/node_modules/.pnpm/@as-integrations+express5@1.1.2_@apollo+server@5.5.0_graphql@16.13.2__express@5.2.1/node_modules/@as-integrations/express5/src/index.ts:87:33
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+/home/venky/repos/servitude/node_modules/.pnpm/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/@nx/js/src/executors/node/lib/coalescing-debounce.js:47
+                reject(new Error('Cancelled'));
+                       ^
+
+Error: Cancelled
+    at Object.cancel [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/[4m@nx/js[24m/src/executors/node/lib/coalescing-debounce.js:47:24[90m)[39m
+    at stopAllTasks [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/[4m@nx/js[24m/src/executors/node/node.impl.js:178:35[90m)[39m
+    at process.<anonymous> [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/[4m@nx/js[24m/src/executors/node/node.impl.js:199:19[90m)[39m
+[90m    at process.emit (node:events:509:20)[39m
+    at process.emit [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/[4mnx[24m/src/native/index.js:29:23[90m)[39m
+
+Node.js v25.9.0

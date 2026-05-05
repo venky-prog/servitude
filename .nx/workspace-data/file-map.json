@@ -4,6 +4,15 @@
   "pathMappings": {
     "@servitude/my-plugin": [
       "tools/my-plugin/src/index.ts"
+    ],
+    "@servitude/database": [
+      "libs/database/src/index.ts"
+    ],
+    "@servitude/logger": [
+      "libs/logger/src/index.ts"
+    ],
+    "@servitude/config": [
+      "libs/config/src/index.ts"
     ]
   },
   "nxJsonPlugins": [
@@ -23,215 +32,448 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "eslint.config.mjs",
-        "hash": "12926286793420397906"
-      },
-      {
-        "file": ".github/skills/nx-import/references/VITE.md",
-        "hash": "5793928500507593678"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/index.js.map",
-        "hash": "5209531805110110018"
-      },
-      {
-        "file": ".github/skills/nx-import/SKILL.md",
-        "hash": "9709061508228126022"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/schema.d.ts",
-        "hash": "1919283545202777730"
-      },
-      {
-        "file": ".github/prompts/monitor-ci.prompt.md",
-        "hash": "373234804653081784"
-      },
-      {
-        "file": ".github/skills/link-workspace-packages/SKILL.md",
-        "hash": "6638592300654417978"
-      },
-      {
-        "file": ".github/skills/nx-import/references/NEXT.md",
-        "hash": "8705422121624482541"
-      },
-      {
-        "file": "AGENTS.md",
-        "hash": "18234343250335250711"
-      },
-      {
-        "file": "package.json",
-        "hash": "562243467921929178"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/index.d.ts",
-        "hash": "13986826492006007116"
-      },
-      {
-        "file": ".github/skills/nx-workspace/SKILL.md",
-        "hash": "56694506768298655"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/index.js",
-        "hash": "16612259154801856517"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/index.js",
-        "hash": "2785730809026575865"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6712395778258239247"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/index.d.ts",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": ".github/skills/nx-import/references/ESLINT.md",
-        "hash": "7412016826831212653"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "2633700893954941114"
-      },
-      {
-        "file": "tmp/accounts/main-with-require-overrides.js",
-        "hash": "6780784871311067496"
-      },
-      {
-        "file": ".vscode/launch.json",
-        "hash": "2604526484156576834"
-      },
-      {
-        "file": ".github/skills/monitor-ci/SKILL.md",
-        "hash": "8399173415832764241"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/index.js.map",
-        "hash": "1233079838410511068"
-      },
-      {
-        "file": ".github/skills/monitor-ci/references/fix-flows.md",
-        "hash": "14499115380699629375"
-      },
-      {
-        "file": ".github/skills/nx-workspace/references/AFFECTED.md",
-        "hash": "10577828056523124002"
-      },
-      {
-        "file": "dist/tools/my-plugin/package.json",
-        "hash": "16020020288641709947"
-      },
-      {
         "file": ".github/skills/nx-import/references/GRADLE.md",
         "hash": "15868511153961490698"
-      },
-      {
-        "file": ".github/skills/monitor-ci/scripts/ci-state-update.mjs",
-        "hash": "13401974159889364904"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
-      },
-      {
-        "file": ".github/skills/nx-generate/SKILL.md",
-        "hash": "16801959272346088877"
-      },
-      {
-        "file": "dist/apps/user/assets/readme.txt",
-        "hash": "13163100149506441076"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "dist/apps/user/package.json",
-        "hash": "4990505761665647669"
-      },
-      {
-        "file": "dist/tools/my-plugin/README.md",
-        "hash": "12505939002744208438"
-      },
-      {
-        "file": ".github/skills/monitor-ci/scripts/ci-poll-decide.mjs",
-        "hash": "5080978990847760627"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.d.ts",
-        "hash": "4595979742548113990"
-      },
-      {
-        "file": ".github/agents/ci-monitor-subagent.agent.md",
-        "hash": "6573591679819005545"
-      },
-      {
-        "file": "dist/tools/my-plugin/executors.json",
-        "hash": "10889209025923371609"
-      },
-      {
-        "file": "dist/apps/user/schema/user.graphql",
-        "hash": "9252941755194672877"
-      },
-      {
-        "file": ".github/skills/nx-plugins/SKILL.md",
-        "hash": "4717624081372438208"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/schema.json",
-        "hash": "15492841523934152026"
-      },
-      {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.js.map",
-        "hash": "5756021056324429981"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "4814650581917454691"
-      },
-      {
-        "file": ".github/skills/nx-import/references/JEST.md",
-        "hash": "8022966628634571060"
-      },
-      {
-        "file": "dist/apps/user/assets/.gitkeep",
-        "hash": "3244421341483603138"
       },
       {
         "file": "nx.json",
         "hash": "14069730223483982355"
       },
       {
-        "file": ".github/skills/nx-run-tasks/SKILL.md",
-        "hash": "10723914446406921246"
+        "file": "debug.log",
+        "hash": "12428480333613930522"
+      },
+      {
+        "file": "dist/libs/logger/src/lib/logger.d.ts",
+        "hash": "13940465795039524289"
+      },
+      {
+        "file": "dist/libs/logger/src/index.d.ts",
+        "hash": "6313578261647711379"
+      },
+      {
+        "file": "dist/apps/user/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "18234343250335250711"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "2604526484156576834"
+      },
+      {
+        "file": "dist/apps/accounts/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".github/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
+      },
+      {
+        "file": ".github/skills/monitor-ci/references/fix-flows.md",
+        "hash": "14499115380699629375"
       },
       {
         "file": ".github/skills/nx-import/references/TURBOREPO.md",
         "hash": "6654032474246573297"
       },
       {
-        "file": "dist/tools/my-plugin/src/apollo-codegen/apollo-codegen.spec.js",
-        "hash": "7057666441894016885"
+        "file": ".github/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": ".github/agents/ci-monitor-subagent.agent.md",
+        "hash": "6573591679819005545"
+      },
+      {
+        "file": "dist/libs/logger/src/index.js",
+        "hash": "13643269549417196828"
+      },
+      {
+        "file": "dist/apps/accounts/schema/accounts.graphql",
+        "hash": "8665287500190885120"
+      },
+      {
+        "file": "tmp/accounts/main-with-require-overrides.js",
+        "hash": "1638951863890793903"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "15925088273010472382"
+      },
+      {
+        "file": ".github/skills/monitor-ci/scripts/ci-state-update.mjs",
+        "hash": "13401974159889364904"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "2079779641757170331"
+      },
+      {
+        "file": ".github/skills/nx-import/references/NEXT.md",
+        "hash": "8705422121624482541"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "dist/apps/user/assets/readme.txt",
+        "hash": "13163100149506441076"
+      },
+      {
+        "file": "dist/libs/logger/package.json",
+        "hash": "6018492861889356186"
+      },
+      {
+        "file": ".github/prompts/monitor-ci.prompt.md",
+        "hash": "373234804653081784"
+      },
+      {
+        "file": "package.json",
+        "hash": "6057633540714254699"
+      },
+      {
+        "file": "dist/libs/logger/README.md",
+        "hash": "12685608216422532280"
+      },
+      {
+        "file": ".github/skills/nx-import/SKILL.md",
+        "hash": "9709061508228126022"
+      },
+      {
+        "file": "dist/libs/logger/src/index.js.map",
+        "hash": "4655148621050246509"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "12926286793420397906"
+      },
+      {
+        "file": "dist/apps/accounts/package.json",
+        "hash": "4925912697938606404"
+      },
+      {
+        "file": "dist/libs/logger/src/lib/logger.js",
+        "hash": "4705890441307480227"
+      },
+      {
+        "file": ".github/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": "dist/libs/logger/src/lib/logger.js.map",
+        "hash": "9501228085193365178"
+      },
+      {
+        "file": ".github/skills/nx-import/references/VITE.md",
+        "hash": "5793928500507593678"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2633700893954941114"
+      },
+      {
+        "file": "dist/apps/user/schema/user.graphql",
+        "hash": "9252941755194672877"
+      },
+      {
+        "file": ".github/skills/link-workspace-packages/SKILL.md",
+        "hash": "6638592300654417978"
+      },
+      {
+        "file": ".github/skills/nx-import/references/ESLINT.md",
+        "hash": "7412016826831212653"
+      },
+      {
+        "file": ".github/skills/nx-import/references/JEST.md",
+        "hash": "8022966628634571060"
+      },
+      {
+        "file": ".github/skills/monitor-ci/SKILL.md",
+        "hash": "8399173415832764241"
+      },
+      {
+        "file": ".github/skills/nx-workspace/SKILL.md",
+        "hash": "56694506768298655"
+      },
+      {
+        "file": ".github/skills/monitor-ci/scripts/ci-poll-decide.mjs",
+        "hash": "5080978990847760627"
+      },
+      {
+        "file": ".github/skills/nx-generate/SKILL.md",
+        "hash": "16801959272346088877"
       }
     ],
     "projectFileMap": {
+      "config": [
+        {
+          "file": "libs/config/README.md",
+          "hash": "14955561250727493101"
+        },
+        {
+          "file": "libs/config/eslint.config.mjs",
+          "hash": "4313095032450400554",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/config/jest.config.cts",
+          "hash": "2038699535955830273"
+        },
+        {
+          "file": "libs/config/package.json",
+          "hash": "12504125438522643295",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/config/project.json",
+          "hash": "10862052501756373461"
+        },
+        {
+          "file": "libs/config/src/index.ts",
+          "hash": "8176327507014441643"
+        },
+        {
+          "file": "libs/config/src/lib/create-app.ts",
+          "hash": "17886272879932260271",
+          "deps": [
+            "npm:@apollo/server",
+            "npm:express",
+            "npm:@as-integrations/express5"
+          ]
+        },
+        {
+          "file": "libs/config/src/lib/load-typedefs.ts",
+          "hash": "10230891378772991562",
+          "deps": [
+            "npm:graphql-tag",
+            "logger"
+          ]
+        },
+        {
+          "file": "libs/config/src/lib/token.ts",
+          "hash": "3933572377534217920",
+          "deps": [
+            "logger",
+            "npm:jose"
+          ]
+        },
+        {
+          "file": "libs/config/tsconfig.json",
+          "hash": "7450039135051461349"
+        },
+        {
+          "file": "libs/config/tsconfig.lib.json",
+          "hash": "13731893420473560347"
+        },
+        {
+          "file": "libs/config/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
+      "database": [
+        {
+          "file": "libs/database/README.md",
+          "hash": "9759918918454671098"
+        },
+        {
+          "file": "libs/database/eslint.config.mjs",
+          "hash": "4313095032450400554",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/database/jest.config.cts",
+          "hash": "11308084085433635133"
+        },
+        {
+          "file": "libs/database/package.json",
+          "hash": "4642412792894219853",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/database/project.json",
+          "hash": "14086500527044851475"
+        },
+        {
+          "file": "libs/database/src/index.ts",
+          "hash": "5340423904165830726"
+        },
+        {
+          "file": "libs/database/src/lib/connect-to-db.ts",
+          "hash": "11909466562024327927",
+          "deps": [
+            "npm:mongoose",
+            "logger"
+          ]
+        },
+        {
+          "file": "libs/database/tsconfig.json",
+          "hash": "2840670722752396445"
+        },
+        {
+          "file": "libs/database/tsconfig.lib.json",
+          "hash": "13731893420473560347"
+        },
+        {
+          "file": "libs/database/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
+      "accounts": [
+        {
+          "file": "apps/accounts/.env",
+          "hash": "11930957151020321042"
+        },
+        {
+          "file": "apps/accounts/codegen.ts",
+          "hash": "13081289463678680486",
+          "deps": [
+            "npm:@graphql-codegen/cli"
+          ]
+        },
+        {
+          "file": "apps/accounts/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/accounts/jest.config.cts",
+          "hash": "13301931629721185536"
+        },
+        {
+          "file": "apps/accounts/project.json",
+          "hash": "13587908237283629641"
+        },
+        {
+          "file": "apps/accounts/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/accounts/src/context.ts",
+          "hash": "11404985537623422237",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/generated/graphql.ts",
+          "hash": "73213755343418027",
+          "deps": [
+            "npm:graphql"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/main.ts",
+          "hash": "3802244040734143219",
+          "deps": [
+            "config",
+            "npm:@apollo/server",
+            "database",
+            "npm:@apollo/subgraph"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/models/accounts.model.ts",
+          "hash": "17530178938197492518",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/resolvers/create-credit-card-account.ts",
+          "hash": "1164143600685989232",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/resolvers/create-loan-account.ts",
+          "hash": "4942785303480371776",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/resolvers/create-savings-account.ts",
+          "hash": "17495953969964240226",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/resolvers/get-account.ts",
+          "hash": "12691703599973590704",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/resolvers/index.ts",
+          "hash": "1370263529684730265",
+          "deps": [
+            "npm:graphql-scalars"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/resolvers/list-accounts.ts",
+          "hash": "16299443746816017367",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/accounts/src/schema/accounts.graphql",
+          "hash": "8665287500190885120"
+        },
+        {
+          "file": "apps/accounts/tsconfig.app.json",
+          "hash": "808439928447687057"
+        },
+        {
+          "file": "apps/accounts/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/accounts/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
       "user": [
         {
           "file": "apps/user/.env",
-          "hash": "2782046584542953893"
+          "hash": "17048962429143282131"
         },
         {
           "file": "apps/user/codegen.ts",
-          "hash": "6131912078270793320",
+          "hash": "7213053444962927537",
           "deps": [
             "npm:@graphql-codegen/cli"
           ]
@@ -265,50 +507,45 @@
         },
         {
           "file": "apps/user/src/main.ts",
-          "hash": "48454851442851580",
+          "hash": "3058332628716108513",
           "deps": [
-            "npm:express",
             "npm:@apollo/server",
-            "npm:@as-integrations/express5",
             "npm:@apollo/subgraph",
-            "npm:graphql-tag"
+            "config",
+            "database"
           ]
         },
         {
           "file": "apps/user/src/models/user.model.ts",
-          "hash": "9905798192063732579",
+          "hash": "13047089913956186283",
           "deps": [
             "npm:mongoose",
             "npm:bcrypt",
-            "npm:jose"
+            "config"
           ]
         },
         {
           "file": "apps/user/src/resolvers/create-user.ts",
-          "hash": "6024968100254043442"
+          "hash": "7553469538678101668"
         },
         {
           "file": "apps/user/src/resolvers/login.ts",
-          "hash": "3896247553314214509"
+          "hash": "1676868791974140529"
         },
         {
           "file": "apps/user/src/resolvers/me.ts",
-          "hash": "1027162010760641149"
+          "hash": "832069575075879972",
+          "deps": [
+            "logger"
+          ]
         },
         {
           "file": "apps/user/src/resolvers/update-user.ts",
-          "hash": "3456833305030489596"
+          "hash": "6381337392669148096"
         },
         {
           "file": "apps/user/src/schema/user.graphql",
           "hash": "9252941755194672877"
-        },
-        {
-          "file": "apps/user/src/utils/mongo-connect.ts",
-          "hash": "5368955745887019159",
-          "deps": [
-            "npm:mongoose"
-          ]
         },
         {
           "file": "apps/user/tsconfig.app.json",
@@ -357,6 +594,64 @@
         },
         {
           "file": "apps/transactions/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
+      "logger": [
+        {
+          "file": "libs/logger/README.md",
+          "hash": "12685608216422532280"
+        },
+        {
+          "file": "libs/logger/eslint.config.mjs",
+          "hash": "4313095032450400554",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/logger/jest.config.cts",
+          "hash": "12959925153718810649"
+        },
+        {
+          "file": "libs/logger/package.json",
+          "hash": "1273945434895725846",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/logger/project.json",
+          "hash": "2270570484216757549"
+        },
+        {
+          "file": "libs/logger/src/index.ts",
+          "hash": "6313578261647711379"
+        },
+        {
+          "file": "libs/logger/src/lib/logger.spec.ts",
+          "hash": "17203541498996544023"
+        },
+        {
+          "file": "libs/logger/src/lib/logger.ts",
+          "hash": "15163253527467129604",
+          "deps": [
+            "npm:winston"
+          ]
+        },
+        {
+          "file": "libs/logger/tsconfig.json",
+          "hash": "2840670722752396445"
+        },
+        {
+          "file": "libs/logger/tsconfig.lib.json",
+          "hash": "13731893420473560347"
+        },
+        {
+          "file": "libs/logger/tsconfig.spec.json",
           "hash": "11011431583980985399"
         }
       ],
@@ -425,45 +720,8 @@
           "file": "tools/my-plugin/tsconfig.lib.json",
           "hash": "12722383387264320257"
         }
-      ],
-      "accounts": [
-        {
-          "file": "apps/accounts/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "apps/accounts/jest.config.cts",
-          "hash": "13301931629721185536"
-        },
-        {
-          "file": "apps/accounts/project.json",
-          "hash": "3001889030094065822"
-        },
-        {
-          "file": "apps/accounts/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/accounts/src/main.ts",
-          "hash": "12003555863464044675",
-          "deps": [
-            "npm:express"
-          ]
-        },
-        {
-          "file": "apps/accounts/tsconfig.app.json",
-          "hash": "808439928447687057"
-        },
-        {
-          "file": "apps/accounts/tsconfig.json",
-          "hash": "3490524966360018312"
-        },
-        {
-          "file": "apps/accounts/tsconfig.spec.json",
-          "hash": "11011431583980985399"
-        }
       ]
     }
   },
-  "externalNodesHash": "11755328834202011651"
+  "externalNodesHash": "10032826242964561046"
 }

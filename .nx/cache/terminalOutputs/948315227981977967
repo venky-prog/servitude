@@ -1,8 +1,0 @@
-> nx run my-plugin:build
-
-Compiling TypeScript files for project "my-plugin"...
-[1m[31m[96mtools/my-plugin/src/apollo-codegen/apollo-codegen.spec.ts[0m:[93m4[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module './apollo-codegen' or its corresponding type declarations.
-
-[7m4[0m import executor from './apollo-codegen';
-[7m [0m [91m                     ~~~~~~~~~~~~~~~~~~[0m
-[39m[22m

@@ -9,7 +9,7 @@ const path = require('path');
 const fs = require('fs');
 const originalResolveFilename = Module._resolveFilename;
 const distPath = __dirname;
-const manifest = [{"module":"@servitude/apollo-config","exactMatch":"libs/apollo-config/src/index.js","pattern":"libs/apollo-config/src/index.ts"}];
+const manifest = [{"module":"@servitude/my-plugin","exactMatch":"tools/my-plugin/src/index.js","pattern":"tools/my-plugin/src/index.ts"},{"module":"@servitude/database","exactMatch":"libs/database/src/index.js","pattern":"libs/database/src/index.ts"},{"module":"@servitude/logger","exactMatch":"libs/logger/src/index.js","pattern":"libs/logger/src/index.ts"},{"module":"@servitude/config","exactMatch":"libs/config/src/index.js","pattern":"libs/config/src/index.ts"}];
 
 Module._resolveFilename = function(request, parent) {
   let found;

@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@servitude/my-plugin": ["tools/my-plugin/src/index.ts"]
+      "@servitude/my-plugin": ["tools/my-plugin/src/index.ts"],
+      "@servitude/database": ["libs/database/src/index.ts"],
+      "@servitude/logger": ["libs/logger/src/index.ts"],
+      "@servitude/config": ["libs/config/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

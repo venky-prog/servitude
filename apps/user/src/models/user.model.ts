@@ -1,8 +1,8 @@
-import mongoose, { InferSchemaType, Model } from 'mongoose';
+import mongoose, { Model } from 'mongoose';
 import bcrypt from 'bcrypt';
-import {SignJWT} from 'jose';
+import { generateToken } from '@servitude/config';
 
-interface IUser {
+interface IUser extends mongoose.Document<string> {
   firstName: string;
   lastName: string;
   email: string;
@@ -41,7 +41,7 @@ const userSchema = new mongoose.Schema<IUser, Model<IUser>, IUserMethods>({
 });
 
 userSchema.pre('save', async function () {
-  console.log("Pre-save hook triggered for user:", this);
+  console.log('Pre-save hook triggered for user:', this);
   if (!this.isModified('password') || !this.isNew) {
     throw new Error('Password is not modified');
   }
@@ -50,16 +50,15 @@ userSchema.pre('save', async function () {
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-userSchema.method('comparePassword', async function (candidatePassword: string) {
-  return bcrypt.compare(candidatePassword, this.password);
-});
+userSchema.method(
+  'comparePassword',
+  async function (candidatePassword: string) {
+    return bcrypt.compare(candidatePassword, this.password);
+  },
+);
 
 userSchema.method('generateAuthToken', async function () {
-  const token = await new SignJWT({ userId: this._id.toHexString() })
-    .setProtectedHeader({ alg: 'HS256' })
-    .setExpirationTime('12h')
-    .sign(new TextEncoder().encode(process.env.JWT_SECRET || 'default-secret'));
-  return token; // Replace with actual token generation
+  return generateToken(this._id.toString()); // Replace with actual token generation
 });
 
 const User = mongoose.model('User', userSchema);

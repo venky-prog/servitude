@@ -12,10 +12,15 @@ const config: CodegenConfig = {
                     inputValue: true,
                     object: true,
                     defaultValue: true,
+                },
+                scalars: {
+                    JSON: 'string',
+                    UUID: 'string',
+                    Date: 'string'
                 }
             }
         },
-    },
+    }
 }
 
 export default config;

@@ -1,0 +1,75 @@
+scalar Date
+
+type Query {
+  accountsList: [Account!]!
+  getAccount(id: ID!): Account
+}
+
+type Mutation {
+  createSavingsAccount(
+    name: String!
+    interestRate: Float!
+    balance: Float!
+  ): Account!
+
+  createCreditCardAccount(
+    name: String!
+    cardLastDigits: Int!
+    limit: Float!
+    billDate: Int!
+  ): Account!
+
+  createLoanAccount(
+    name: String!
+    loanNumber: String!
+    date: Date!
+    emiStartDate: Date!
+    totalEMIs: Int!
+  ): Account!
+}
+
+enum AccountType {
+  SAVINGS
+  CREDIT_CARD
+  LOAN
+}
+
+type Account @key(fields: "_id") {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  userId: ID!
+}
+
+type SavingsAccount  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  interestRate: Float!
+  balance: Float!
+}
+
+type CreditCardAccount  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  cardLastDigits: Int!
+  limit: Float!
+  billDate: Int!
+}
+
+type LoanAccount  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  loanNumber: String!
+  date: Date!
+  emiStartDate: Date!
+  totalEMIs: Int!
+}
+
+extend schema
+  @link(
+    url: "https://specs.apollo.dev/federation/v2.3"
+    import: ["@key", "@shareable"]
+  )

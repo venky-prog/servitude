@@ -14,6 +14,6 @@ export const updateUser: MutationResolvers['updateUser'] = async (parent, args, 
 
     return {
         ...updateUser.toJSON(),
-        _id: updateUser._id.toHexString(), // Convert ObjectId to string
+        _id: updateUser._id, // Convert ObjectId to string
     };
 }

@@ -13,10 +13,21 @@
         "platform": "node",
         "outputPath": "dist/apps/accounts",
         "format": ["cjs"],
-        "bundle": false,
+        "bundle": true,
         "main": "apps/accounts/src/main.ts",
         "tsConfig": "apps/accounts/tsconfig.app.json",
-        "assets": ["apps/accounts/src/assets"],
+        "assets": [
+          {
+            "input": "apps/accounts/src/assets",
+            "glob": "**/*",
+            "output": "./assets"
+          },
+          {
+            "input": "apps/accounts/src/schema",
+            "glob": "**/*",
+            "output": "./schema"
+          }
+        ],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
@@ -84,6 +95,10 @@
       "options": {
         "passWithNoTests": true
       }
+    },
+    "codegen": {
+      "executor": "@servitude/my-plugin:apollo-codegen",
+      "options": {}
     }
   }
 }

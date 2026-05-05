@@ -1,4 +1,0 @@
-> nx run my-plugin:build
-
-Compiling TypeScript files for project "my-plugin"...
-Done compiling TypeScript files for project "my-plugin".

@@ -8,6 +8,6 @@ export const createUser: MutationResolvers['createUser'] = async (parent, args, 
 
   return {
     ...user,
-    _id: user._id.toHexString(), // Convert ObjectId to string
+    _id: user._id, // Convert ObjectId to string
   };
 }

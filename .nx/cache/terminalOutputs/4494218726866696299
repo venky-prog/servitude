@@ -1,4 +1,0 @@
-> nx run user:codegen
-
-Running GraphQL Codegen for project: user
-loading config from apps/user/codegen.ts
