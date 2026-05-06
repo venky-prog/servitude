@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run-many -t serve -p user -p accounts",
-    "startTime": "2026-05-05T16:50:52.370Z",
-    "endTime": "2026-05-05T17:17:41.377Z",
+    "startTime": "2026-05-06T00:39:06.261Z",
+    "endTime": "2026-05-06T01:07:20.719Z",
     "inner": false
   },
   "tasks": [
@@ -11,8 +11,8 @@
       "target": "build",
       "projectName": "logger",
       "hash": "4833620736178125421",
-      "startTime": "2026-05-05T16:50:52.384Z",
-      "endTime": "2026-05-05T16:50:54.105Z",
+      "startTime": "2026-05-06T00:39:06.278Z",
+      "endTime": "2026-05-06T00:39:08.084Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -22,8 +22,8 @@
       "target": "build",
       "projectName": "database",
       "hash": "11157297255992626967",
-      "startTime": "2026-05-05T16:50:54.113Z",
-      "endTime": "2026-05-05T16:50:55.908Z",
+      "startTime": "2026-05-06T00:39:08.094Z",
+      "endTime": "2026-05-06T00:39:09.934Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,20 +32,9 @@
       "taskId": "config:build",
       "target": "build",
       "projectName": "config",
-      "hash": "16073996654238152111",
-      "startTime": "2026-05-05T16:50:54.113Z",
-      "endTime": "2026-05-05T16:50:56.247Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "accounts:build:production",
-      "target": "build",
-      "projectName": "accounts",
-      "hash": "8691416341968859693",
-      "startTime": "2026-05-05T16:50:56.257Z",
-      "endTime": "2026-05-05T16:50:59.908Z",
+      "hash": "15163495255632902953",
+      "startTime": "2026-05-06T00:39:08.094Z",
+      "endTime": "2026-05-06T00:39:10.205Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -54,31 +43,42 @@
       "taskId": "user:build:production",
       "target": "build",
       "projectName": "user",
-      "hash": "1937634052967931007",
-      "startTime": "2026-05-05T16:50:56.257Z",
-      "endTime": "2026-05-05T16:51:00.019Z",
+      "hash": "5485728514491944506",
+      "startTime": "2026-05-06T00:39:10.215Z",
+      "endTime": "2026-05-06T00:39:13.946Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
     },
     {
-      "taskId": "accounts:serve:development",
-      "target": "serve",
+      "taskId": "accounts:build:production",
+      "target": "build",
       "projectName": "accounts",
-      "hash": "17204843173591511839",
-      "startTime": "2026-05-05T16:50:59.915Z",
-      "endTime": "2026-05-05T17:17:41.229Z",
+      "hash": "3123935538254794412",
+      "startTime": "2026-05-06T00:39:10.215Z",
+      "endTime": "2026-05-06T00:39:14.003Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     },
     {
       "taskId": "user:serve:development",
       "target": "serve",
       "projectName": "user",
-      "hash": "12912234721227132909",
-      "startTime": "2026-05-05T16:51:00.027Z",
-      "endTime": "2026-05-05T17:17:41.327Z",
+      "hash": "6374246459073310530",
+      "startTime": "2026-05-06T00:39:13.953Z",
+      "endTime": "2026-05-06T01:07:20.708Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "accounts:serve:development",
+      "target": "serve",
+      "projectName": "accounts",
+      "hash": "1958139721893452440",
+      "startTime": "2026-05-06T00:39:14.011Z",
+      "endTime": "2026-05-06T01:07:20.718Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

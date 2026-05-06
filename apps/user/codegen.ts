@@ -7,17 +7,14 @@ const config: CodegenConfig = {
         "src/generated/graphql.ts": {
             plugins: ["typescript", "typescript-resolvers"],
             config: {
-                avoidOptionals: {
-                    field: true,
-                    inputValue: true,
-                    object: true,
-                    defaultValue: true,
-                },
+                context: '@servitude/config#Context',
+                federation: true,
                 scalars: {
                     JSON: 'string',
                     UUID: 'string',
                     Date: 'string'
-                }
+                },
+
             }
         },
     }

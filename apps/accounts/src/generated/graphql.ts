@@ -1,5 +1,5 @@
 import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
-import { Context } from '../context';
+import { Context } from '@servitude/config';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -23,6 +23,7 @@ export type Account = {
   __typename?: 'Account';
   _id: Scalars['ID']['output'];
   accountType: AccountType;
+  lastFourDigits: Scalars['String']['output'];
   name: Scalars['String']['output'];
   userId: Scalars['ID']['output'];
 };
@@ -38,7 +39,6 @@ export type CreditCardAccount = {
   _id: Scalars['ID']['output'];
   accountType: AccountType;
   billDate: Scalars['Int']['output'];
-  cardLastDigits: Scalars['Int']['output'];
   limit: Scalars['Float']['output'];
   name: Scalars['String']['output'];
 };
@@ -49,7 +49,6 @@ export type LoanAccount = {
   accountType: AccountType;
   date: Scalars['Date']['output'];
   emiStartDate: Scalars['Date']['output'];
-  loanNumber: Scalars['String']['output'];
   name: Scalars['String']['output'];
   totalEMIs: Scalars['Int']['output'];
 };
@@ -64,7 +63,7 @@ export type Mutation = {
 
 export type MutationCreateCreditCardAccountArgs = {
   billDate: Scalars['Int']['input'];
-  cardLastDigits: Scalars['Int']['input'];
+  lastFourDigits: Scalars['String']['input'];
   limit: Scalars['Float']['input'];
   name: Scalars['String']['input'];
 };
@@ -73,7 +72,7 @@ export type MutationCreateCreditCardAccountArgs = {
 export type MutationCreateLoanAccountArgs = {
   date: Scalars['Date']['input'];
   emiStartDate: Scalars['Date']['input'];
-  loanNumber: Scalars['String']['input'];
+  lastFourDigits: Scalars['String']['input'];
   name: Scalars['String']['input'];
   totalEMIs: Scalars['Int']['input'];
 };
@@ -82,13 +81,14 @@ export type MutationCreateLoanAccountArgs = {
 export type MutationCreateSavingsAccountArgs = {
   balance: Scalars['Float']['input'];
   interestRate: Scalars['Float']['input'];
+  lastFourDigits: Scalars['String']['input'];
   name: Scalars['String']['input'];
 };
 
 export type Query = {
   __typename?: 'Query';
-  accountsList: Array<Account>;
   getAccount?: Maybe<Account>;
+  listAccounts: Array<Account>;
 };
 
 
@@ -234,6 +234,7 @@ export type AccountResolvers<ContextType = Context, ParentType extends Resolvers
   __resolveReference?: ReferenceResolver<Maybe<ResolversTypes['Account']> | FederationReferenceType, FederationReferenceType, ContextType>;
   _id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   accountType?: Resolver<ResolversTypes['AccountType'], ParentType, ContextType>;
+  lastFourDigits?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   userId?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
 };
@@ -242,7 +243,6 @@ export type CreditCardAccountResolvers<ContextType = Context, ParentType extends
   _id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   accountType?: Resolver<ResolversTypes['AccountType'], ParentType, ContextType>;
   billDate?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  cardLastDigits?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   limit?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
 };
@@ -256,20 +256,19 @@ export type LoanAccountResolvers<ContextType = Context, ParentType extends Resol
   accountType?: Resolver<ResolversTypes['AccountType'], ParentType, ContextType>;
   date?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
   emiStartDate?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
-  loanNumber?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   totalEMIs?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
 };
 
 export type MutationResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation']> = {
-  createCreditCardAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateCreditCardAccountArgs, 'billDate' | 'cardLastDigits' | 'limit' | 'name'>>;
-  createLoanAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateLoanAccountArgs, 'date' | 'emiStartDate' | 'loanNumber' | 'name' | 'totalEMIs'>>;
-  createSavingsAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateSavingsAccountArgs, 'balance' | 'interestRate' | 'name'>>;
+  createCreditCardAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateCreditCardAccountArgs, 'billDate' | 'lastFourDigits' | 'limit' | 'name'>>;
+  createLoanAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateLoanAccountArgs, 'date' | 'emiStartDate' | 'lastFourDigits' | 'name' | 'totalEMIs'>>;
+  createSavingsAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateSavingsAccountArgs, 'balance' | 'interestRate' | 'lastFourDigits' | 'name'>>;
 };
 
 export type QueryResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
-  accountsList?: Resolver<Array<ResolversTypes['Account']>, ParentType, ContextType>;
   getAccount?: Resolver<Maybe<ResolversTypes['Account']>, ParentType, ContextType, RequireFields<QueryGetAccountArgs, 'id'>>;
+  listAccounts?: Resolver<Array<ResolversTypes['Account']>, ParentType, ContextType>;
 };
 
 export type SavingsAccountResolvers<ContextType = Context, ParentType extends ResolversParentTypes['SavingsAccount'] = ResolversParentTypes['SavingsAccount']> = {

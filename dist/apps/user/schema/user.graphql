@@ -41,6 +41,7 @@ type User @key(fields: "_id") {
   firstName: String! @shareable
   lastName: String! @shareable
   dob: String! @shareable
+  
 }
 
 # (Subgraph schemas include

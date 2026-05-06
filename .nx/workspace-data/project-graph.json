@@ -10495,11 +10495,6 @@
       },
       {
         "source": "accounts",
-        "target": "npm:express",
-        "type": "static"
-      },
-      {
-        "source": "accounts",
         "target": "npm:graphql",
         "type": "static"
       },
@@ -10574,12 +10569,12 @@
       },
       {
         "source": "config",
-        "target": "npm:@apollo/server",
+        "target": "npm:express",
         "type": "static"
       },
       {
         "source": "config",
-        "target": "npm:express",
+        "target": "npm:@apollo/server",
         "type": "static"
       },
       {
@@ -10659,6 +10654,11 @@
       {
         "source": "user",
         "target": "npm:bcrypt",
+        "type": "static"
+      },
+      {
+        "source": "user",
+        "target": "npm:graphql-scalars",
         "type": "static"
       },
       {
@@ -23421,5 +23421,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1777999863527
+  "computedAt": 1778029741106
 }

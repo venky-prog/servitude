@@ -14,11 +14,9 @@ interface IAccounts extends mongoose.Document<string> {
   interestRate?: number;
   balance?: number;
   // credit card properties
-  cardLastDigits?: number;
+  lastFourDigits: string;
   limit?: number;
   billDate?: number;
-  // loan account properties
-  loanNumber: string;
   date: Date;
   emiStartDate: Date;
   totalEMIs: number;
@@ -42,11 +40,9 @@ const accountsSchema = new mongoose.Schema<
   interestRate: { type: Number },
   balance: { type: Number },
   // credit card properties
-  cardLastDigits: { type: Number },
+  lastFourDigits: { type: String, required: true },
   limit: { type: Number },
   billDate: { type: Number },
-  // loan account properties
-  loanNumber: { type: String },
   date: { type: Date },
   emiStartDate: { type: Date },
   totalEMIs: { type: Number },

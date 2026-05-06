@@ -1,7 +1,7 @@
 scalar Date
 
 type Query {
-  accountsList: [Account!]!
+  listAccounts: [Account!]!
   getAccount(id: ID!): Account
 }
 
@@ -10,18 +10,19 @@ type Mutation {
     name: String!
     interestRate: Float!
     balance: Float!
+    lastFourDigits: String!
   ): Account!
 
   createCreditCardAccount(
     name: String!
-    cardLastDigits: Int!
+    lastFourDigits: String!
     limit: Float!
     billDate: Int!
   ): Account!
 
   createLoanAccount(
     name: String!
-    loanNumber: String!
+    lastFourDigits: String!
     date: Date!
     emiStartDate: Date!
     totalEMIs: Int!
@@ -39,6 +40,7 @@ type Account @key(fields: "_id") {
   name: String!
   accountType: AccountType!
   userId: ID!
+  lastFourDigits: String!
 }
 
 type SavingsAccount  {
@@ -53,7 +55,6 @@ type CreditCardAccount  {
   _id: ID!
   name: String!
   accountType: AccountType!
-  cardLastDigits: Int!
   limit: Float!
   billDate: Int!
 }
@@ -62,7 +63,6 @@ type LoanAccount  {
   _id: ID!
   name: String!
   accountType: AccountType!
-  loanNumber: String!
   date: Date!
   emiStartDate: Date!
   totalEMIs: Int!

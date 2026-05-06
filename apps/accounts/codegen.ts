@@ -8,7 +8,7 @@ const config: CodegenConfig = {
       plugins: ['typescript', 'typescript-resolvers'],
       config: {
         federation: true,
-        contextType: '../context#Context',
+        contextType: '@servitude/config#Context',
         scalars: {
           JSON: 'string',
           UUID: 'string',

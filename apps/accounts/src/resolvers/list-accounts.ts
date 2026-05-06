@@ -2,13 +2,12 @@ import { logger } from '@servitude/logger';
 import { QueryResolvers } from '../generated/graphql';
 import Accounts from '../models/accounts.model';
 
-export const listAccounts: NonNullable<QueryResolvers['accountsList']> = async (
+export const listAccounts: NonNullable<QueryResolvers['listAccounts']> = async (
   _parent,
   args,
   ctx,
 ) => {
   try {
-    console.log('------------', ctx.userId);
     const accounts = await Accounts.find({ userId: ctx.userId }).lean();
     return accounts;
   } catch (error) {

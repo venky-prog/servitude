@@ -151,11 +151,9 @@ var accountsSchema = new import_mongoose2.default.Schema({
   interestRate: { type: Number },
   balance: { type: Number },
   // credit card properties
-  cardLastDigits: { type: Number },
+  lastFourDigits: { type: String, required: true },
   limit: { type: Number },
   billDate: { type: Number },
-  // loan account properties
-  loanNumber: { type: String },
   date: { type: Date },
   emiStartDate: { type: Date },
   totalEMIs: { type: Number }
@@ -166,7 +164,6 @@ var accounts_model_default = Accounts;
 // apps/accounts/src/resolvers/list-accounts.ts
 var listAccounts = async (_parent, args, ctx) => {
   try {
-    console.log("------------", ctx.userId);
     const accounts = await accounts_model_default.find({ userId: ctx.userId }).lean();
     return accounts;
   } catch (error) {
@@ -238,7 +235,7 @@ var createSavingsAccount = async (_parent, args, ctx) => {
 var accountResolvers = {
   ...import_graphql_scalars.resolvers,
   Query: {
-    accountsList: listAccounts,
+    listAccounts,
     getAccount
   },
   Mutation: {
@@ -248,7 +245,7 @@ var accountResolvers = {
   },
   Account: {
     __resolveReference: async (ref) => {
-      const account = await accounts_model_default.findById(ref._id).lean();
+      const account = await accounts_model_default.findById(ref._id);
       return account;
     }
   }
@@ -259,12 +256,14 @@ var resolvers_default = accountResolvers;
 var host = process.env.HOST ?? "localhost";
 var port = process.env.PORT ? Number(process.env.PORT) : 3e3;
 (async () => {
-  const schema = (0, import_subgraph.buildSubgraphSchema)({
-    typeDefs: await loadTypeDefs(
-      import_node_path.default.join(__dirname, "schema", "accounts.graphql")
-    ),
-    resolvers: resolvers_default
-  });
+  const schema = (0, import_subgraph.buildSubgraphSchema)([
+    {
+      typeDefs: await loadTypeDefs(
+        import_node_path.default.join(__dirname, "schema", "accounts.graphql")
+      ),
+      resolvers: resolvers_default
+    }
+  ]);
   const apolloServer = new import_server.ApolloServer({
     schema
   });

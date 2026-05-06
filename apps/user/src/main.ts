@@ -1,34 +1,24 @@
 import { ApolloServer } from '@apollo/server';
-import { me } from './resolvers/me';
 import { buildSubgraphSchema } from '@apollo/subgraph';
 import { loadTypeDefs, createApp } from '@servitude/config';
 import path from 'node:path';
-import { createUser } from './resolvers/create-user';
 import { connectToDb } from '@servitude/database';
-import { updateUser } from './resolvers/update-user';
-import { login } from './resolvers/login';
+import resolvers from './resolvers';
 
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 (async () => {
+  const schema = buildSubgraphSchema([
+    {
+      typeDefs: await loadTypeDefs(
+        path.join(__dirname, 'schema', 'user.graphql'),
+      ),
+      resolvers,
+    },
+  ]);
+  
   const apolloServer = new ApolloServer({
-    schema: buildSubgraphSchema([
-      {
-        typeDefs: await loadTypeDefs(
-          path.join(__dirname, 'schema', 'user.graphql'),
-        ),
-        resolvers: {
-          Query: {
-            me: me!,
-          },
-          Mutation: {
-            createUser: createUser!,
-            updateUser: updateUser!,
-            login: login!,
-          },
-        },
-      },
-    ]),
+    schema,
   });
 
   await apolloServer.start();

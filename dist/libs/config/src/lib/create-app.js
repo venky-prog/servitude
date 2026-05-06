@@ -11,8 +11,8 @@ function createApp(apolloServer) {
         context: (_a) => tslib_1.__awaiter(this, [_a], void 0, function* ({ req }) {
             var _b;
             const token = (_b = req.headers.authorization) === null || _b === void 0 ? void 0 : _b.split(' ')[1];
-            const userId = yield (0, token_1.verifyToken)(token || '');
-            return { userId, req };
+            const payload = yield (0, token_1.verifyToken)(token || '');
+            return { userId: payload === null || payload === void 0 ? void 0 : payload.userId, req };
         }),
     }));
     app.use('/test', (req, res) => {

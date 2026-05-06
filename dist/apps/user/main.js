@@ -23,6 +23,10 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 
 // apps/user/src/main.ts
 var import_server = require("@apollo/server");
+var import_subgraph = require("@apollo/subgraph");
+
+// libs/config/src/lib/load-typedefs.ts
+var import_graphql_tag = require("graphql-tag");
 
 // libs/logger/src/lib/logger.ts
 var winston = __toESM(require("winston"));
@@ -52,12 +56,7 @@ var logger = winston.createLogger({
   ]
 });
 
-// apps/user/src/models/user.model.ts
-var import_mongoose = __toESM(require("mongoose"));
-var import_bcrypt = __toESM(require("bcrypt"));
-
 // libs/config/src/lib/load-typedefs.ts
-var import_graphql_tag = require("graphql-tag");
 var import_promises = require("node:fs/promises");
 async function loadTypeDefs(path2) {
   try {
@@ -108,8 +107,35 @@ function createApp(apolloServer) {
   return app;
 }
 
+// apps/user/src/main.ts
+var import_node_path = __toESM(require("node:path"));
+
+// libs/database/src/lib/connect-to-db.ts
+var import_mongoose = __toESM(require("mongoose"));
+var isConnected = false;
+async function connectToDb(uri) {
+  if (isConnected) return;
+  try {
+    await import_mongoose.default.connect(uri);
+    import_mongoose.default.connection.on("error", (error) => {
+      logger.error(error);
+    });
+    import_mongoose.default.connection.on("connected", () => {
+      logger.info("Connected to MongoDB");
+    });
+    import_mongoose.default.connection.on("disconnected", () => {
+      logger.warn("Disconnected from MongoDB");
+    });
+    isConnected = true;
+  } catch (error) {
+    logger.error("Failed to connect to MongoDB", error);
+  }
+}
+
 // apps/user/src/models/user.model.ts
-var userSchema = new import_mongoose.default.Schema({
+var import_mongoose2 = __toESM(require("mongoose"));
+var import_bcrypt = __toESM(require("bcrypt"));
+var userSchema = new import_mongoose2.default.Schema({
   firstName: {
     type: String,
     required: true
@@ -151,26 +177,8 @@ userSchema.method(
 userSchema.method("generateAuthToken", async function() {
   return generateToken(this._id.toString());
 });
-var User = import_mongoose.default.model("User", userSchema);
+var User = import_mongoose2.default.model("User", userSchema);
 var user_model_default = User;
-
-// apps/user/src/resolvers/me.ts
-var me = async () => {
-  try {
-    const user = await user_model_default.findById("64b8c9e5f1a2c9b1d2e3f4a5").lean();
-    if (!user) {
-      throw new Error("User not found");
-    }
-    return user;
-  } catch (error) {
-    logger.error("Error fetching user:", error);
-    throw new Error("Failed to fetch user");
-  }
-};
-
-// apps/user/src/main.ts
-var import_subgraph = require("@apollo/subgraph");
-var import_node_path = __toESM(require("node:path"));
 
 // apps/user/src/resolvers/create-user.ts
 var createUser = async (parent, args, context) => {
@@ -179,43 +187,6 @@ var createUser = async (parent, args, context) => {
   return {
     ...user,
     _id: user._id
-    // Convert ObjectId to string
-  };
-};
-
-// libs/database/src/lib/connect-to-db.ts
-var import_mongoose2 = __toESM(require("mongoose"));
-var isConnected = false;
-async function connectToDb(uri) {
-  if (isConnected) return;
-  try {
-    await import_mongoose2.default.connect(uri);
-    import_mongoose2.default.connection.on("error", (error) => {
-      logger.error(error);
-    });
-    import_mongoose2.default.connection.on("connected", () => {
-      logger.info("Connected to MongoDB");
-    });
-    import_mongoose2.default.connection.on("disconnected", () => {
-      logger.warn("Disconnected from MongoDB");
-    });
-    isConnected = true;
-  } catch (error) {
-    logger.error("Failed to connect to MongoDB", error);
-  }
-}
-
-// apps/user/src/resolvers/update-user.ts
-var updateUser = async (parent, args, context) => {
-  const { input: { _id, ...updateData } } = args;
-  const updateUser2 = await user_model_default.findByIdAndUpdate(_id, updateData, { new: true });
-  if (!updateUser2) {
-    throw new Error("User not found");
-  }
-  console.log("Updated user:", updateUser2);
-  return {
-    ...updateUser2.toJSON(),
-    _id: updateUser2._id
     // Convert ObjectId to string
   };
 };
@@ -243,27 +214,69 @@ var login = async (parent, args, context) => {
   };
 };
 
+// apps/user/src/resolvers/me.ts
+var me = async () => {
+  try {
+    const user = await user_model_default.findById("64b8c9e5f1a2c9b1d2e3f4a5").lean();
+    if (!user) {
+      throw new Error("User not found");
+    }
+    return user;
+  } catch (error) {
+    logger.error("Error fetching user:", error);
+    throw new Error("Failed to fetch user");
+  }
+};
+
+// apps/user/src/resolvers/update-user.ts
+var updateUser = async (parent, args, context) => {
+  const { input: { _id, ...updateData } } = args;
+  const updateUser2 = await user_model_default.findByIdAndUpdate(_id, updateData, { new: true });
+  if (!updateUser2) {
+    throw new Error("User not found");
+  }
+  console.log("Updated user:", updateUser2);
+  return {
+    ...updateUser2.toJSON(),
+    _id: updateUser2._id
+    // Convert ObjectId to string
+  };
+};
+
+// apps/user/src/resolvers/index.ts
+var import_graphql_scalars = require("graphql-scalars");
+var userResolvers = {
+  ...import_graphql_scalars.resolvers,
+  Query: {
+    me
+  },
+  Mutation: {
+    createUser,
+    login,
+    updateUser
+  },
+  User: {
+    __resolveReference: async (ref) => {
+      const user = user_model_default.findById(ref._id);
+      return user;
+    }
+  }
+};
+var resolvers_default = userResolvers;
+
 // apps/user/src/main.ts
 var port = process.env.PORT ? Number(process.env.PORT) : 3e3;
 (async () => {
+  const schema = (0, import_subgraph.buildSubgraphSchema)([
+    {
+      typeDefs: await loadTypeDefs(
+        import_node_path.default.join(__dirname, "schema", "user.graphql")
+      ),
+      resolvers: resolvers_default
+    }
+  ]);
   const apolloServer = new import_server.ApolloServer({
-    schema: (0, import_subgraph.buildSubgraphSchema)([
-      {
-        typeDefs: await loadTypeDefs(
-          import_node_path.default.join(__dirname, "schema", "user.graphql")
-        ),
-        resolvers: {
-          Query: {
-            me
-          },
-          Mutation: {
-            createUser,
-            updateUser,
-            login
-          }
-        }
-      }
-    ])
+    schema
   });
   await apolloServer.start();
   const app = createApp(apolloServer);

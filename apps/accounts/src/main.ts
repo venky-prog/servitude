@@ -3,19 +3,20 @@ import { ApolloServer } from '@apollo/server';
 import { connectToDb } from '@servitude/database';
 import { buildSubgraphSchema } from '@apollo/subgraph';
 import path from 'node:path';
-import { GraphQLResolverMap } from '@apollo/subgraph/dist/schema-helper';
-import accountResolvers from './resolvers';
+import resolvers from './resolvers';
 
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 (async () => {
-  const schema = buildSubgraphSchema({
-    typeDefs: await loadTypeDefs(
-      path.join(__dirname, 'schema', 'accounts.graphql'),
-    ),
-    resolvers: accountResolvers as unknown as GraphQLResolverMap<unknown>,
-  });
+  const schema = buildSubgraphSchema([
+    {
+      typeDefs: await loadTypeDefs(
+        path.join(__dirname, 'schema', 'accounts.graphql'),
+      ),
+      resolvers,
+    },
+  ]);
 
   const apolloServer = new ApolloServer({
     schema,

@@ -1,0 +1,17 @@
+> nx run accounts:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/e95a435e-653f-4d1e-bd60-febe7dd5d4f6
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+2026-05-06T00:39:57.066Z [[31merror[39m]: MongooseServerSelectionError: Socket 'connect' timed out after 30006ms (connectTimeoutMS: 30000)
+    at _handleConnectionErrors (/home/venky/repos/servitude/node_modules/.pnpm/mongoose@9.4.1/node_modules/mongoose/lib/connection.js:1180:11)
+    at NativeConnection.openUri (/home/venky/repos/servitude/node_modules/.pnpm/mongoose@9.4.1/node_modules/mongoose/lib/connection.js:1111:11)
+    at connectToDb (/home/venky/repos/servitude/libs/database/src/lib/connect-to-db.ts:9:5)
+    at /home/venky/repos/servitude/apps/accounts/src/main.ts:29:3
+[ ready ] http://localhost:3001
+2026-05-06T00:41:03.172Z [[31merror[39m]: MongooseError: Operation `accounts.insertOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (/home/venky/repos/servitude/node_modules/.pnpm/mongoose@9.4.1/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:142:25)
+    at listOnTimeout (node:internal/timers:605:17)
+    at processTimers (node:internal/timers:541:7)

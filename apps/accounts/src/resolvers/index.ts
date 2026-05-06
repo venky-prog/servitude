@@ -10,8 +10,8 @@ import { createSavingsAccount } from './create-savings-account';
 const accountResolvers: Resolvers = {
   ...scalarResolvers,
   Query: {
-    accountsList: listAccounts,
-    getAccount: getAccount,
+    listAccounts,
+    getAccount,
   },
   Mutation: {
     createCreditCardAccount,
@@ -20,7 +20,7 @@ const accountResolvers: Resolvers = {
   },
   Account: {
     __resolveReference: async (ref) => {
-      const account = await Accounts.findById(ref._id).lean();
+      const account = await Accounts.findById(ref._id);
       return account;
     },
   },
