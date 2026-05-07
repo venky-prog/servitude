@@ -1,84 +1,18 @@
 {
   "run": {
-    "command": "nx run-many -t serve -p user -p accounts",
-    "startTime": "2026-05-06T00:39:06.261Z",
-    "endTime": "2026-05-06T01:07:20.719Z",
+    "command": "nx start super-router",
+    "startTime": "2026-05-07T03:06:07.813Z",
+    "endTime": "2026-05-07T03:09:05.996Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "logger:build",
-      "target": "build",
-      "projectName": "logger",
-      "hash": "4833620736178125421",
-      "startTime": "2026-05-06T00:39:06.278Z",
-      "endTime": "2026-05-06T00:39:08.084Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "database:build",
-      "target": "build",
-      "projectName": "database",
-      "hash": "11157297255992626967",
-      "startTime": "2026-05-06T00:39:08.094Z",
-      "endTime": "2026-05-06T00:39:09.934Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "config:build",
-      "target": "build",
-      "projectName": "config",
-      "hash": "15163495255632902953",
-      "startTime": "2026-05-06T00:39:08.094Z",
-      "endTime": "2026-05-06T00:39:10.205Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "user:build:production",
-      "target": "build",
-      "projectName": "user",
-      "hash": "5485728514491944506",
-      "startTime": "2026-05-06T00:39:10.215Z",
-      "endTime": "2026-05-06T00:39:13.946Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "accounts:build:production",
-      "target": "build",
-      "projectName": "accounts",
-      "hash": "3123935538254794412",
-      "startTime": "2026-05-06T00:39:10.215Z",
-      "endTime": "2026-05-06T00:39:14.003Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "user:serve:development",
-      "target": "serve",
-      "projectName": "user",
-      "hash": "6374246459073310530",
-      "startTime": "2026-05-06T00:39:13.953Z",
-      "endTime": "2026-05-06T01:07:20.708Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
-    },
-    {
-      "taskId": "accounts:serve:development",
-      "target": "serve",
-      "projectName": "accounts",
-      "hash": "1958139721893452440",
-      "startTime": "2026-05-06T00:39:14.011Z",
-      "endTime": "2026-05-06T01:07:20.718Z",
+      "taskId": "super-router:start",
+      "target": "start",
+      "projectName": "super-router",
+      "hash": "554789933226912663",
+      "startTime": "2026-05-07T03:06:07.835Z",
+      "endTime": "2026-05-07T03:09:05.989Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

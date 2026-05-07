@@ -8,6 +8,7 @@ export const listAccounts: NonNullable<QueryResolvers['listAccounts']> = async (
   ctx,
 ) => {
   try {
+    console.log('Fetching accounts for userId:', ctx.userId);
     const accounts = await Accounts.find({ userId: ctx.userId }).lean();
     return accounts;
   } catch (error) {

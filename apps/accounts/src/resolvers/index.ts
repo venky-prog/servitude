@@ -19,6 +19,7 @@ const accountResolvers: Resolvers = {
     createSavingsAccount,
   },
   Account: {
+    user: (parent:any) => ({ __typename: 'User' as const, _id: parent.userId }),
     __resolveReference: async (ref) => {
       const account = await Accounts.findById(ref._id);
       return account;

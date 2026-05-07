@@ -40,6 +40,7 @@ type Account @key(fields: "_id") {
   name: String!
   accountType: AccountType!
   userId: ID!
+  user: User
   lastFourDigits: String!
 }
 
@@ -66,6 +67,10 @@ type LoanAccount  {
   date: Date!
   emiStartDate: Date!
   totalEMIs: Int!
+}
+
+type User @key(fields: "_id", resolvable: false) {  # 👈 resolvable: false = owned by user-service
+  _id: ID!
 }
 
 extend schema

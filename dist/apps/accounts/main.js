@@ -164,6 +164,7 @@ var accounts_model_default = Accounts;
 // apps/accounts/src/resolvers/list-accounts.ts
 var listAccounts = async (_parent, args, ctx) => {
   try {
+    console.log("Fetching accounts for userId:", ctx.userId);
     const accounts = await accounts_model_default.find({ userId: ctx.userId }).lean();
     return accounts;
   } catch (error) {
@@ -244,6 +245,7 @@ var accountResolvers = {
     createSavingsAccount
   },
   Account: {
+    user: (parent) => ({ __typename: "User", _id: parent.userId }),
     __resolveReference: async (ref) => {
       const account = await accounts_model_default.findById(ref._id);
       return account;

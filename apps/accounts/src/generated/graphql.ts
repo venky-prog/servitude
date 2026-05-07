@@ -25,6 +25,7 @@ export type Account = {
   accountType: AccountType;
   lastFourDigits: Scalars['String']['output'];
   name: Scalars['String']['output'];
+  user?: Maybe<User>;
   userId: Scalars['ID']['output'];
 };
 
@@ -103,6 +104,11 @@ export type SavingsAccount = {
   balance: Scalars['Float']['output'];
   interestRate: Scalars['Float']['output'];
   name: Scalars['String']['output'];
+};
+
+export type User = {
+  __typename?: 'User';
+  _id: Scalars['ID']['output'];
 };
 
 
@@ -211,6 +217,7 @@ export type ResolversTypes = {
   Mutation: ResolverTypeWrapper<Record<PropertyKey, never>>;
   Query: ResolverTypeWrapper<Record<PropertyKey, never>>;
   SavingsAccount: ResolverTypeWrapper<SavingsAccount>;
+  User: ResolverTypeWrapper<User>;
   Boolean: ResolverTypeWrapper<Scalars['Boolean']['output']>;
 };
 
@@ -227,6 +234,7 @@ export type ResolversParentTypes = {
   Mutation: Record<PropertyKey, never>;
   Query: Record<PropertyKey, never>;
   SavingsAccount: SavingsAccount;
+  User: User;
   Boolean: Scalars['Boolean']['output'];
 };
 
@@ -236,6 +244,7 @@ export type AccountResolvers<ContextType = Context, ParentType extends Resolvers
   accountType?: Resolver<ResolversTypes['AccountType'], ParentType, ContextType>;
   lastFourDigits?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  user?: Resolver<Maybe<ResolversTypes['User']>, ParentType, ContextType>;
   userId?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
 };
 
@@ -279,6 +288,10 @@ export type SavingsAccountResolvers<ContextType = Context, ParentType extends Re
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
 };
 
+export type UserResolvers<ContextType = Context, ParentType extends ResolversParentTypes['User'] = ResolversParentTypes['User']> = {
+  _id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+};
+
 export type Resolvers<ContextType = Context> = {
   Account?: AccountResolvers<ContextType>;
   CreditCardAccount?: CreditCardAccountResolvers<ContextType>;
@@ -287,5 +300,6 @@ export type Resolvers<ContextType = Context> = {
   Mutation?: MutationResolvers<ContextType>;
   Query?: QueryResolvers<ContextType>;
   SavingsAccount?: SavingsAccountResolvers<ContextType>;
+  User?: UserResolvers<ContextType>;
 };
 

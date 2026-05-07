@@ -1,4 +1,0 @@
-> nx run config:build
-
-Compiling TypeScript files for project "config"...
-Done compiling TypeScript files for project "config".

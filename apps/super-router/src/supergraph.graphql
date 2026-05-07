@@ -1,0 +1,190 @@
+
+
+    schema
+    @link(url: "https://specs.apollo.dev/link/v1.0")
+    @link(url: "https://specs.apollo.dev/join/v0.3", for: EXECUTION)
+    
+    
+    
+    
+    
+    
+    
+  {
+    query: Query
+    mutation: Mutation
+    
+  }
+
+  
+    directive @join__enumValue(graph: join__Graph!) repeatable on ENUM_VALUE
+
+    directive @join__graph(name: String!, url: String!) on ENUM_VALUE
+
+    
+      directive @join__field(
+        graph: join__Graph
+        requires: join__FieldSet
+        provides: join__FieldSet
+        type: String
+        external: Boolean
+        override: String
+        usedOverridden: Boolean
+        
+        
+      ) repeatable on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+    
+    
+
+    directive @join__implements(
+      graph: join__Graph!
+      interface: String!
+    ) repeatable on OBJECT | INTERFACE
+
+    directive @join__type(
+      graph: join__Graph!
+      key: join__FieldSet
+      extension: Boolean! = false
+      resolvable: Boolean! = true
+      isInterfaceObject: Boolean! = false
+    ) repeatable on OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT | SCALAR
+
+    directive @join__unionMember(
+      graph: join__Graph!
+      member: String!
+    ) repeatable on UNION
+
+    scalar join__FieldSet
+    
+  
+  
+  directive @link(
+    url: String
+    as: String
+    for: link__Purpose
+    import: [link__Import]
+  ) repeatable on SCHEMA
+
+  scalar link__Import
+
+  enum link__Purpose {
+    """
+    `SECURITY` features provide metadata necessary to securely resolve fields.
+    """
+    SECURITY
+
+    """
+    `EXECUTION` features provide metadata necessary for operation execution.
+    """
+    EXECUTION
+  }
+
+  
+  
+  
+  
+  
+  
+  
+enum join__Graph {
+  ACCOUNTS @join__graph(name: "accounts", url: "http://localhost:3001/graphql") 
+  USERS @join__graph(name: "users", url: "http://localhost:3000/graphql") 
+}
+
+scalar Date @join__type(graph: ACCOUNTS) 
+
+type Query @join__type(graph: ACCOUNTS)  @join__type(graph: USERS)  {
+  listAccounts: [Account!]! @join__field(graph: ACCOUNTS) 
+  getAccount(id: ID!) : Account @join__field(graph: ACCOUNTS) 
+  me: User @join__field(graph: USERS) 
+}
+
+type Mutation @join__type(graph: ACCOUNTS)  @join__type(graph: USERS)  {
+  createSavingsAccount(name: String!, interestRate: Float!, balance: Float!, lastFourDigits: String!) : Account! @join__field(graph: ACCOUNTS) 
+  createCreditCardAccount(name: String!, lastFourDigits: String!, limit: Float!, billDate: Int!) : Account! @join__field(graph: ACCOUNTS) 
+  createLoanAccount(
+    name: String!
+    lastFourDigits: String!
+    date: Date!
+    emiStartDate: Date!
+    totalEMIs: Int!
+  ): Account! @join__field(graph: ACCOUNTS) 
+  createUser(input: CreateUserInput!) : User! @join__field(graph: USERS) 
+  updateUser(input: UpdateUserInput!) : User! @join__field(graph: USERS) 
+  login(input: LoginInput!) : LoginResponse! @join__field(graph: USERS) 
+}
+
+type Account @join__type(graph: ACCOUNTS, key: "_id")  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  userId: ID!
+  user: User
+  lastFourDigits: String!
+}
+
+type SavingsAccount @join__type(graph: ACCOUNTS)  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  interestRate: Float!
+  balance: Float!
+}
+
+type CreditCardAccount @join__type(graph: ACCOUNTS)  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  limit: Float!
+  billDate: Int!
+}
+
+type LoanAccount @join__type(graph: ACCOUNTS)  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  date: Date!
+  emiStartDate: Date!
+  totalEMIs: Int!
+}
+
+type User @join__type(graph: ACCOUNTS, key: "_id", resolvable: false)  @join__type(graph: USERS, key: "_id")  {
+  _id: ID!
+  email: String! @join__field(graph: USERS) 
+  firstName: String! @join__field(graph: USERS) 
+  lastName: String! @join__field(graph: USERS) 
+  dob: String! @join__field(graph: USERS) 
+}
+
+type LoginResponse @join__type(graph: USERS)  {
+  token: String!
+  user: User!
+}
+
+enum AccountType @join__type(graph: ACCOUNTS)  {
+  SAVINGS @join__enumValue(graph: ACCOUNTS) 
+  CREDIT_CARD @join__enumValue(graph: ACCOUNTS) 
+  LOAN @join__enumValue(graph: ACCOUNTS) 
+}
+
+input LoginInput @join__type(graph: USERS)  {
+  email: String!
+  password: String!
+}
+
+input CreateUserInput @join__type(graph: USERS)  {
+  email: String!
+  firstName: String!
+  lastName: String!
+  dob: String!
+  password: String!
+}
+
+input UpdateUserInput @join__type(graph: USERS)  {
+  _id: ID!
+  firstName: String
+  lastName: String
+  dob: String
+  password: String
+}
+    
