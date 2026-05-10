@@ -6,7 +6,7 @@ enum AccountType {
   Savings = 'SAVINGS',
 }
 
-interface IAccounts extends mongoose.Document<string> {
+export interface IAccount extends mongoose.Document<string> {
   name: string;
   accountType: AccountType;
   userId: string;
@@ -25,8 +25,8 @@ interface IAccounts extends mongoose.Document<string> {
 interface IAccountMethods {}
 
 const accountsSchema = new mongoose.Schema<
-  IAccounts,
-  Model<IAccounts>,
+  IAccount,
+  Model<IAccount>,
   IAccountMethods
 >({
   name: { type: String, required: true },
@@ -48,6 +48,6 @@ const accountsSchema = new mongoose.Schema<
   totalEMIs: { type: Number },
 });
 
-const Accounts = mongoose.model('Accounts', accountsSchema);
+const Account = mongoose.model('Accounts', accountsSchema);
 
-export default Accounts;
+export default Account;

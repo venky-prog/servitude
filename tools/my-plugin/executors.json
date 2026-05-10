@@ -1,9 +1,19 @@
 {
   "executors": {
     "apollo-codegen": {
-      "implementation": "./src/apollo-codegen",
-      "schema": "./src/apollo-codegen/schema.json",
+      "implementation": "./src/executors/apollo-codegen",
+      "schema": "./src/executors/apollo-codegen/schema.json",
       "description": "apollo-codegen executor"
+    },
+    "schema-check": {
+      "implementation": "./src/executors/schema-check/schema-check",
+      "schema": "./src/executors/schema-check/schema.json",
+      "description": "schema-check executor"
+    },
+    "schema-publish": {
+      "implementation": "./src/executors/schema-publish/schema-publish",
+      "schema": "./src/executors/schema-publish/schema.json",
+      "description": "schema-publish executor"
     }
   }
 }

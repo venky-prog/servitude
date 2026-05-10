@@ -2,7 +2,7 @@ import { resolvers as scalarResolvers } from 'graphql-scalars';
 import { listAccounts } from './list-accounts';
 import { getAccount } from './get-account';
 import type { Resolvers } from '../generated/graphql';
-import Accounts from '../models/accounts.model';
+import Account from '../models/account.model';
 import { createCreditCardAccount } from './create-credit-card-account';
 import { createLoanAccount } from './create-loan-account';
 import { createSavingsAccount } from './create-savings-account';
@@ -19,9 +19,11 @@ const accountResolvers: Resolvers = {
     createSavingsAccount,
   },
   Account: {
-    user: (parent:any) => ({ __typename: 'User' as const, _id: parent.userId }),
+    user: (parent) => {
+      return { __typename: 'User' as const, _id: parent.userId }
+    },
     __resolveReference: async (ref) => {
-      const account = await Accounts.findById(ref._id);
+      const account = await Account.findById(ref._id);
       return account;
     },
   },

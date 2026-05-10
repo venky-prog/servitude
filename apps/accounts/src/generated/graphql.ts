@@ -1,4 +1,5 @@
 import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
+import { IAccount } from '../models/account.model';
 import { Context } from '@servitude/config';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
@@ -42,6 +43,11 @@ export type CreditCardAccount = {
   billDate: Scalars['Int']['output'];
   limit: Scalars['Float']['output'];
   name: Scalars['String']['output'];
+};
+
+export type ListAccountsFilter = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
 };
 
 export type LoanAccount = {
@@ -95,6 +101,11 @@ export type Query = {
 
 export type QueryGetAccountArgs = {
   id: Scalars['ID']['input'];
+};
+
+
+export type QueryListAccountsArgs = {
+  filter?: InputMaybe<ListAccountsFilter>;
 };
 
 export type SavingsAccount = {
@@ -205,7 +216,7 @@ export type FederationReferenceTypes = {
 
 /** Mapping between all available schema types and the resolvers types */
 export type ResolversTypes = {
-  Account: ResolverTypeWrapper<Account>;
+  Account: ResolverTypeWrapper<IAccount>;
   ID: ResolverTypeWrapper<Scalars['ID']['output']>;
   String: ResolverTypeWrapper<Scalars['String']['output']>;
   AccountType: AccountType;
@@ -213,6 +224,7 @@ export type ResolversTypes = {
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
   Float: ResolverTypeWrapper<Scalars['Float']['output']>;
   Date: ResolverTypeWrapper<Scalars['Date']['output']>;
+  ListAccountsFilter: ListAccountsFilter;
   LoanAccount: ResolverTypeWrapper<LoanAccount>;
   Mutation: ResolverTypeWrapper<Record<PropertyKey, never>>;
   Query: ResolverTypeWrapper<Record<PropertyKey, never>>;
@@ -223,13 +235,14 @@ export type ResolversTypes = {
 
 /** Mapping between all available schema types and the resolvers parents */
 export type ResolversParentTypes = {
-  Account: Account | FederationReferenceTypes['Account'];
+  Account: IAccount;
   ID: Scalars['ID']['output'];
   String: Scalars['String']['output'];
   CreditCardAccount: CreditCardAccount;
   Int: Scalars['Int']['output'];
   Float: Scalars['Float']['output'];
   Date: Scalars['Date']['output'];
+  ListAccountsFilter: ListAccountsFilter;
   LoanAccount: LoanAccount;
   Mutation: Record<PropertyKey, never>;
   Query: Record<PropertyKey, never>;
@@ -277,7 +290,7 @@ export type MutationResolvers<ContextType = Context, ParentType extends Resolver
 
 export type QueryResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   getAccount?: Resolver<Maybe<ResolversTypes['Account']>, ParentType, ContextType, RequireFields<QueryGetAccountArgs, 'id'>>;
-  listAccounts?: Resolver<Array<ResolversTypes['Account']>, ParentType, ContextType>;
+  listAccounts?: Resolver<Array<ResolversTypes['Account']>, ParentType, ContextType, Partial<QueryListAccountsArgs>>;
 };
 
 export type SavingsAccountResolvers<ContextType = Context, ParentType extends ResolversParentTypes['SavingsAccount'] = ResolversParentTypes['SavingsAccount']> = {

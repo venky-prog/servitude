@@ -7,6 +7,7 @@
     "@graphql-codegen/cli": "^6.3.1",
     "@graphql-codegen/typescript": "^5.0.10",
     "@graphql-codegen/typescript-resolvers": "^5.1.8",
+    "@graphql-hive/cli": "^0.59.1",
     "@graphql-hive/gateway": "^2.6.0",
     "@nx/devkit": "22.6.5",
     "@nx/esbuild": "22.6.5",

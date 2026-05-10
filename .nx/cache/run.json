@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx start super-router",
-    "startTime": "2026-05-07T03:06:07.813Z",
-    "endTime": "2026-05-07T03:09:05.996Z",
+    "command": "nx codegen accounts",
+    "startTime": "2026-05-10T05:58:30.108Z",
+    "endTime": "2026-05-10T05:58:31.562Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "super-router:start",
-      "target": "start",
-      "projectName": "super-router",
-      "hash": "554789933226912663",
-      "startTime": "2026-05-07T03:06:07.835Z",
-      "endTime": "2026-05-07T03:09:05.989Z",
+      "taskId": "accounts:codegen",
+      "target": "codegen",
+      "projectName": "accounts",
+      "hash": "4303959648822645776",
+      "startTime": "2026-05-10T05:58:30.186Z",
+      "endTime": "2026-05-10T05:58:31.558Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }

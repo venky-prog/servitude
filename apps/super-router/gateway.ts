@@ -8,10 +8,6 @@ export const gatewayConfig  = defineConfig({
   // optional: forward auth headers to subgraphs
   propagateHeaders: {
     fromClientToSubgraphs: ({ request }) => {
-      console.log(
-        'Propagating headers from client to subgraphs:',
-        request.headers,
-      );
       return {
         authorization: request.headers.get('authorization'),
       };

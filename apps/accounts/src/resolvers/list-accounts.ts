@@ -1,6 +1,6 @@
 import { logger } from '@servitude/logger';
 import { QueryResolvers } from '../generated/graphql';
-import Accounts from '../models/accounts.model';
+import Account from '../models/account.model';
 
 export const listAccounts: NonNullable<QueryResolvers['listAccounts']> = async (
   _parent,
@@ -8,8 +8,10 @@ export const listAccounts: NonNullable<QueryResolvers['listAccounts']> = async (
   ctx,
 ) => {
   try {
-    console.log('Fetching accounts for userId:', ctx.userId);
-    const accounts = await Accounts.find({ userId: ctx.userId }).lean();
+    const accounts = await Account.find({ userId: ctx.userId })
+      .limit(args.filter?.limit ?? 10)
+      .skip(args.filter?.offset ?? 0)
+      .lean();
     return accounts;
   } catch (error) {
     logger.error('Error fetching accounts:', error);

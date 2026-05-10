@@ -1,12 +1,12 @@
 import { logger } from '@servitude/logger';
 import { AccountType, MutationResolvers } from '../generated/graphql';
-import Accounts from '../models/accounts.model';
+import Account from '../models/account.model';
 
 export const createSavingsAccount: NonNullable<
   MutationResolvers['createSavingsAccount']
 > = async (_parent, args, ctx) => {
   try {
-    const account = await Accounts.create({
+    const account = await Account.create({
       userId: ctx.userId,
       accountType: AccountType.Savings,
       ...args,

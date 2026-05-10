@@ -4,7 +4,6 @@ import { gql } from 'graphql-tag';
 import path from 'node:path';
 
 async function generateSuperGraph() {
-  console.log(process.env);
   const accountsSdl = await readFile(
     path.join(process.cwd(), '../accounts/src/schema/accounts.graphql'),
     'utf-8',

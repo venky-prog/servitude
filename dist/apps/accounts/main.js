@@ -70,6 +70,20 @@ var import_express5 = require("@as-integrations/express5");
 
 // libs/config/src/lib/token.ts
 var import_jose = require("jose");
+
+// libs/config/src/lib/errors.ts
+var import_graphql = require("graphql");
+var TokenExpiredError = class extends import_graphql.GraphQLError {
+  constructor(message) {
+    super(message, {
+      extensions: {
+        code: "TOKEN_EXPIRED"
+      }
+    });
+  }
+};
+
+// libs/config/src/lib/token.ts
 async function verifyToken(token) {
   try {
     const { payload } = await (0, import_jose.jwtVerify)(
@@ -79,7 +93,7 @@ async function verifyToken(token) {
     return payload;
   } catch (error) {
     logger.error("Token verification failed:", error);
-    return null;
+    throw new TokenExpiredError("Token is invalid or has expired");
   }
 }
 
@@ -131,7 +145,7 @@ var import_node_path = __toESM(require("node:path"));
 // apps/accounts/src/resolvers/index.ts
 var import_graphql_scalars = require("graphql-scalars");
 
-// apps/accounts/src/models/accounts.model.ts
+// apps/accounts/src/models/account.model.ts
 var import_mongoose2 = __toESM(require("mongoose"));
 var AccountType = /* @__PURE__ */ ((AccountType3) => {
   AccountType3["CreditCard"] = "CREDIT_CARD";
@@ -158,14 +172,13 @@ var accountsSchema = new import_mongoose2.default.Schema({
   emiStartDate: { type: Date },
   totalEMIs: { type: Number }
 });
-var Accounts = import_mongoose2.default.model("Accounts", accountsSchema);
-var accounts_model_default = Accounts;
+var Account = import_mongoose2.default.model("Accounts", accountsSchema);
+var account_model_default = Account;
 
 // apps/accounts/src/resolvers/list-accounts.ts
 var listAccounts = async (_parent, args, ctx) => {
   try {
-    console.log("Fetching accounts for userId:", ctx.userId);
-    const accounts = await accounts_model_default.find({ userId: ctx.userId }).lean();
+    const accounts = await account_model_default.find({ userId: ctx.userId }).limit(args.filter?.limit ?? 10).skip(args.filter?.offset ?? 0).lean();
     return accounts;
   } catch (error) {
     logger.error("Error fetching accounts:", error);
@@ -176,7 +189,7 @@ var listAccounts = async (_parent, args, ctx) => {
 // apps/accounts/src/resolvers/get-account.ts
 var getAccount = async (_parent, args, ctx) => {
   try {
-    const account = await accounts_model_default.findById(args.id).lean();
+    const account = await account_model_default.findById(args.id).lean();
     if (!account) {
       throw new Error("Account not found");
     }
@@ -190,7 +203,7 @@ var getAccount = async (_parent, args, ctx) => {
 // apps/accounts/src/resolvers/create-credit-card-account.ts
 var createCreditCardAccount = async (_parent, args, ctx) => {
   try {
-    const account = await accounts_model_default.create({
+    const account = await account_model_default.create({
       userId: ctx.userId,
       accountType: "CREDIT_CARD" /* CreditCard */,
       ...args
@@ -205,7 +218,7 @@ var createCreditCardAccount = async (_parent, args, ctx) => {
 // apps/accounts/src/resolvers/create-loan-account.ts
 var createLoanAccount = async (_parent, args, ctx) => {
   try {
-    const account = await accounts_model_default.create({
+    const account = await account_model_default.create({
       userId: ctx.userId,
       accountType: "LOAN" /* Loan */,
       ...args
@@ -220,7 +233,7 @@ var createLoanAccount = async (_parent, args, ctx) => {
 // apps/accounts/src/resolvers/create-savings-account.ts
 var createSavingsAccount = async (_parent, args, ctx) => {
   try {
-    const account = await accounts_model_default.create({
+    const account = await account_model_default.create({
       userId: ctx.userId,
       accountType: "SAVINGS" /* Savings */,
       ...args
@@ -245,9 +258,11 @@ var accountResolvers = {
     createSavingsAccount
   },
   Account: {
-    user: (parent) => ({ __typename: "User", _id: parent.userId }),
+    user: (parent) => {
+      return { __typename: "User", _id: parent.userId };
+    },
     __resolveReference: async (ref) => {
-      const account = await accounts_model_default.findById(ref._id);
+      const account = await account_model_default.findById(ref._id);
       return account;
     }
   }

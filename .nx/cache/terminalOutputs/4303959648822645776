@@ -2,7 +2,7 @@
 
 Running GraphQL Codegen for project: accounts
 loading config from apps/accounts/codegen.ts
-(node:112194) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(node:47452) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ⠙[1G[0K[?25l[2m◼[22m Parse Configuration
 [2K[1A[2K[G[2m◼[22m Parse Configuration

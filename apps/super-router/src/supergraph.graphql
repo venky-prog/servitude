@@ -94,7 +94,7 @@ enum join__Graph {
 scalar Date @join__type(graph: ACCOUNTS) 
 
 type Query @join__type(graph: ACCOUNTS)  @join__type(graph: USERS)  {
-  listAccounts: [Account!]! @join__field(graph: ACCOUNTS) 
+  listAccounts(filter: ListAccountsFilter) : [Account!]! @join__field(graph: ACCOUNTS) 
   getAccount(id: ID!) : Account @join__field(graph: ACCOUNTS) 
   me: User @join__field(graph: USERS) 
 }
@@ -148,7 +148,7 @@ type LoanAccount @join__type(graph: ACCOUNTS)  {
   totalEMIs: Int!
 }
 
-type User @join__type(graph: ACCOUNTS, key: "_id", resolvable: false)  @join__type(graph: USERS, key: "_id")  {
+type User @join__type(graph: ACCOUNTS, key: "_id", resolvable: false, extension: true)  @join__type(graph: USERS, key: "_id")  {
   _id: ID!
   email: String! @join__field(graph: USERS) 
   firstName: String! @join__field(graph: USERS) 
@@ -165,6 +165,11 @@ enum AccountType @join__type(graph: ACCOUNTS)  {
   SAVINGS @join__enumValue(graph: ACCOUNTS) 
   CREDIT_CARD @join__enumValue(graph: ACCOUNTS) 
   LOAN @join__enumValue(graph: ACCOUNTS) 
+}
+
+input ListAccountsFilter @join__type(graph: ACCOUNTS)  {
+  limit: Int
+  offset: Int
 }
 
 input LoginInput @join__type(graph: USERS)  {

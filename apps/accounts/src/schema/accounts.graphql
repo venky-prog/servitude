@@ -1,7 +1,7 @@
 scalar Date
 
 type Query {
-  listAccounts: [Account!]!
+  listAccounts(filter: ListAccountsFilter): [Account!]!
   getAccount(id: ID!): Account
 }
 
@@ -33,6 +33,11 @@ enum AccountType {
   SAVINGS
   CREDIT_CARD
   LOAN
+}
+
+input ListAccountsFilter {
+  limit: Int
+  offset: Int
 }
 
 type Account @key(fields: "_id") {
@@ -69,12 +74,12 @@ type LoanAccount  {
   totalEMIs: Int!
 }
 
-type User @key(fields: "_id", resolvable: false) {  # 👈 resolvable: false = owned by user-service
-  _id: ID!
+extend type User @key(fields: "_id", resolvable: false) {  # 👈 resolvable: false = owned by user-service
+  _id: ID! 
 }
 
 extend schema
   @link(
     url: "https://specs.apollo.dev/federation/v2.3"
-    import: ["@key", "@shareable"]
+    import: ["@key", "@shareable", "@external"]
   )

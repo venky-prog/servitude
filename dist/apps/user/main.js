@@ -74,6 +74,20 @@ var import_express5 = require("@as-integrations/express5");
 
 // libs/config/src/lib/token.ts
 var import_jose = require("jose");
+
+// libs/config/src/lib/errors.ts
+var import_graphql = require("graphql");
+var TokenExpiredError = class extends import_graphql.GraphQLError {
+  constructor(message) {
+    super(message, {
+      extensions: {
+        code: "TOKEN_EXPIRED"
+      }
+    });
+  }
+};
+
+// libs/config/src/lib/token.ts
 async function generateToken(userId) {
   const token = await new import_jose.SignJWT({ userId }).setProtectedHeader({ alg: "HS256" }).setExpirationTime("12h").sign(new TextEncoder().encode(process.env.JWT_SECRET || "default-secret"));
   return token;
@@ -87,7 +101,7 @@ async function verifyToken(token) {
     return payload;
   } catch (error) {
     logger.error("Token verification failed:", error);
-    return null;
+    throw new TokenExpiredError("Token is invalid or has expired");
   }
 }
 

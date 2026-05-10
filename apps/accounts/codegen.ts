@@ -9,6 +9,9 @@ const config: CodegenConfig = {
       config: {
         federation: true,
         contextType: '@servitude/config#Context',
+        mappers: {
+          Account: '../models/account.model#IAccount', // 👈 map to your mongoose document type
+        },
         scalars: {
           JSON: 'string',
           UUID: 'string',

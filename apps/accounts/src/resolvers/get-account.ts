@@ -1,6 +1,6 @@
 import { logger } from '@servitude/logger';
 import { QueryResolvers } from '../generated/graphql';
-import Accounts from '../models/accounts.model';
+import Account from '../models/account.model';
 
 export const getAccount: NonNullable<QueryResolvers['getAccount']> = async (
   _parent,
@@ -8,7 +8,7 @@ export const getAccount: NonNullable<QueryResolvers['getAccount']> = async (
   ctx,
 ) => {
   try {
-    const account = await Accounts.findById(args.id).lean();
+    const account = await Account.findById(args.id).lean();
     if (!account) {
       throw new Error('Account not found');
     }

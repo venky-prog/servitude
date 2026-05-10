@@ -538,43 +538,43 @@
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.compose-supergraph": [
+    "targets.compose": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.compose-supergraph.executor": [
+    "targets.compose.executor": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.compose-supergraph.options": [
+    "targets.compose.options": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.compose-supergraph.options.command": [
+    "targets.compose.options.command": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.compose-supergraph.options.cwd": [
+    "targets.compose.options.cwd": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.start-supergraph": [
+    "targets.start": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.start-supergraph.executor": [
+    "targets.start.executor": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.start-supergraph.options": [
+    "targets.start.options": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.start-supergraph.options.command": [
+    "targets.start.options.command": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
-    "targets.start-supergraph.options.cwd": [
+    "targets.start.options.cwd": [
       "apps/super-router/project.json",
       "nx/core/project-json"
     ],
@@ -1081,365 +1081,365 @@
       "nx/target-defaults"
     ]
   },
-  "apps/user": {
+  "apps/users": {
     "root": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.inputs": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.outputs": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.executor": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.cwd": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.command": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies.0": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.description": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.command": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.example": [
-      "apps/user/eslint.config.mjs",
+      "apps/users/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.test": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.test.metadata": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.cache": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.inputs": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.outputs": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.executor": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.cwd": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.env": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.options.command": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.technologies": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.technologies.0": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.description": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help.command": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "targets.test.metadata.help.example": [
-      "apps/user/jest.config.cts",
+      "apps/users/jest.config.cts",
       "@nx/jest/plugin"
     ],
     "name": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "$schema": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "sourceRoot": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "projectType": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "tags": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.executor": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.outputs": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.defaultConfiguration": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.platform": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.outputPath": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.format": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.bundle": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.main": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.tsConfig": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.assets": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.generatePackageJson": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.esbuildOptions": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.development": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.production": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.production.esbuildOptions": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.dependsOn": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.cache": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.executor": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.outputs": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.options": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.options.buildTarget": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.dependsOn": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.cache": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.outputs": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.executor": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.options": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.options.buildTarget": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune.dependsOn": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.prune.executor": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.continuous": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.executor": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.defaultConfiguration": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.dependsOn": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.buildTarget": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.runBuildTargetDependencies": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development.buildTarget": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production.buildTarget": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options.passWithNoTests": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.codegen": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.codegen.executor": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.codegen.options": [
-      "apps/user/project.json",
+      "apps/users/project.json",
       "nx/core/project-json"
     ],
     "targets.build.cache": [

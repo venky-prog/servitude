@@ -1,5 +1,6 @@
 import { logger } from '@servitude/logger';
-import { jwtVerify, SignJWT } from 'jose';
+import { jwtVerify, SignJWT, errors } from 'jose';
+import { TokenExpiredError } from './errors';
 
 export type Payload = {
     userId: string;
@@ -15,7 +16,7 @@ export async function generateToken(userId: string): Promise<string> {
 
 export async function verifyToken(
   token: string,
-): Promise<Payload> {
+): Promise<Payload | undefined> {
   try {
     const { payload } = await jwtVerify<Payload>(
       token,
@@ -23,7 +24,13 @@ export async function verifyToken(
     );
     return payload;
   } catch (error) {
-    logger.error('Token verification failed:', error);
-    return null;
+    if( error instanceof errors.JWTExpired) {
+      logger.warn('Token has expired:', error);
+      throw new TokenExpiredError('Token has expired');
+    }
+    else if(error instanceof errors.JWTInvalid) {
+      logger.error('Token verification failed:', error);
+      throw new TokenExpiredError('Token is invalid or has expired');
+    }
   }
 }
