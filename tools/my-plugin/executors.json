@@ -1,7 +1,7 @@
 {
   "executors": {
     "apollo-codegen": {
-      "implementation": "./src/executors/apollo-codegen",
+      "implementation": "./src/executors/apollo-codegen/apollo-codegen",
       "schema": "./src/executors/apollo-codegen/schema.json",
       "description": "apollo-codegen executor"
     },

@@ -360,6 +360,50 @@
       "apps/accounts/project.json",
       "nx/core/project-json"
     ],
+    "targets.schema:publish": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.executor": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.cache": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.defaultConfiguration": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.options": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.options.org": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.options.project": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations.development": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations.development.url": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations.development.target": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build.cache": [
       "nx.json",
       "nx/target-defaults"
@@ -1439,6 +1483,46 @@
       "nx/core/project-json"
     ],
     "targets.codegen.options": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.executor": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.defaultConfiguration": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.options": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.options.org": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.options.project": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations.development": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations.development.url": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.schema:publish.configurations.development.target": [
       "apps/users/project.json",
       "nx/core/project-json"
     ],

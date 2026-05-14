@@ -5,4 +5,5 @@ tslib_1.__exportStar(require("./lib/load-typedefs"), exports);
 tslib_1.__exportStar(require("./lib/create-app"), exports);
 tslib_1.__exportStar(require("./lib/token"), exports);
 tslib_1.__exportStar(require("./lib/context"), exports);
+tslib_1.__exportStar(require("./lib/errors"), exports);
 //# sourceMappingURL=index.js.map

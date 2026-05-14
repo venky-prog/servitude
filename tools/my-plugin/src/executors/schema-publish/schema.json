@@ -4,6 +4,27 @@
   "title": "SchemaPublish executor",
   "description": "",
   "type": "object",
-  "properties": {},
-  "required": []
+  "properties": {
+    "org": {
+      "type": "string",
+      "description": "The organization in the registry to which the schema belongs."
+    },
+    "project": {
+      "type": "string",
+      "description": "The project in the registry to which the schema belongs."
+    },
+    "target": {
+      "type": "string",
+      "description": "The target in the registry to which the schema belongs."
+    },
+    "url": {
+      "type": "string",
+      "description": "(Optional) The URL of the registry to which the schema should be published. If not provided, it defaults to https://api.apollographql.com/graphql."
+    }
+  },
+  "required": [
+    "org",
+    "project",
+    "target"
+  ]
 }

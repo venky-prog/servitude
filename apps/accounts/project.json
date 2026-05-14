@@ -99,6 +99,21 @@
     "codegen": {
       "executor": "@servitude/my-plugin:apollo-codegen",
       "options": {}
+    },
+    "schema:publish": {
+      "executor": "@servitude/my-plugin:schema-publish",
+      "cache": false,
+      "defaultConfiguration": "development",
+      "options": {
+        "org": "servitude",
+        "project": "trackme"
+      },
+      "configurations": {
+        "development": {
+          "url": "http://localhost:3001/graphql",
+          "target": "development"
+        }
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 import { ExecutorContext } from '@nx/devkit';
 
 import { ApolloCodegenExecutorSchema } from './schema';
-import executor from '.';
+import executor from './apollo-codegen';
 
 const options: ApolloCodegenExecutorSchema = {};
 const context: ExecutorContext = {

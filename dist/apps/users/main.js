@@ -21,6 +21,10 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 
+// apps/users/src/main.ts
+var import_server = require("@apollo/server");
+var import_subgraph = require("@apollo/subgraph");
+
 // libs/config/src/lib/load-typedefs.ts
 var import_graphql_tag = require("graphql-tag");
 
@@ -85,6 +89,10 @@ var TokenExpiredError = class extends import_graphql.GraphQLError {
 };
 
 // libs/config/src/lib/token.ts
+async function generateToken(userId) {
+  const token = await new import_jose.SignJWT({ userId }).setProtectedHeader({ alg: "HS256" }).setExpirationTime("12h").sign(new TextEncoder().encode(process.env.JWT_SECRET || "default-secret"));
+  return token;
+}
 async function verifyToken(token) {
   try {
     const { payload } = await (0, import_jose.jwtVerify)(
@@ -119,8 +127,8 @@ function createApp(apolloServer) {
   return app;
 }
 
-// apps/accounts/src/main.ts
-var import_server = require("@apollo/server");
+// apps/users/src/main.ts
+var import_node_path = __toESM(require("node:path"));
 
 // libs/database/src/lib/connect-to-db.ts
 var import_mongoose = __toESM(require("mongoose"));
@@ -144,145 +152,145 @@ async function connectToDb(uri) {
   }
 }
 
-// apps/accounts/src/main.ts
-var import_subgraph = require("@apollo/subgraph");
-var import_node_path = __toESM(require("node:path"));
-
-// apps/accounts/src/resolvers/index.ts
-var import_graphql_scalars = require("graphql-scalars");
-
-// apps/accounts/src/models/account.model.ts
+// apps/users/src/models/user.model.ts
 var import_mongoose2 = __toESM(require("mongoose"));
-var AccountType = /* @__PURE__ */ ((AccountType3) => {
-  AccountType3["CreditCard"] = "CREDIT_CARD";
-  AccountType3["Loan"] = "LOAN";
-  AccountType3["Savings"] = "SAVINGS";
-  return AccountType3;
-})(AccountType || {});
-var accountsSchema = new import_mongoose2.default.Schema({
-  name: { type: String, required: true },
-  accountType: {
+var import_bcrypt = __toESM(require("bcrypt"));
+var userSchema = new import_mongoose2.default.Schema({
+  firstName: {
     type: String,
-    enum: Object.values(AccountType),
     required: true
   },
-  userId: { type: String, required: true },
-  // bank account properties
-  interestRate: { type: Number },
-  balance: { type: Number },
-  // credit card properties
-  lastFourDigits: { type: String, required: true },
-  limit: { type: Number },
-  billDate: { type: Number },
-  date: { type: Date },
-  emiStartDate: { type: Date },
-  totalEMIs: { type: Number }
+  lastName: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true,
+    select: false
+    // Exclude password from query results by default
+  },
+  dob: {
+    type: String,
+    required: true
+  }
 });
-var Account = import_mongoose2.default.model("Accounts", accountsSchema);
-var account_model_default = Account;
-
-// apps/accounts/src/resolvers/list-accounts.ts
-var listAccounts = async (_parent, args, ctx) => {
-  try {
-    const accounts = await account_model_default.find({ userId: ctx.userId }).limit(args.filter?.limit ?? 10).skip(args.filter?.offset ?? 0).lean();
-    return accounts;
-  } catch (error) {
-    logger.error("Error fetching accounts:", error);
-    throw new Error("Failed to fetch accounts");
+userSchema.pre("save", async function() {
+  console.log("Pre-save hook triggered for user:", this);
+  if (!this.isModified("password") || !this.isNew) {
+    throw new Error("Password is not modified");
   }
+  const salt = await import_bcrypt.default.genSalt(10);
+  this.password = await import_bcrypt.default.hash(this.password, salt);
+});
+userSchema.method(
+  "comparePassword",
+  async function(candidatePassword) {
+    return import_bcrypt.default.compare(candidatePassword, this.password);
+  }
+);
+userSchema.method("generateAuthToken", async function() {
+  return generateToken(this._id.toString());
+});
+var User = import_mongoose2.default.model("User", userSchema);
+var user_model_default = User;
+
+// apps/users/src/resolvers/create-user.ts
+var createUser = async (parent, args, context) => {
+  const { input } = args;
+  const user = (await user_model_default.create(input)).toJSON();
+  return {
+    ...user,
+    _id: user._id
+    // Convert ObjectId to string
+  };
 };
 
-// apps/accounts/src/resolvers/get-account.ts
-var getAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.findById(args.id).lean();
-    if (!account) {
-      throw new Error("Account not found");
+// apps/users/src/resolvers/login.ts
+var login = async (parent, args, context) => {
+  const { input: { email, password } } = args;
+  const user = await user_model_default.findOne({ email }).select("+password");
+  if (!user) {
+    throw new Error("Invalid email or password");
+  }
+  const isPasswordValid = await user.comparePassword(password);
+  if (!isPasswordValid) {
+    throw new Error("Invalid email or password");
+  }
+  const token = await user.generateAuthToken();
+  console.log("----------------------- from user service", user._id.toString());
+  return {
+    token,
+    user: {
+      ...user.toJSON(),
+      _id: user._id.toString()
+      // Convert ObjectId to string
     }
-    return account;
-  } catch (error) {
-    logger.error("Error fetching account:", error);
-    throw new Error("Failed to fetch account");
-  }
+  };
 };
 
-// apps/accounts/src/resolvers/create-credit-card-account.ts
-var createCreditCardAccount = async (_parent, args, ctx) => {
+// apps/users/src/resolvers/me.ts
+var me = async () => {
   try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "CREDIT_CARD" /* CreditCard */,
-      ...args
-    });
-    return account;
+    const user = await user_model_default.findById("64b8c9e5f1a2c9b1d2e3f4a5").lean();
+    if (!user) {
+      throw new Error("User not found");
+    }
+    return user;
   } catch (error) {
-    logger.error("Error creating credit card account:", error);
-    throw new Error("Failed to create credit card account");
+    logger.error("Error fetching user:", error);
+    throw new Error("Failed to fetch user");
   }
 };
 
-// apps/accounts/src/resolvers/create-loan-account.ts
-var createLoanAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "LOAN" /* Loan */,
-      ...args
-    });
-    return account;
-  } catch (error) {
-    logger.error("Error creating loan account:", error);
-    throw new Error("Failed to create loan account");
+// apps/users/src/resolvers/update-user.ts
+var updateUser = async (parent, args, context) => {
+  const { input: { _id, ...updateData } } = args;
+  const updateUser2 = await user_model_default.findByIdAndUpdate(_id, updateData, { new: true });
+  if (!updateUser2) {
+    throw new Error("User not found");
   }
+  console.log("Updated user:", updateUser2);
+  return {
+    ...updateUser2.toJSON(),
+    _id: updateUser2._id
+    // Convert ObjectId to string
+  };
 };
 
-// apps/accounts/src/resolvers/create-savings-account.ts
-var createSavingsAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "SAVINGS" /* Savings */,
-      ...args
-    });
-    return account;
-  } catch (error) {
-    logger.error("Error creating savings account:", error);
-    throw new Error("Failed to create savings account");
-  }
-};
-
-// apps/accounts/src/resolvers/index.ts
-var accountResolvers = {
+// apps/users/src/resolvers/index.ts
+var import_graphql_scalars = require("graphql-scalars");
+var userResolvers = {
   ...import_graphql_scalars.resolvers,
   Query: {
-    listAccounts,
-    getAccount
+    me
   },
   Mutation: {
-    createCreditCardAccount,
-    createLoanAccount,
-    createSavingsAccount
+    createUser,
+    login,
+    updateUser
   },
-  Account: {
-    user: (parent) => {
-      return { __typename: "User", _id: parent.userId };
-    },
+  User: {
     __resolveReference: async (ref) => {
-      const account = await account_model_default.findById(ref._id);
-      return account;
+      const user = user_model_default.findById(ref._id);
+      return user;
     }
   }
 };
-var resolvers_default = accountResolvers;
+var resolvers_default = userResolvers;
 
-// apps/accounts/src/main.ts
-var host = process.env.HOST ?? "localhost";
+// apps/users/src/main.ts
 var port = process.env.PORT ? Number(process.env.PORT) : 3e3;
 (async () => {
   const schema = (0, import_subgraph.buildSubgraphSchema)([
     {
       typeDefs: await loadTypeDefs(
-        import_node_path.default.join(__dirname, "schema", "accounts.graphql")
+        import_node_path.default.join(__dirname, "schema", "users.graphql")
       ),
       resolvers: resolvers_default
     }
@@ -296,7 +304,7 @@ var port = process.env.PORT ? Number(process.env.PORT) : 3e3;
     process.env.MONGO_URI || "mongodb://localhost:27017/servitude"
   );
   app.listen(port, () => {
-    console.log(`[ ready ] http://${host}:${port}`);
+    console.log(`[ ready ] http://localhost:${port}`);
   });
 })();
 //# sourceMappingURL=main.js.map

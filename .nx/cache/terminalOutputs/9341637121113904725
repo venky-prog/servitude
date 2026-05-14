@@ -1,0 +1,4 @@
+> nx run logger:build
+
+Compiling TypeScript files for project "logger"...
+Done compiling TypeScript files for project "logger".

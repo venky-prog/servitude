@@ -2,7 +2,7 @@
 
 Running GraphQL Codegen for project: accounts
 loading config from apps/accounts/codegen.ts
-(node:47452) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(node:19331) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 ⠙[1G[0K[?25l[2m◼[22m Parse Configuration
 [2K[1A[2K[G[2m◼[22m Parse Configuration
@@ -77,4 +77,9 @@ loading config from apps/accounts/codegen.ts
 [32m✔[39m Generate outputs
 [2K[1A[2K[1A[2K[G[32m✔[39m Parse Configuration
 [32m✔[39m Generate outputs
-[?25h[?25h⠙[1G[0K
+[?25h[?25h⠙[1G[0K[1mnpm[22m [96mnotice[39m
+[1mnpm[22m [96mnotice[39m New [33mminor[39m version of npm available! [33m11.12.1[39m -> [34m11.14.1[39m
+[1mnpm[22m [96mnotice[39m Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.14.1[39m
+[1mnpm[22m [96mnotice[39m To update run: [4mnpm install -g npm@11.14.1[24m
+[1mnpm[22m [96mnotice[39m
+⠙[1G[0K

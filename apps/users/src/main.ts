@@ -11,7 +11,7 @@ const port = process.env.PORT ? Number(process.env.PORT) : 3000;
   const schema = buildSubgraphSchema([
     {
       typeDefs: await loadTypeDefs(
-        path.join(__dirname, 'schema', 'user.graphql'),
+        path.join(__dirname, 'schema', 'users.graphql'),
       ),
       resolvers,
     },

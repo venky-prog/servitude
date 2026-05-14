@@ -1,7 +1,7 @@
 {
-  "name": "user",
+  "name": "users",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/user/src",
+  "sourceRoot": "apps/users/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -11,19 +11,19 @@
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
-        "outputPath": "dist/apps/user",
+        "outputPath": "dist/apps/users",
         "format": ["cjs"],
         "bundle": true,
-        "main": "apps/user/src/main.ts",
-        "tsConfig": "apps/user/tsconfig.app.json",
+        "main": "apps/users/src/main.ts",
+        "tsConfig": "apps/users/tsconfig.app.json",
         "assets": [
           {
-            "input": "apps/user/src/assets",
+            "input": "apps/users/src/assets",
             "glob": "**/*",
             "output": "./assets"
           },
           {
-            "input": "apps/user/src/schema",
+            "input": "apps/users/src/schema",
             "glob": "**/*",
             "output": "./schema"
           }
@@ -54,8 +54,8 @@
       "cache": true,
       "executor": "@nx/js:prune-lockfile",
       "outputs": [
-        "{workspaceRoot}/dist/apps/user/package.json",
-        "{workspaceRoot}/dist/apps/user/pnpm-lock.yaml"
+        "{workspaceRoot}/dist/apps/users/package.json",
+        "{workspaceRoot}/dist/apps/users/pnpm-lock.yaml"
       ],
       "options": {
         "buildTarget": "build"
@@ -64,7 +64,7 @@
     "copy-workspace-modules": {
       "dependsOn": ["build"],
       "cache": true,
-      "outputs": ["{workspaceRoot}/dist/apps/user/workspace_modules"],
+      "outputs": ["{workspaceRoot}/dist/apps/users/workspace_modules"],
       "executor": "@nx/js:copy-workspace-modules",
       "options": {
         "buildTarget": "build"
@@ -80,15 +80,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "user:build",
+        "buildTarget": "users:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "user:build:development"
+          "buildTarget": "users:build:development"
         },
         "production": {
-          "buildTarget": "user:build:production"
+          "buildTarget": "users:build:production"
         }
       }
     },
@@ -101,6 +101,20 @@
     "codegen": {
       "executor": "@servitude/my-plugin:apollo-codegen",
       "options": {}
+    },
+    "schema:publish": {
+      "executor": "@servitude/my-plugin:schema-publish",
+      "defaultConfiguration": "development",
+      "options": {
+        "org": "servitude",
+        "project": "trackme"
+      },
+      "configurations": {
+        "development": {
+          "url": "http://localhost:3000/graphql",
+          "target": "development"
+        }
+      }
     }
   }
 }

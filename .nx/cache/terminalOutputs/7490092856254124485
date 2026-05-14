@@ -1,0 +1,15 @@
+> nx run accounts:schema:publish:development
+
+0a60efe4aefe9dcc6f2b75feee4d5a13 token from env
+Executor ran for SchemaPublish {
+  org: [32m'servitude'[39m,
+  project: [32m'trackme'[39m,
+  url: [32m'http://localhost:3001/graphql'[39m,
+  target: [32m'development'[39m
+}
+schema path: ./src/schema/accounts.graphql
+(node:71145) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+⠙[1G[0K[32m✔[39m New service url: http://localhost:3001/graphql (previously: http://localhost:3000/graphql)
+[33mℹ[39m Available at https://app.graphql-hive.com/servitude/trackme/development/history/776bff88-c61c-4667-9687-dfc53c0fb17d
+⠙[1G[0K

@@ -707,6 +707,22 @@
             "options": {},
             "configurations": {},
             "parallelism": true
+          },
+          "schema:publish": {
+            "executor": "@servitude/my-plugin:schema-publish",
+            "cache": false,
+            "defaultConfiguration": "development",
+            "options": {
+              "org": "servitude",
+              "project": "trackme"
+            },
+            "configurations": {
+              "development": {
+                "url": "http://localhost:3001/graphql",
+                "target": "development"
+              }
+            },
+            "parallelism": true
           }
         },
         "name": "accounts",
@@ -1113,8 +1129,8 @@
         "implicitDependencies": []
       }
     },
-    "user": {
-      "name": "user",
+    "users": {
+      "name": "users",
       "type": "app",
       "data": {
         "root": "apps/users",
@@ -1209,21 +1225,21 @@
             "defaultConfiguration": "production",
             "options": {
               "platform": "node",
-              "outputPath": "dist/apps/user",
+              "outputPath": "dist/apps/users",
               "format": [
                 "cjs"
               ],
               "bundle": true,
-              "main": "apps/user/src/main.ts",
-              "tsConfig": "apps/user/tsconfig.app.json",
+              "main": "apps/users/src/main.ts",
+              "tsConfig": "apps/users/tsconfig.app.json",
               "assets": [
                 {
-                  "input": "apps/user/src/assets",
+                  "input": "apps/users/src/assets",
                   "glob": "**/*",
                   "output": "./assets"
                 },
                 {
-                  "input": "apps/user/src/schema",
+                  "input": "apps/users/src/schema",
                   "glob": "**/*",
                   "output": "./schema"
                 }
@@ -1264,8 +1280,8 @@
             "cache": true,
             "executor": "@nx/js:prune-lockfile",
             "outputs": [
-              "{workspaceRoot}/dist/apps/user/package.json",
-              "{workspaceRoot}/dist/apps/user/pnpm-lock.yaml"
+              "{workspaceRoot}/dist/apps/users/package.json",
+              "{workspaceRoot}/dist/apps/users/pnpm-lock.yaml"
             ],
             "options": {
               "buildTarget": "build"
@@ -1279,7 +1295,7 @@
             ],
             "cache": true,
             "outputs": [
-              "{workspaceRoot}/dist/apps/user/workspace_modules"
+              "{workspaceRoot}/dist/apps/users/workspace_modules"
             ],
             "executor": "@nx/js:copy-workspace-modules",
             "options": {
@@ -1306,15 +1322,15 @@
               "build"
             ],
             "options": {
-              "buildTarget": "user:build",
+              "buildTarget": "users:build",
               "runBuildTargetDependencies": false
             },
             "configurations": {
               "development": {
-                "buildTarget": "user:build:development"
+                "buildTarget": "users:build:development"
               },
               "production": {
-                "buildTarget": "user:build:production"
+                "buildTarget": "users:build:production"
               }
             },
             "parallelism": true
@@ -1324,11 +1340,26 @@
             "options": {},
             "configurations": {},
             "parallelism": true
+          },
+          "schema:publish": {
+            "executor": "@servitude/my-plugin:schema-publish",
+            "defaultConfiguration": "development",
+            "options": {
+              "org": "servitude",
+              "project": "trackme"
+            },
+            "configurations": {
+              "development": {
+                "url": "http://localhost:3000/graphql",
+                "target": "development"
+              }
+            },
+            "parallelism": true
           }
         },
-        "name": "user",
+        "name": "users",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/user/src",
+        "sourceRoot": "apps/users/src",
         "projectType": "application",
         "tags": [],
         "implicitDependencies": []
@@ -16128,54 +16159,54 @@
         "type": "static"
       }
     ],
-    "user": [
+    "users": [
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:@graphql-codegen/cli",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:graphql",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:@apollo/server",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:@apollo/subgraph",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "config",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "database",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:mongoose",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:bcrypt",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "npm:graphql-scalars",
         "type": "static"
       },
       {
-        "source": "user",
+        "source": "users",
         "target": "logger",
         "type": "static"
       }
@@ -41759,5 +41790,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778392709759
+  "computedAt": 1778775374186
 }
