@@ -1,7 +1,7 @@
 {
-  "name": "super-router",
+  "name": "gateway",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/super-router/src",
+  "sourceRoot": "apps/gateway/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -11,12 +11,12 @@
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
-        "outputPath": "dist/apps/super-router",
+        "outputPath": "dist/apps/gateway",
         "format": ["cjs"],
         "bundle": false,
-        "main": "apps/super-router/src/main.ts",
-        "tsConfig": "apps/super-router/tsconfig.app.json",
-        "assets": ["apps/super-router/src/assets"],
+        "main": "apps/gateway/src/main.ts",
+        "tsConfig": "apps/gateway/tsconfig.app.json",
+        "assets": ["apps/gateway/src/assets"],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
@@ -41,14 +41,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "ts-node src/compose.ts",
-        "cwd": "apps/super-router"
+        "cwd": "apps/gateway"
       }
     },
     "start": {
       "executor": "nx:run-commands",
       "options": {
         "command": "hive-gateway -c ./gateway.ts supergraph",
-        "cwd": "apps/super-router"
+        "cwd": "apps/gateway"
       }
     },
     "prune-lockfile": {
@@ -56,8 +56,8 @@
       "cache": true,
       "executor": "@nx/js:prune-lockfile",
       "outputs": [
-        "{workspaceRoot}/dist/apps/super-router/package.json",
-        "{workspaceRoot}/dist/apps/super-router/pnpm-lock.yaml"
+        "{workspaceRoot}/dist/apps/gateway/package.json",
+        "{workspaceRoot}/dist/apps/gateway/pnpm-lock.yaml"
       ],
       "options": {
         "buildTarget": "build"
@@ -66,7 +66,7 @@
     "copy-workspace-modules": {
       "dependsOn": ["build"],
       "cache": true,
-      "outputs": ["{workspaceRoot}/dist/apps/super-router/workspace_modules"],
+      "outputs": ["{workspaceRoot}/dist/apps/gateway/workspace_modules"],
       "executor": "@nx/js:copy-workspace-modules",
       "options": {
         "buildTarget": "build"
@@ -82,15 +82,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "super-router:build",
+        "buildTarget": "gateway:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "super-router:build:development"
+          "buildTarget": "gateway:build:development"
         },
         "production": {
-          "buildTarget": "super-router:build:production"
+          "buildTarget": "gateway:build:production"
         }
       }
     }

@@ -1,9 +1,0 @@
-> nx run users:serve:development
-
-[ [32mwatch[39m ] build succeeded, watching for changes...
-[1m[31mDebugger listening on ws://localhost:9229/9d75b493-f1b1-4c96-bb81-a30fc4e998a7
-For help, see: https://nodejs.org/en/docs/inspector
-[39m[22m
-Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
-[ ready ] http://localhost:3000
------------------------ from user service 69e7b269d9d92e31e9cd73b8

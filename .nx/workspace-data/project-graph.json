@@ -1,186 +1,5 @@
 {
   "nodes": {
-    "super-router": {
-      "name": "super-router",
-      "type": "app",
-      "data": {
-        "root": "apps/super-router",
-        "targets": {
-          "lint": {
-            "cache": true,
-            "options": {
-              "cwd": "apps/super-router",
-              "command": "eslint ."
-            },
-            "inputs": [
-              "default",
-              "^default",
-              "{workspaceRoot}/eslint.config.mjs",
-              "{workspaceRoot}/apps/super-router/eslint.config.mjs",
-              "{workspaceRoot}/tools/eslint-rules/**/*",
-              {
-                "externalDependencies": [
-                  "eslint"
-                ]
-              }
-            ],
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "metadata": {
-              "technologies": [
-                "eslint"
-              ],
-              "description": "Runs ESLint on project",
-              "help": {
-                "command": "pnpm exec eslint --help",
-                "example": {
-                  "options": {
-                    "max-warnings": 0
-                  }
-                }
-              }
-            },
-            "executor": "nx:run-commands",
-            "configurations": {},
-            "parallelism": true
-          },
-          "build": {
-            "executor": "@nx/esbuild:esbuild",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "defaultConfiguration": "production",
-            "options": {
-              "platform": "node",
-              "outputPath": "dist/apps/super-router",
-              "format": [
-                "cjs"
-              ],
-              "bundle": false,
-              "main": "apps/super-router/src/main.ts",
-              "tsConfig": "apps/super-router/tsconfig.app.json",
-              "assets": [
-                "apps/super-router/src/assets"
-              ],
-              "generatePackageJson": true,
-              "esbuildOptions": {
-                "sourcemap": true,
-                "outExtension": {
-                  ".js": ".js"
-                }
-              }
-            },
-            "configurations": {
-              "development": {},
-              "production": {
-                "esbuildOptions": {
-                  "sourcemap": false,
-                  "outExtension": {
-                    ".js": ".js"
-                  }
-                }
-              }
-            },
-            "parallelism": true,
-            "cache": false,
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "default",
-              "^default"
-            ]
-          },
-          "compose": {
-            "executor": "nx:run-commands",
-            "options": {
-              "command": "ts-node src/compose.ts",
-              "cwd": "apps/super-router"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "start": {
-            "executor": "nx:run-commands",
-            "options": {
-              "command": "hive-gateway -c ./gateway.ts supergraph",
-              "cwd": "apps/super-router"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "prune-lockfile": {
-            "dependsOn": [
-              "build"
-            ],
-            "cache": true,
-            "executor": "@nx/js:prune-lockfile",
-            "outputs": [
-              "{workspaceRoot}/dist/apps/super-router/package.json",
-              "{workspaceRoot}/dist/apps/super-router/pnpm-lock.yaml"
-            ],
-            "options": {
-              "buildTarget": "build"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "copy-workspace-modules": {
-            "dependsOn": [
-              "build"
-            ],
-            "cache": true,
-            "outputs": [
-              "{workspaceRoot}/dist/apps/super-router/workspace_modules"
-            ],
-            "executor": "@nx/js:copy-workspace-modules",
-            "options": {
-              "buildTarget": "build"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "prune": {
-            "dependsOn": [
-              "prune-lockfile",
-              "copy-workspace-modules"
-            ],
-            "executor": "nx:noop",
-            "configurations": {},
-            "options": {},
-            "parallelism": true
-          },
-          "serve": {
-            "continuous": true,
-            "executor": "@nx/js:node",
-            "defaultConfiguration": "development",
-            "dependsOn": [
-              "build"
-            ],
-            "options": {
-              "buildTarget": "super-router:build",
-              "runBuildTargetDependencies": false
-            },
-            "configurations": {
-              "development": {
-                "buildTarget": "super-router:build:development"
-              },
-              "production": {
-                "buildTarget": "super-router:build:production"
-              }
-            },
-            "parallelism": true
-          }
-        },
-        "name": "super-router",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/super-router/src",
-        "projectType": "application",
-        "tags": [],
-        "implicitDependencies": []
-      }
-    },
     "transactions": {
       "name": "transactions",
       "type": "app",
@@ -862,6 +681,187 @@
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "libs/database/src",
         "projectType": "library",
+        "implicitDependencies": []
+      }
+    },
+    "gateway": {
+      "name": "gateway",
+      "type": "app",
+      "data": {
+        "root": "apps/gateway",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/gateway",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/apps/gateway/eslint.config.mjs",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "pnpm exec eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "@nx/esbuild:esbuild",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "platform": "node",
+              "outputPath": "dist/apps/gateway",
+              "format": [
+                "cjs"
+              ],
+              "bundle": false,
+              "main": "apps/gateway/src/main.ts",
+              "tsConfig": "apps/gateway/tsconfig.app.json",
+              "assets": [
+                "apps/gateway/src/assets"
+              ],
+              "generatePackageJson": true,
+              "esbuildOptions": {
+                "sourcemap": true,
+                "outExtension": {
+                  ".js": ".js"
+                }
+              }
+            },
+            "configurations": {
+              "development": {},
+              "production": {
+                "esbuildOptions": {
+                  "sourcemap": false,
+                  "outExtension": {
+                    ".js": ".js"
+                  }
+                }
+              }
+            },
+            "parallelism": true,
+            "cache": false,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "default",
+              "^default"
+            ]
+          },
+          "compose": {
+            "executor": "nx:run-commands",
+            "options": {
+              "command": "ts-node src/compose.ts",
+              "cwd": "apps/gateway"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "start": {
+            "executor": "nx:run-commands",
+            "options": {
+              "command": "hive-gateway -c ./gateway.ts supergraph",
+              "cwd": "apps/gateway"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "prune-lockfile": {
+            "dependsOn": [
+              "build"
+            ],
+            "cache": true,
+            "executor": "@nx/js:prune-lockfile",
+            "outputs": [
+              "{workspaceRoot}/dist/apps/gateway/package.json",
+              "{workspaceRoot}/dist/apps/gateway/pnpm-lock.yaml"
+            ],
+            "options": {
+              "buildTarget": "build"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "copy-workspace-modules": {
+            "dependsOn": [
+              "build"
+            ],
+            "cache": true,
+            "outputs": [
+              "{workspaceRoot}/dist/apps/gateway/workspace_modules"
+            ],
+            "executor": "@nx/js:copy-workspace-modules",
+            "options": {
+              "buildTarget": "build"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "prune": {
+            "dependsOn": [
+              "prune-lockfile",
+              "copy-workspace-modules"
+            ],
+            "executor": "nx:noop",
+            "configurations": {},
+            "options": {},
+            "parallelism": true
+          },
+          "serve": {
+            "continuous": true,
+            "executor": "@nx/js:node",
+            "defaultConfiguration": "development",
+            "dependsOn": [
+              "build"
+            ],
+            "options": {
+              "buildTarget": "gateway:build",
+              "runBuildTargetDependencies": false
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "gateway:build:development"
+              },
+              "production": {
+                "buildTarget": "gateway:build:production"
+              }
+            },
+            "parallelism": true
+          }
+        },
+        "name": "gateway",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/gateway/src",
+        "projectType": "application",
+        "tags": [],
         "implicitDependencies": []
       }
     },
@@ -15985,23 +15985,6 @@
     }
   },
   "dependencies": {
-    "super-router": [
-      {
-        "source": "super-router",
-        "target": "npm:@graphql-hive/gateway",
-        "type": "static"
-      },
-      {
-        "source": "super-router",
-        "target": "npm:@theguild/federation-composition",
-        "type": "static"
-      },
-      {
-        "source": "super-router",
-        "target": "npm:graphql-tag",
-        "type": "static"
-      }
-    ],
     "transactions": [
       {
         "source": "transactions",
@@ -16092,6 +16075,23 @@
       {
         "source": "database",
         "target": "logger",
+        "type": "static"
+      }
+    ],
+    "gateway": [
+      {
+        "source": "gateway",
+        "target": "npm:@graphql-hive/gateway",
+        "type": "static"
+      },
+      {
+        "source": "gateway",
+        "target": "npm:@theguild/federation-composition",
+        "type": "static"
+      },
+      {
+        "source": "gateway",
+        "target": "npm:graphql-tag",
         "type": "static"
       }
     ],
@@ -41790,5 +41790,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778775374186
+  "computedAt": 1778820097837
 }

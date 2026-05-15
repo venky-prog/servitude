@@ -9,7 +9,7 @@ async function generateSuperGraph() {
     'utf-8',
   );
   const userSdl = await readFile(
-    path.join(process.cwd(), '../user/src/schema/user.graphql'),
+    path.join(process.cwd(), '../users/src/schema/users.graphql'),
     'utf-8',
   );
 

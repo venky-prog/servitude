@@ -421,325 +421,325 @@
       "nx/target-defaults"
     ]
   },
-  "apps/super-router": {
+  "apps/gateway": {
     "root": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.inputs": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.outputs": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.executor": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.cwd": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.command": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies.0": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.description": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.command": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.example": [
-      "apps/super-router/eslint.config.mjs",
+      "apps/gateway/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "name": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "$schema": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "sourceRoot": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "projectType": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "tags": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.outputs": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.defaultConfiguration": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.platform": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.outputPath": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.format": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.bundle": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.main": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.tsConfig": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.assets": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.generatePackageJson": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.options.esbuildOptions": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.development": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.production": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.configurations.production.esbuildOptions": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.compose": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.compose.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.compose.options": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.compose.options.command": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.compose.options.cwd": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.start": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.start.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.start.options": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.start.options.command": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.start.options.cwd": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.dependsOn": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.cache": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.outputs": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.options": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune-lockfile.options.buildTarget": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.dependsOn": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.cache": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.outputs": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.options": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.copy-workspace-modules.options.buildTarget": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune.dependsOn": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.prune.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.continuous": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.executor": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.defaultConfiguration": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.dependsOn": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.buildTarget": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.options.runBuildTargetDependencies": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.development.buildTarget": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.configurations.production.buildTarget": [
-      "apps/super-router/project.json",
+      "apps/gateway/project.json",
       "nx/core/project-json"
     ],
     "targets.build.cache": [
