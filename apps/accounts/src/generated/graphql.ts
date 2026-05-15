@@ -32,6 +32,7 @@ export type Account = {
 
 export enum AccountType {
   CreditCard = 'CREDIT_CARD',
+  Emi = 'EMI',
   Loan = 'LOAN',
   Savings = 'SAVINGS'
 }
@@ -45,6 +46,18 @@ export type CreditCardAccount = {
   name: Scalars['String']['output'];
 };
 
+export type EmiAccount = {
+  __typename?: 'EMIAccount';
+  _id: Scalars['ID']['output'];
+  accountType: AccountType;
+  date: Scalars['Date']['output'];
+  emiAmount: Scalars['Float']['output'];
+  emiStartDate: Scalars['Date']['output'];
+  name: Scalars['String']['output'];
+  totalAmount: Scalars['Float']['output'];
+  totalEMIs: Scalars['Int']['output'];
+};
+
 export type ListAccountsFilter = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   offset?: InputMaybe<Scalars['Int']['input']>;
@@ -55,14 +68,17 @@ export type LoanAccount = {
   _id: Scalars['ID']['output'];
   accountType: AccountType;
   date: Scalars['Date']['output'];
+  emiAmount: Scalars['Float']['output'];
   emiStartDate: Scalars['Date']['output'];
   name: Scalars['String']['output'];
+  totalAmount: Scalars['Float']['output'];
   totalEMIs: Scalars['Int']['output'];
 };
 
 export type Mutation = {
   __typename?: 'Mutation';
   createCreditCardAccount: Account;
+  createEMIAccount: Account;
   createLoanAccount: Account;
   createSavingsAccount: Account;
 };
@@ -76,11 +92,24 @@ export type MutationCreateCreditCardAccountArgs = {
 };
 
 
-export type MutationCreateLoanAccountArgs = {
+export type MutationCreateEmiAccountArgs = {
   date: Scalars['Date']['input'];
+  emiAmount: Scalars['Float']['input'];
   emiStartDate: Scalars['Date']['input'];
   lastFourDigits: Scalars['String']['input'];
   name: Scalars['String']['input'];
+  totalAmount: Scalars['Float']['input'];
+  totalEMIs: Scalars['Int']['input'];
+};
+
+
+export type MutationCreateLoanAccountArgs = {
+  date: Scalars['Date']['input'];
+  emiAmount: Scalars['Float']['input'];
+  emiStartDate: Scalars['Date']['input'];
+  lastFourDigits: Scalars['String']['input'];
+  name: Scalars['String']['input'];
+  totalAmount: Scalars['Float']['input'];
   totalEMIs: Scalars['Int']['input'];
 };
 
@@ -224,6 +253,7 @@ export type ResolversTypes = {
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
   Float: ResolverTypeWrapper<Scalars['Float']['output']>;
   Date: ResolverTypeWrapper<Scalars['Date']['output']>;
+  EMIAccount: ResolverTypeWrapper<EmiAccount>;
   ListAccountsFilter: ListAccountsFilter;
   LoanAccount: ResolverTypeWrapper<LoanAccount>;
   Mutation: ResolverTypeWrapper<Record<PropertyKey, never>>;
@@ -242,6 +272,7 @@ export type ResolversParentTypes = {
   Int: Scalars['Int']['output'];
   Float: Scalars['Float']['output'];
   Date: Scalars['Date']['output'];
+  EMIAccount: EmiAccount;
   ListAccountsFilter: ListAccountsFilter;
   LoanAccount: LoanAccount;
   Mutation: Record<PropertyKey, never>;
@@ -273,18 +304,32 @@ export interface DateScalarConfig extends GraphQLScalarTypeConfig<ResolversTypes
   name: 'Date';
 }
 
+export type EmiAccountResolvers<ContextType = Context, ParentType extends ResolversParentTypes['EMIAccount'] = ResolversParentTypes['EMIAccount']> = {
+  _id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
+  accountType?: Resolver<ResolversTypes['AccountType'], ParentType, ContextType>;
+  date?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
+  emiAmount?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  emiStartDate?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
+  name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  totalAmount?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
+  totalEMIs?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+};
+
 export type LoanAccountResolvers<ContextType = Context, ParentType extends ResolversParentTypes['LoanAccount'] = ResolversParentTypes['LoanAccount']> = {
   _id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   accountType?: Resolver<ResolversTypes['AccountType'], ParentType, ContextType>;
   date?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
+  emiAmount?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
   emiStartDate?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  totalAmount?: Resolver<ResolversTypes['Float'], ParentType, ContextType>;
   totalEMIs?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
 };
 
 export type MutationResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation']> = {
   createCreditCardAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateCreditCardAccountArgs, 'billDate' | 'lastFourDigits' | 'limit' | 'name'>>;
-  createLoanAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateLoanAccountArgs, 'date' | 'emiStartDate' | 'lastFourDigits' | 'name' | 'totalEMIs'>>;
+  createEMIAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateEmiAccountArgs, 'date' | 'emiAmount' | 'emiStartDate' | 'lastFourDigits' | 'name' | 'totalAmount' | 'totalEMIs'>>;
+  createLoanAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateLoanAccountArgs, 'date' | 'emiAmount' | 'emiStartDate' | 'lastFourDigits' | 'name' | 'totalAmount' | 'totalEMIs'>>;
   createSavingsAccount?: Resolver<ResolversTypes['Account'], ParentType, ContextType, RequireFields<MutationCreateSavingsAccountArgs, 'balance' | 'interestRate' | 'lastFourDigits' | 'name'>>;
 };
 
@@ -309,6 +354,7 @@ export type Resolvers<ContextType = Context> = {
   Account?: AccountResolvers<ContextType>;
   CreditCardAccount?: CreditCardAccountResolvers<ContextType>;
   Date?: GraphQLScalarType;
+  EMIAccount?: EmiAccountResolvers<ContextType>;
   LoanAccount?: LoanAccountResolvers<ContextType>;
   Mutation?: MutationResolvers<ContextType>;
   Query?: QueryResolvers<ContextType>;

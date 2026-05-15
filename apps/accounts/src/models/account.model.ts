@@ -4,6 +4,7 @@ enum AccountType {
   CreditCard = 'CREDIT_CARD',
   Loan = 'LOAN',
   Savings = 'SAVINGS',
+  EMI = 'EMI',
 }
 
 export interface IAccount extends mongoose.Document<string> {
@@ -20,6 +21,8 @@ export interface IAccount extends mongoose.Document<string> {
   date: Date;
   emiStartDate: Date;
   totalEMIs: number;
+  totalAmount?: number;
+  emiAmount?: number;
 }
 
 interface IAccountMethods {}
@@ -46,6 +49,8 @@ const accountsSchema = new mongoose.Schema<
   date: { type: Date },
   emiStartDate: { type: Date },
   totalEMIs: { type: Number },
+  totalAmount: { type: Number },
+  emiAmount: { type: Number },
 });
 
 const Account = mongoose.model('Accounts', accountsSchema);

@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx start gateway",
-    "startTime": "2026-05-15T04:44:35.465Z",
-    "endTime": "2026-05-15T04:44:41.927Z",
+    "command": "nx codegen accounts",
+    "startTime": "2026-05-15T15:58:56.521Z",
+    "endTime": "2026-05-15T15:58:58.631Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "gateway:start",
-      "target": "start",
-      "projectName": "gateway",
-      "hash": "204504620221061686",
-      "startTime": "2026-05-15T04:44:35.491Z",
-      "endTime": "2026-05-15T04:44:41.923Z",
+      "taskId": "accounts:codegen",
+      "target": "codegen",
+      "projectName": "accounts",
+      "hash": "4547704256117998744",
+      "startTime": "2026-05-15T15:58:56.543Z",
+      "endTime": "2026-05-15T15:58:58.629Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }

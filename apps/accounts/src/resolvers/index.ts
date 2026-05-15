@@ -6,6 +6,7 @@ import Account from '../models/account.model';
 import { createCreditCardAccount } from './create-credit-card-account';
 import { createLoanAccount } from './create-loan-account';
 import { createSavingsAccount } from './create-savings-account';
+import { createEMIAccount } from './create-emi-account';
 
 const accountResolvers: Resolvers = {
   ...scalarResolvers,
@@ -17,6 +18,7 @@ const accountResolvers: Resolvers = {
     createCreditCardAccount,
     createLoanAccount,
     createSavingsAccount,
+    createEMIAccount
   },
   Account: {
     user: (parent) => {
