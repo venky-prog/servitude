@@ -196,6 +196,12 @@
               }
             },
             "parallelism": true
+          },
+          "codegen": {
+            "executor": "@servitude/my-plugin:apollo-codegen",
+            "options": {},
+            "configurations": {},
+            "parallelism": true
           }
         },
         "name": "transactions",
@@ -15988,7 +15994,17 @@
     "transactions": [
       {
         "source": "transactions",
+        "target": "npm:@graphql-codegen/cli",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
         "target": "npm:express",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "npm:mongoose",
         "type": "static"
       }
     ],
@@ -41790,5 +41806,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778844379946
+  "computedAt": 1778866526316
 }

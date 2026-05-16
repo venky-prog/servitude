@@ -1,10 +1,10 @@
-> nx run accounts:codegen
+> nx run transactions:codegen
 
-Running GraphQL Codegen for project: accounts
-loading config from apps/accounts/codegen.ts
-(node:31510) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+Running GraphQL Codegen for project: transactions
+loading config from apps/transactions/codegen.ts
+(node:89383) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-⠙[1G[0K[?25l[2m◼[22m Parse Configuration
+[?25l[2m◼[22m Parse Configuration
 [2K[1A[2K[G[2m◼[22m Parse Configuration
 [2m◼[22m Generate outputs
 [2K[1A[2K[1A[2K[G[33m⠋[39m Parse Configuration

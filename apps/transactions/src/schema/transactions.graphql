@@ -1,0 +1,72 @@
+scalar Date
+
+type Transaction @key(fields: "_id") {
+  _id: ID!
+  accountId: ID!
+  account: Account
+  amount: Float!
+  date: Date!
+  description: String!
+  userId: ID!
+  user: User
+}
+
+input CreateTransactionInput {
+  accountId: ID!
+  amount: Float!
+  date: Date!
+  description: String!
+}
+
+input updateTransactionInput {
+  accountId: ID
+  amount: Float
+  date: Date
+  description: String
+}
+
+type Mutation {
+  createTransaction(input: CreateTransactionInput!): Transaction!
+  updateTransaction(_id: ID!, input: updateTransactionInput!): Transaction!
+  deleteTransaction(_id: ID!): Boolean!
+}
+
+type TransactionEdge {
+  cursor: String!
+  node: Transaction!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+type TransactionConnection {
+  edges: [TransactionEdge]!
+  pageInfo: PageInfo!
+}
+
+type Query {
+  listTransactions(
+    userId: ID!
+    first: Int = 10
+    after: String
+  ): TransactionConnection!
+  getTransaction(_id: ID!): Transaction
+}
+
+extend type Account @key(fields: "_id", resolvable: false) {  # 👈 resolvable: false = owned by user-service
+  _id: ID! 
+}
+
+extend type User @key(fields: "_id", resolvable: false) {  # 👈 resolvable: false = owned by user-service
+  _id: ID! 
+}
+
+extend schema
+  @link(
+    url: "https://specs.apollo.dev/federation/v2.3"
+    import: ["@key", "@shareable", "@external"]
+  )

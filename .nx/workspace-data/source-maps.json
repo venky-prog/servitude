@@ -1108,6 +1108,18 @@
       "apps/transactions/project.json",
       "nx/core/project-json"
     ],
+    "targets.codegen": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.executor": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.options": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build.cache": [
       "nx.json",
       "nx/target-defaults"

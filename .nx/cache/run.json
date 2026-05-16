@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx codegen accounts",
-    "startTime": "2026-05-15T15:58:56.521Z",
-    "endTime": "2026-05-15T15:58:58.631Z",
+    "command": "nx codegen transactions",
+    "startTime": "2026-05-16T07:44:11.201Z",
+    "endTime": "2026-05-16T07:44:13.216Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "accounts:codegen",
+      "taskId": "transactions:codegen",
       "target": "codegen",
-      "projectName": "accounts",
-      "hash": "4547704256117998744",
-      "startTime": "2026-05-15T15:58:56.543Z",
-      "endTime": "2026-05-15T15:58:58.629Z",
+      "projectName": "transactions",
+      "hash": "15682784410114918076",
+      "startTime": "2026-05-16T07:44:11.224Z",
+      "endTime": "2026-05-16T07:44:13.213Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

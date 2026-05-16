@@ -84,6 +84,10 @@
       "options": {
         "passWithNoTests": true
       }
+    },
+    "codegen": {
+      "executor": "@servitude/my-plugin:apollo-codegen",
+      "options": {}
     }
   }
 }
