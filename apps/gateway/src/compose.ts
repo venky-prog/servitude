@@ -12,6 +12,10 @@ async function generateSuperGraph() {
     path.join(process.cwd(), '../users/src/schema/users.graphql'),
     'utf-8',
   );
+  const transactionSdl = await readFile(
+    path.join(process.cwd(), '../transactions/src/schema/transactions.graphql'),
+    'utf-8',
+  );
 
   const result = composeServices([
     {
@@ -23,6 +27,11 @@ async function generateSuperGraph() {
       name: 'users',
       typeDefs: gql(userSdl),
       url: process.env.USER_SERVICE_URL,
+    },
+    {
+      name: 'transactions',
+      typeDefs: gql(transactionSdl),
+      url: process.env.TRANSACTIONS_SERVICE_URL,
     },
   ]);
 

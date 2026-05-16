@@ -5,8 +5,10 @@ import { getTransaction } from "./get-transaction";
 import { updateTransaction } from "./update-transaction";
 import { listTransactions } from "./list-transactions";
 import { Transactions } from "../models/transactions.model";
+import {resolvers as scalarResolvers} from 'graphql-scalars'
 
-export const resolvers: Resolvers = {
+const resolvers: Resolvers = {
+    ...scalarResolvers,
     Query: {
         getTransaction,
         listTransactions
@@ -29,3 +31,5 @@ export const resolvers: Resolvers = {
         },
     }
 }
+
+export default resolvers

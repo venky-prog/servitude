@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@servitude/my-plugin": [
+        "tools/my-plugin/src/index.ts"
+      ],
+      "@servitude/database": [
+        "dist/libs/database"
+      ],
+      "@servitude/logger": [
+        "dist/libs/logger"
+      ],
+      "@servitude/config": [
+        "dist/libs/config"
+      ]
+    }
+  },
+  "extends": "../../../../apps/transactions/tsconfig.app.json"
+}

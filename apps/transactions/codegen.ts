@@ -10,7 +10,7 @@ const config: CodegenConfig = {
         federation: true,
         contextType: '@servitude/config#Context',
         mappers: {
-          Transaction: '../models/transaction.model#ITransaction', // 👈 map to your mongoose document type
+          Transaction: '../models/transactions.model#ITransactions', // 👈 map to your mongoose document type
         },
         scalars: {
           JSON: 'string',

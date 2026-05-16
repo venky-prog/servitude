@@ -1,5 +1,5 @@
 import { GraphQLResolveInfo, GraphQLScalarType, GraphQLScalarTypeConfig } from 'graphql';
-import { ITransaction } from '../models/transaction.model';
+import { ITransactions } from '../models/transactions.model';
 import { Context } from '@servitude/config';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
@@ -79,7 +79,6 @@ export type QueryGetTransactionArgs = {
 export type QueryListTransactionsArgs = {
   after?: InputMaybe<Scalars['String']['input']>;
   first?: InputMaybe<Scalars['Int']['input']>;
-  userId: Scalars['ID']['input'];
 };
 
 export type Transaction = {
@@ -223,7 +222,7 @@ export type ResolversTypes = {
   PageInfo: ResolverTypeWrapper<PageInfo>;
   Query: ResolverTypeWrapper<Record<PropertyKey, never>>;
   Int: ResolverTypeWrapper<Scalars['Int']['output']>;
-  Transaction: ResolverTypeWrapper<ITransaction>;
+  Transaction: ResolverTypeWrapper<ITransactions>;
   TransactionConnection: ResolverTypeWrapper<Omit<TransactionConnection, 'edges'> & { edges: Array<Maybe<ResolversTypes['TransactionEdge']>> }>;
   TransactionEdge: ResolverTypeWrapper<Omit<TransactionEdge, 'node'> & { node: ResolversTypes['Transaction'] }>;
   User: ResolverTypeWrapper<User>;
@@ -243,7 +242,7 @@ export type ResolversParentTypes = {
   PageInfo: PageInfo;
   Query: Record<PropertyKey, never>;
   Int: Scalars['Int']['output'];
-  Transaction: ITransaction;
+  Transaction: ITransactions;
   TransactionConnection: Omit<TransactionConnection, 'edges'> & { edges: Array<Maybe<ResolversParentTypes['TransactionEdge']>> };
   TransactionEdge: Omit<TransactionEdge, 'node'> & { node: ResolversParentTypes['Transaction'] };
   User: User;
@@ -273,7 +272,7 @@ export type PageInfoResolvers<ContextType = Context, ParentType extends Resolver
 
 export type QueryResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   getTransaction?: Resolver<Maybe<ResolversTypes['Transaction']>, ParentType, ContextType, RequireFields<QueryGetTransactionArgs, '_id'>>;
-  listTransactions?: Resolver<ResolversTypes['TransactionConnection'], ParentType, ContextType, RequireFields<QueryListTransactionsArgs, 'first' | 'userId'>>;
+  listTransactions?: Resolver<ResolversTypes['TransactionConnection'], ParentType, ContextType, RequireFields<QueryListTransactionsArgs, 'first'>>;
 };
 
 export type TransactionResolvers<ContextType = Context, ParentType extends ResolversParentTypes['Transaction'] = ResolversParentTypes['Transaction'], FederationReferenceType extends FederationReferenceTypes['Transaction'] = FederationReferenceTypes['Transaction']> = {

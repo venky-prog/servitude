@@ -13,10 +13,21 @@
         "platform": "node",
         "outputPath": "dist/apps/transactions",
         "format": ["cjs"],
-        "bundle": false,
+        "bundle": true,
         "main": "apps/transactions/src/main.ts",
         "tsConfig": "apps/transactions/tsconfig.app.json",
-        "assets": ["apps/transactions/src/assets"],
+        "assets": [
+          {
+            "input": "apps/transactions/src/assets",
+            "glob": "**/*",
+            "output": "./assets"
+          },
+          {
+            "input": "apps/transactions/src/schema",
+            "glob": "**/*",
+            "output": "./schema"
+          }
+        ],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,

@@ -119,7 +119,7 @@ function createApp(apolloServer) {
   return app;
 }
 
-// apps/accounts/src/main.ts
+// apps/transactions/src/main.ts
 var import_server = require("@apollo/server");
 
 // libs/database/src/lib/connect-to-db.ts
@@ -144,164 +144,157 @@ async function connectToDb(uri) {
   }
 }
 
-// apps/accounts/src/main.ts
+// apps/transactions/src/main.ts
 var import_subgraph = require("@apollo/subgraph");
 var import_node_path = __toESM(require("node:path"));
 
-// apps/accounts/src/resolvers/index.ts
-var import_graphql_scalars = require("graphql-scalars");
-
-// apps/accounts/src/models/account.model.ts
+// apps/transactions/src/models/transactions.model.ts
 var import_mongoose2 = __toESM(require("mongoose"));
-var AccountType = /* @__PURE__ */ ((AccountType3) => {
-  AccountType3["CreditCard"] = "CREDIT_CARD";
-  AccountType3["Loan"] = "LOAN";
-  AccountType3["Savings"] = "SAVINGS";
-  AccountType3["EMI"] = "EMI";
-  return AccountType3;
-})(AccountType || {});
-var accountsSchema = new import_mongoose2.default.Schema({
-  name: { type: String, required: true },
-  accountType: {
-    type: String,
-    enum: Object.values(AccountType),
-    required: true
-  },
-  userId: { type: String, required: true },
-  // bank account properties
-  interestRate: { type: Number },
-  balance: { type: Number },
-  // credit card properties
-  lastFourDigits: { type: String, required: true },
-  limit: { type: Number },
-  billDate: { type: Number },
-  date: { type: Date },
-  emiStartDate: { type: Date },
-  totalEMIs: { type: Number },
-  totalAmount: { type: Number },
-  emiAmount: { type: Number }
+var transactionSchema = new import_mongoose2.default.Schema({
+  accountId: { type: String, required: true },
+  amount: { type: Number, required: true },
+  date: { type: Date, required: true },
+  description: { type: String, required: true },
+  userId: { type: String, required: true }
 });
-var Account = import_mongoose2.default.model("Accounts", accountsSchema);
-var account_model_default = Account;
+var Transactions = import_mongoose2.default.model("Transactions", transactionSchema);
 
-// apps/accounts/src/resolvers/list-accounts.ts
-var listAccounts = async (_parent, args, ctx) => {
-  try {
-    const accounts = await account_model_default.find({ userId: ctx.userId }).limit(args.filter?.limit ?? 10).skip(args.filter?.offset ?? 0).lean();
-    return accounts;
-  } catch (error) {
-    logger.error("Error fetching accounts:", error);
-    throw new Error("Failed to fetch accounts");
+// apps/transactions/src/resolvers/create-transaction.ts
+var createTransaction = async (_, { input }, ctx) => {
+  if (!ctx.userId) {
+    logger.error("Unauthorized access to createTransaction");
+    throw new Error("Unauthorized");
   }
+  const transaction = await Transactions.create({
+    userId: ctx.userId,
+    ...input
+  });
+  return transaction;
 };
 
-// apps/accounts/src/resolvers/get-account.ts
-var getAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.findById(args.id).lean();
-    if (!account) {
-      throw new Error("Account not found");
+// apps/transactions/src/resolvers/delete-transaction.ts
+var deleteTransaction = async (_, { _id }, ctx) => {
+  if (!ctx.userId) {
+    logger.error("Unauthorized access to deleteTransaction");
+    throw new Error("Unauthorized");
+  }
+  const result = await Transactions.deleteOne({
+    _id,
+    userId: ctx.userId
+  });
+  if (result.deletedCount !== 1) {
+    logger.error("Transaction not found");
+    throw new Error("Transaction not found");
+  }
+  return true;
+};
+
+// apps/transactions/src/resolvers/get-transaction.ts
+var getTransaction = async (_, { _id }, ctx) => {
+  if (!ctx.userId) {
+    logger.error("Unauthorized access to getTransaction");
+    throw new Error("Unauthorized");
+  }
+  const transaction = await Transactions.findOne({
+    _id,
+    userId: ctx.userId
+  });
+  if (!transaction) {
+    logger.error(`Transaction with id ${_id} not found for user ${ctx.userId}`);
+    throw new Error("Transaction not found");
+  }
+  return transaction;
+};
+
+// apps/transactions/src/resolvers/update-transaction.ts
+var updateTransaction = async (_, { _id, input }, ctx) => {
+  if (!ctx.userId) {
+    logger.error("Unauthorized access to updateTransaction");
+    throw new Error("Unauthorized");
+  }
+  const transaction = await Transactions.findOneAndUpdate(
+    { _id, userId: ctx.userId },
+    { $set: input },
+    { new: true }
+  );
+  if (!transaction) {
+    logger.error("Transaction not found");
+    throw new Error("Transaction not found");
+  }
+  return transaction;
+};
+
+// apps/transactions/src/resolvers/list-transactions.ts
+var import_mongoose3 = require("mongoose");
+var listTransactions = async (_, { first, after }, { userId }) => {
+  if (!userId) {
+    logger.error("Unauthorized access to listTransactions");
+    throw new Error("Unauthorized");
+  }
+  const filter = {
+    userId
+  };
+  if (after) {
+    filter._id = {
+      $lt: new import_mongoose3.Types.ObjectId(after)
+    };
+  }
+  const limit = first + 1;
+  const docs = await Transactions.find(filter).sort({ _id: -1 }).limit(limit).lean();
+  const hasNextPage = docs.length === limit;
+  if (hasNextPage) {
+    docs.pop();
+  }
+  return {
+    edges: docs.map((doc) => ({
+      cursor: doc._id.toString(),
+      node: doc
+    })),
+    pageInfo: {
+      hasNextPage,
+      hasPreviousPage: false,
+      startCursor: docs.at(0)?._id.toString(),
+      endCursor: docs.at(-1)?._id.toString()
     }
-    return account;
-  } catch (error) {
-    logger.error("Error fetching account:", error);
-    throw new Error("Failed to fetch account");
-  }
+  };
 };
 
-// apps/accounts/src/resolvers/create-credit-card-account.ts
-var createCreditCardAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "CREDIT_CARD" /* CreditCard */,
-      ...args
-    });
-    return account;
-  } catch (error) {
-    logger.error("Error creating credit card account:", error);
-    throw new Error("Failed to create credit card account");
-  }
-};
-
-// apps/accounts/src/resolvers/create-loan-account.ts
-var createLoanAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "LOAN" /* Loan */,
-      ...args
-    });
-    return account;
-  } catch (error) {
-    logger.error("Error creating loan account:", error);
-    throw new Error("Failed to create loan account");
-  }
-};
-
-// apps/accounts/src/resolvers/create-savings-account.ts
-var createSavingsAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "SAVINGS" /* Savings */,
-      ...args
-    });
-    return account;
-  } catch (error) {
-    logger.error("Error creating savings account:", error);
-    throw new Error("Failed to create savings account");
-  }
-};
-
-// apps/accounts/src/resolvers/create-emi-account.ts
-var createEMIAccount = async (_parent, args, ctx) => {
-  try {
-    const account = await account_model_default.create({
-      userId: ctx.userId,
-      accountType: "EMI" /* Emi */,
-      ...args
-    });
-    return account;
-  } catch (error) {
-    logger.error("Error creating EMI account:", error);
-    throw new Error("Failed to create EMI account");
-  }
-};
-
-// apps/accounts/src/resolvers/index.ts
-var accountResolvers = {
+// apps/transactions/src/resolvers/index.ts
+var import_graphql_scalars = require("graphql-scalars");
+var resolvers = {
   ...import_graphql_scalars.resolvers,
   Query: {
-    listAccounts,
-    getAccount
+    getTransaction,
+    listTransactions
   },
   Mutation: {
-    createCreditCardAccount,
-    createLoanAccount,
-    createSavingsAccount,
-    createEMIAccount
+    createTransaction,
+    updateTransaction,
+    deleteTransaction
   },
-  Account: {
+  Transaction: {
     user: (parent) => {
       return { __typename: "User", _id: parent.userId };
     },
+    account: (parent) => {
+      return { __typename: "Account", _id: parent.accountId };
+    },
     __resolveReference: async (ref) => {
-      const account = await account_model_default.findById(ref._id);
-      return account;
+      const transaction = await Transactions.findById(ref._id);
+      return transaction;
     }
   }
 };
-var resolvers_default = accountResolvers;
+var resolvers_default = resolvers;
 
-// apps/accounts/src/main.ts
+// apps/transactions/src/main.ts
 var host = process.env.HOST ?? "localhost";
 var port = process.env.PORT ? Number(process.env.PORT) : 3e3;
 (async () => {
   const schema = (0, import_subgraph.buildSubgraphSchema)([
     {
       typeDefs: await loadTypeDefs(
-        import_node_path.default.join(__dirname, "schema", "accounts.graphql")
+        import_node_path.default.join(__dirname, "schema", "transactions.graphql")
       ),
       resolvers: resolvers_default
     }

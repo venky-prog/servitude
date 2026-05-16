@@ -10,7 +10,11 @@ export interface ITransactions extends Document<string> {
 
 interface ITransactionsMethods {}
 
-const transactionSchema = new mongoose.Schema<ITransactions, Model<ITransactions>, ITransactionsMethods>({
+const transactionSchema = new mongoose.Schema<
+  ITransactions,
+  Model<ITransactions>,
+  ITransactionsMethods
+>({
   accountId: { type: String, required: true },
   amount: { type: Number, required: true },
   date: { type: Date, required: true },

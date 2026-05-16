@@ -11,7 +11,7 @@ export const getTransaction: NonNullable<QueryResolvers['getTransaction']> = asy
         logger.error('Unauthorized access to getTransaction');
         throw new Error('Unauthorized');
     }
-    const transaction = await Transactions.find({
+    const transaction = await Transactions.findOne({
         _id,
         userId: ctx.userId
     });

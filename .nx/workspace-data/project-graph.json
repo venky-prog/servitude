@@ -100,11 +100,20 @@
               "format": [
                 "cjs"
               ],
-              "bundle": false,
+              "bundle": true,
               "main": "apps/transactions/src/main.ts",
               "tsConfig": "apps/transactions/tsconfig.app.json",
               "assets": [
-                "apps/transactions/src/assets"
+                {
+                  "input": "apps/transactions/src/assets",
+                  "glob": "**/*",
+                  "output": "./assets"
+                },
+                {
+                  "input": "apps/transactions/src/schema",
+                  "glob": "**/*",
+                  "output": "./schema"
+                }
               ],
               "generatePackageJson": true,
               "esbuildOptions": {
@@ -15999,12 +16008,42 @@
       },
       {
         "source": "transactions",
-        "target": "npm:express",
+        "target": "npm:graphql",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "config",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "npm:@apollo/server",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "database",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "npm:@apollo/subgraph",
         "type": "static"
       },
       {
         "source": "transactions",
         "target": "npm:mongoose",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "logger",
+        "type": "static"
+      },
+      {
+        "source": "transactions",
+        "target": "npm:graphql-scalars",
         "type": "static"
       }
     ],
@@ -41806,5 +41845,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778866526316
+  "computedAt": 1778929374972
 }

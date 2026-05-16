@@ -1,0 +1,32 @@
+> nx run transactions:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/5ec324e5-780e-4aed-90df-b1db7d4ae18e
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+2026-05-16T08:05:12.973Z [[31merror[39m]: Error: ENOENT: no such file or directory, open '/home/venky/repos/servitude/dist/apps/transactions/schema/accounts.graphql'
+    at open (node:internal/fs/promises:1281:25)
+    at readFile (node:internal/fs/promises:1929:14)
+    at loadTypeDefs (/home/venky/repos/servitude/libs/config/src/lib/load-typedefs.ts:7:22)
+    at /home/venky/repos/servitude/apps/transactions/src/main.ts:14:17
+[1m[31m
+[39m[22m
+[1m[31m/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/error/syntaxError.js:15
+  return new _GraphQLError.GraphQLError(`Syntax Error: ${description}`, {
+         ^
+[39m[22m
+[1m[31mGraphQLError: Syntax Error: Unexpected <EOF>.
+    at syntaxError (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/error/syntaxError.js:15:10)
+    at Parser.unexpected (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/language/parser.js:1583:41)
+    at Parser.parseDefinition (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/language/parser.js:264:16)
+    at Parser.many (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/language/parser.js:1636:26)
+    at Parser.parseDocument (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/language/parser.js:164:25)
+    at Object.parse (/home/venky/repos/servitude/node_modules/.pnpm/graphql@16.13.2/node_modules/graphql/language/parser.js:35:27)
+    at parseDocument (/home/venky/repos/servitude/node_modules/.pnpm/graphql-tag@2.12.6_graphql@16.13.2/node_modules/graphql-tag/src/index.ts:96:20)
+    at gql (/home/venky/repos/servitude/node_modules/.pnpm/graphql-tag@2.12.6_graphql@16.13.2/node_modules/graphql-tag/src/index.ts:134:10)
+    at loadTypeDefs (/home/venky/repos/servitude/libs/config/src/lib/load-typedefs.ts:11:12)
+    at /home/venky/repos/servitude/apps/transactions/src/main.ts:14:17
+[39m[22m
+
+[7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+

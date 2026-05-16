@@ -1,21 +1,109 @@
 {
   "run": {
-    "command": "nx codegen transactions",
-    "startTime": "2026-05-16T07:44:11.201Z",
-    "endTime": "2026-05-16T07:44:13.216Z",
+    "command": "nx run-many -t serve -p users -p transactions -p accounts",
+    "startTime": "2026-05-16T10:51:02.390Z",
+    "endTime": "2026-05-16T11:02:14.275Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "transactions:codegen",
-      "target": "codegen",
-      "projectName": "transactions",
-      "hash": "15682784410114918076",
-      "startTime": "2026-05-16T07:44:11.224Z",
-      "endTime": "2026-05-16T07:44:13.213Z",
+      "taskId": "logger:build",
+      "target": "build",
+      "projectName": "logger",
+      "hash": "9341637121113904725",
+      "startTime": "2026-05-16T10:51:02.406Z",
+      "endTime": "2026-05-16T10:51:03.788Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
+    },
+    {
+      "taskId": "database:build",
+      "target": "build",
+      "projectName": "database",
+      "hash": "3385835099260812658",
+      "startTime": "2026-05-16T10:51:03.800Z",
+      "endTime": "2026-05-16T10:51:05.293Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "config:build",
+      "target": "build",
+      "projectName": "config",
+      "hash": "7595331765416761693",
+      "startTime": "2026-05-16T10:51:03.800Z",
+      "endTime": "2026-05-16T10:51:05.529Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "accounts:build:production",
+      "target": "build",
+      "projectName": "accounts",
+      "hash": "16078639420811119746",
+      "startTime": "2026-05-16T10:51:05.535Z",
+      "endTime": "2026-05-16T10:51:08.484Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "transactions:build:production",
+      "target": "build",
+      "projectName": "transactions",
+      "hash": "6207509921785002914",
+      "startTime": "2026-05-16T10:51:05.535Z",
+      "endTime": "2026-05-16T10:51:08.515Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "users:build:production",
+      "target": "build",
+      "projectName": "users",
+      "hash": "11459480624441365062",
+      "startTime": "2026-05-16T10:51:05.535Z",
+      "endTime": "2026-05-16T10:51:08.591Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "accounts:serve:development",
+      "target": "serve",
+      "projectName": "accounts",
+      "hash": "4806830168274587717",
+      "startTime": "2026-05-16T10:51:08.490Z",
+      "endTime": "2026-05-16T11:02:14.265Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "transactions:serve:development",
+      "target": "serve",
+      "projectName": "transactions",
+      "hash": "5796264404000136647",
+      "startTime": "2026-05-16T10:51:08.521Z",
+      "endTime": "2026-05-16T11:02:14.270Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "users:serve:development",
+      "target": "serve",
+      "projectName": "users",
+      "hash": "3421730503320790107",
+      "startTime": "2026-05-16T10:51:08.597Z",
+      "endTime": "2026-05-16T11:02:14.274Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
     }
   ]
 }

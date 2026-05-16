@@ -26,6 +26,18 @@ type Mutation {
     date: Date!
     emiStartDate: Date!
     totalEMIs: Int!
+    emiAmount: Float!
+    totalAmount: Float!
+  ): Account!
+
+  createEMIAccount(
+    name: String!
+    lastFourDigits: String!
+    date: Date!
+    emiStartDate: Date!
+    totalEMIs: Int!
+    emiAmount: Float!
+    totalAmount: Float!
   ): Account!
 }
 
@@ -33,6 +45,7 @@ enum AccountType {
   SAVINGS
   CREDIT_CARD
   LOAN
+  EMI
 }
 
 input ListAccountsFilter {
@@ -72,6 +85,19 @@ type LoanAccount  {
   date: Date!
   emiStartDate: Date!
   totalEMIs: Int!
+  emiAmount: Float!
+  totalAmount: Float!
+}
+
+type EMIAccount  {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  date: Date!
+  emiStartDate: Date!
+  totalEMIs: Int!
+  emiAmount: Float!
+  totalAmount: Float!
 }
 
 extend type User @key(fields: "_id", resolvable: false) {  # 👈 resolvable: false = owned by user-service
