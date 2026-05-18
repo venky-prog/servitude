@@ -26,5 +26,5 @@ jobs:
 
       - name: Get effected apps
         id: get-effected-apps
-        run: echo "apps=$(nx show projects --affected --type=app --base=origin/main --head=HEAD)" >> $GITHUB_OUTPUT
+        run: echo "apps=$(nx show projects --affected --type=app --base=${{ github.event.before }} --head=${{ github.sha }})" >> $GITHUB_OUTPUT
         shell: bash

@@ -235,9 +235,9 @@ var login = async (parent, args, context) => {
 };
 
 // apps/users/src/resolvers/me.ts
-var me = async () => {
+var me = async (parent, args, { userId }) => {
   try {
-    const user = await user_model_default.findById("64b8c9e5f1a2c9b1d2e3f4a5").lean();
+    const user = await user_model_default.findById(userId).lean();
     if (!user) {
       throw new Error("User not found!");
     }
