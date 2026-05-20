@@ -1,0 +1,20 @@
+> nx run accounts:serve:development
+
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3001
+2026-05-16T14:49:12.595Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-16T14:49:22.610Z [[32minfo[39m]: Connected to MongoDB
+2026-05-16T16:24:19.058Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-16T16:24:29.066Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T07:03:46.056Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T07:03:56.073Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T07:51:48.524Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T07:51:58.549Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T08:45:24.377Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T08:45:34.400Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T13:23:39.245Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T13:23:48.303Z [[32minfo[39m]: Connected to MongoDB
+2026-05-18T14:03:27.932Z [[33mwarn[39m]: Disconnected from MongoDB

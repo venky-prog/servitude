@@ -1,8 +1,47 @@
 > nx run users:serve:development
 
-[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
+[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
 [1m[31mStarting inspector on localhost:9229 failed: address already in use
 [39m[22m
 Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
 [ ready ] http://localhost:3000
------------------------ from user service 69e7b269d9d92e31e9cd73b8
+2026-05-16T14:49:12.487Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-16T14:49:22.503Z [[32minfo[39m]: Connected to MongoDB
+2026-05-16T16:24:19.048Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-16T16:24:29.066Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T07:03:46.053Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T07:03:56.070Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T07:51:48.523Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T07:51:58.551Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T08:45:24.254Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T08:45:34.271Z [[32minfo[39m]: Connected to MongoDB
+2026-05-17T13:23:39.704Z [[33mwarn[39m]: Disconnected from MongoDB
+2026-05-17T13:23:48.833Z [[32minfo[39m]: Connected to MongoDB
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+2026-05-18T14:03:26.878Z [[33mwarn[39m]: Disconnected from MongoDB
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+2026-05-18T14:32:13.153Z [[31merror[39m]: MongooseServerSelectionError: connect EHOSTUNREACH 192.168.1.23:27017
+    at _handleConnectionErrors (/home/venky/repos/servitude/node_modules/.pnpm/mongoose@9.4.1_socks@2.8.9/node_modules/mongoose/lib/connection.js:1180:11)
+    at NativeConnection.openUri (/home/venky/repos/servitude/node_modules/.pnpm/mongoose@9.4.1_socks@2.8.9/node_modules/mongoose/lib/connection.js:1111:11)
+    at connectToDb (/home/venky/repos/servitude/libs/database/src/lib/connect-to-db.ts:9:5)
+    at /home/venky/repos/servitude/apps/users/src/main.ts:28:3
+[ ready ] http://localhost:3000
+/home/venky/repos/servitude/node_modules/.pnpm/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/@nx/js/src/executors/node/lib/coalescing-debounce.js:47
+                reject(new Error('Cancelled'));
+                       ^
+
+Error: Cancelled
+    at Object.cancel [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/[4m@nx/js[24m/src/executors/node/lib/coalescing-debounce.js:47:24[90m)[39m
+    at stopAllTasks [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/[4m@nx/js[24m/src/executors/node/node.impl.js:178:35[90m)[39m
+    at process.<anonymous> [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/@nx+js@22.6.5_@babel+traverse@7.29.0_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emn_ad47b4d30913e39b4fb61fa01aa2c6af/node_modules/[4m@nx/js[24m/src/executors/node/node.impl.js:191:19[90m)[39m
+[90m    at process.emit (node:events:509:20)[39m
+    at process.emit [90m(/home/venky/repos/servitude/[39mnode_modules/[4m.pnpm[24m/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/[4mnx[24m/src/native/index.js:29:23[90m)[39m
+
+Node.js v25.9.0

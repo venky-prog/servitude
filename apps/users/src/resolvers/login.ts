@@ -8,7 +8,7 @@ export const login: MutationResolvers['login'] = async (parent, args, context) =
     const user = await User.findOne({ email }).select('+password'); // Include password field for comparison
 
     if (!user) {
-        throw new Error('Invalid email or password');
+        throw new Error('Invalid credentials');
     }
 
     // Check if the password is correct

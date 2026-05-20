@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run-many -t serve -p users -p transactions -p accounts",
-    "startTime": "2026-05-16T10:51:02.390Z",
-    "endTime": "2026-05-16T11:02:14.275Z",
+    "startTime": "2026-05-16T11:02:46.184Z",
+    "endTime": "2026-05-20T13:44:51.338Z",
     "inner": false
   },
   "tasks": [
@@ -11,8 +11,8 @@
       "target": "build",
       "projectName": "logger",
       "hash": "9341637121113904725",
-      "startTime": "2026-05-16T10:51:02.406Z",
-      "endTime": "2026-05-16T10:51:03.788Z",
+      "startTime": "2026-05-16T11:02:46.195Z",
+      "endTime": "2026-05-16T11:02:47.370Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -22,8 +22,8 @@
       "target": "build",
       "projectName": "database",
       "hash": "3385835099260812658",
-      "startTime": "2026-05-16T10:51:03.800Z",
-      "endTime": "2026-05-16T10:51:05.293Z",
+      "startTime": "2026-05-16T11:02:47.380Z",
+      "endTime": "2026-05-16T11:02:48.822Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -33,19 +33,8 @@
       "target": "build",
       "projectName": "config",
       "hash": "7595331765416761693",
-      "startTime": "2026-05-16T10:51:03.800Z",
-      "endTime": "2026-05-16T10:51:05.529Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "accounts:build:production",
-      "target": "build",
-      "projectName": "accounts",
-      "hash": "16078639420811119746",
-      "startTime": "2026-05-16T10:51:05.535Z",
-      "endTime": "2026-05-16T10:51:08.484Z",
+      "startTime": "2026-05-16T11:02:47.380Z",
+      "endTime": "2026-05-16T11:02:49.090Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -55,8 +44,8 @@
       "target": "build",
       "projectName": "transactions",
       "hash": "6207509921785002914",
-      "startTime": "2026-05-16T10:51:05.535Z",
-      "endTime": "2026-05-16T10:51:08.515Z",
+      "startTime": "2026-05-16T11:02:49.098Z",
+      "endTime": "2026-05-16T11:02:52.449Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -66,30 +55,30 @@
       "target": "build",
       "projectName": "users",
       "hash": "11459480624441365062",
-      "startTime": "2026-05-16T10:51:05.535Z",
-      "endTime": "2026-05-16T10:51:08.591Z",
+      "startTime": "2026-05-16T11:02:49.098Z",
+      "endTime": "2026-05-16T11:02:52.450Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
     },
     {
-      "taskId": "accounts:serve:development",
-      "target": "serve",
+      "taskId": "accounts:build:production",
+      "target": "build",
       "projectName": "accounts",
-      "hash": "4806830168274587717",
-      "startTime": "2026-05-16T10:51:08.490Z",
-      "endTime": "2026-05-16T11:02:14.265Z",
+      "hash": "14958566546957054711",
+      "startTime": "2026-05-16T11:02:49.098Z",
+      "endTime": "2026-05-16T11:02:52.450Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     },
     {
       "taskId": "transactions:serve:development",
       "target": "serve",
       "projectName": "transactions",
       "hash": "5796264404000136647",
-      "startTime": "2026-05-16T10:51:08.521Z",
-      "endTime": "2026-05-16T11:02:14.270Z",
+      "startTime": "2026-05-16T11:02:52.457Z",
+      "endTime": "2026-05-20T13:44:51.187Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
@@ -99,8 +88,19 @@
       "target": "serve",
       "projectName": "users",
       "hash": "3421730503320790107",
-      "startTime": "2026-05-16T10:51:08.597Z",
-      "endTime": "2026-05-16T11:02:14.274Z",
+      "startTime": "2026-05-16T11:02:52.467Z",
+      "endTime": "2026-05-20T13:44:51.272Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    },
+    {
+      "taskId": "accounts:serve:development",
+      "target": "serve",
+      "projectName": "accounts",
+      "hash": "6849291008506428035",
+      "startTime": "2026-05-16T11:02:52.476Z",
+      "endTime": "2026-05-20T13:44:51.288Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

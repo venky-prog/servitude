@@ -1,9 +1,7 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
 
@@ -18,13 +16,44 @@ jobs:
   get-effected-apps:
     needs: install-dependencies
     runs-on: ubuntu-latest
+    outputs:
+      apps: ${{ steps.get-effected-apps.outputs.apps }}
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
       - name: Get effected apps
         id: get-effected-apps
-        run: echo "apps=$(nx show projects --affected --type=app --base=${{ github.event.before }} --head=${{ github.sha }})" >> $GITHUB_OUTPUT
+        run: | 
+          echo "apps=$(nx show projects --affected --type=app --base=${{ github.event.before }} --head=${{ github.sha }})" >> $GITHUB_OUTPUT
+          # nx show projects --affected --type=app --base=a56afc899175e97dedc612f8427385a4626a23e9 --head=7ec545a384009a0c57cef4b93dba2b388aa37aff
+        shell: bash
+  
+  release:
+    needs: get-effected-apps
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup node and pnpm
+        uses: ./.github/actions/setup-node-pnpm
+
+      - name: Release app
+        run: |
+          echo "Releasing affected apps... ${{ needs.get-effected-apps.outputs.apps }}"
+          APPS="${{ needs.get-effected-apps.outputs.apps }}"
+          if [ -z "$APPS" ]; then
+            echo "No affected apps found. Skipping release."
+            exit 0
+          fi
+
+          for APP in $APPS; do
+            echo "Releasing $APP..."
+            # pnpm nx run $APP:build:production
+          done
         shell: bash
