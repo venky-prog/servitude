@@ -13,31 +13,15 @@ jobs:
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
-      - name: Deploy
-        env:
-          SSH_KEY: ${{ secrets.SSH_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 142.171.139.158 >> ~/.ssh/known_hosts 2>/dev/null
-          # Then run your rsync or deployment command
-
-      - name: Debug SSH Key
-        run: |
-          echo "${{ secrets.SSH_KEY }}" > ssh_key
-          chmod 600 ssh_key
-
-          echo "First line:"
-          head -1 ssh_key
-
-          echo "Last line:"
-          tail -1 ssh_key
-
-          ssh-keygen -l -f ssh_key
 
       - name: Release app
         run: |
+          # Setup SSH key
+          mkdir -p ~/.ssh
+          echo "$SSH_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ vars.SERVER_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          
           echo "Getting apps with tag:subgraph..."
           apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
           echo "$apps"
