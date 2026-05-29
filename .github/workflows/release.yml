@@ -4,14 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  install-dependencies:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup node and pnpm
-        uses: ./.github/actions/setup-node-pnpm
-
   release:
     runs-on: ubuntu-latest
 
@@ -43,7 +35,7 @@ jobs:
 
           while IFS= read -r APP; do
             echo "Releasing $APP..."
-            
+
             echo "${{vars.SERVER_HOST}} - ${{vars.SERVER_USER}} - $APP - /${{ vars.SERVER_USER }}/${{ vars.SERVER_PATH }}/"
 
             pnpm nx run "$APP:build:production"
