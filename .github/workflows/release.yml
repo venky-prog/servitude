@@ -51,12 +51,12 @@ jobs:
           while IFS= read -r APP; do
             echo "Releasing $APP..."
 
-            echo "${{vars.SERVER_HOST}} - ${{vars.SERVER_USER}} - $APP - /${{ vars.SERVER_USER }}/${{ vars.SERVER_PATH }}/"
+            echo "${{vars.SERVER_HOST}} - ${{vars.SERVER_USER}} - $APP - /${{ vars.SERVER_USER }}/${{ vars.APPS_PATH }}/"
 
             pnpm nx run "$APP:build:production"
 
             rsync -avz \
               -e "ssh -i ~/.ssh/id_rsa" \
               ./dist/apps/"$APP"/ \
-              ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }}:/${{ vars.SERVER_USER }}/${{ vars.SERVER_PATH }}/
+              ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }}:/${{ vars.SERVER_USER }}/${{ vars.APPS_PATH }}/
           done <<< "$apps"
