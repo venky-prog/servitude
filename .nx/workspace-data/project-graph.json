@@ -217,7 +217,9 @@
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/transactions/src",
         "projectType": "application",
-        "tags": [],
+        "tags": [
+          "subgraph"
+        ],
         "implicitDependencies": []
       }
     },
@@ -563,7 +565,9 @@
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/accounts/src",
         "projectType": "application",
-        "tags": [],
+        "tags": [
+          "subgraph"
+        ],
         "implicitDependencies": []
       }
     },
@@ -1376,7 +1380,9 @@
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/users/src",
         "projectType": "application",
-        "tags": [],
+        "tags": [
+          "subgraph"
+        ],
         "implicitDependencies": []
       }
     }
@@ -41845,5 +41851,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778929374972
+  "computedAt": 1780059701593
 }

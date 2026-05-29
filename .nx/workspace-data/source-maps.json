@@ -152,6 +152,10 @@
       "apps/accounts/project.json",
       "nx/core/project-json"
     ],
+    "tags.subgraph": [
+      "apps/accounts/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build": [
       "apps/accounts/project.json",
       "nx/core/project-json"
@@ -912,6 +916,10 @@
       "apps/transactions/project.json",
       "nx/core/project-json"
     ],
+    "tags.subgraph": [
+      "apps/transactions/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build": [
       "apps/transactions/project.json",
       "nx/core/project-json"
@@ -1287,6 +1295,10 @@
       "nx/core/project-json"
     ],
     "tags": [
+      "apps/users/project.json",
+      "nx/core/project-json"
+    ],
+    "tags.subgraph": [
       "apps/users/project.json",
       "nx/core/project-json"
     ],

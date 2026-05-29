@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   install-dependencies:
     runs-on: ubuntu-latest
     steps:
@@ -13,28 +12,7 @@ jobs:
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
-  get-effected-apps:
-    needs: install-dependencies
-    runs-on: ubuntu-latest
-    outputs:
-      apps: ${{ steps.get-effected-apps.outputs.apps }}
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Setup node and pnpm
-        uses: ./.github/actions/setup-node-pnpm
-
-      - name: Get effected apps
-        id: get-effected-apps
-        run: | 
-          echo "apps=$(nx show projects --affected --type=app --base=${{ github.event.before }} --head=${{ github.sha }})" >> $GITHUB_OUTPUT
-          # nx show projects --affected --type=app --base=a56afc899175e97dedc612f8427385a4626a23e9 --head=7ec545a384009a0c57cef4b93dba2b388aa37aff
-        shell: bash
-  
   release:
-    needs: get-effected-apps
     runs-on: ubuntu-latest
 
     steps:
@@ -45,15 +23,23 @@ jobs:
 
       - name: Release app
         run: |
-          echo "Releasing affected apps... ${{ needs.get-effected-apps.outputs.apps }}"
-          APPS="${{ needs.get-effected-apps.outputs.apps }}"
-          if [ -z "$APPS" ]; then
-            echo "No affected apps found. Skipping release."
+          echo "Getting apps with tag:subgraph..."
+          apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
+          echo "$apps"
+
+          if [ -z "$apps" ]; then
             exit 0
           fi
 
-          for APP in $APPS; do
+          mkdir -p releases
+
+          while IFS= read -r APP; do
             echo "Releasing $APP..."
-            # pnpm nx run $APP:build:production
-          done
-        shell: bash
+
+            pnpm nx run "$APP:build:production"
+
+            rsync -avz \
+              -e "ssh -i ${{ secrets.SSH_KEY }}" \
+              ./dist/apps/"$APP"/ \
+              ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }}:${{ vars.SERVER_PATH }}/"$APP"/
+          done <<< "$apps"
