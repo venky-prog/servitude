@@ -15,12 +15,17 @@ jobs:
 
 
       - name: Release app
+        env: 
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SERVER_HOST: ${{ vars.SERVER_HOST }}
+          SERVER_USER: ${{ vars.SERVER_USER }}
+          APPS_PATH: ${{ vars.APPS_PATH }}
         run: |
           # Setup SSH key
           mkdir -p ~/.ssh
           echo "$SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ vars.SERVER_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          ssh-keyscan -H $SERVER_HOST >> ~/.ssh/known_hosts 2>/dev/null
           
           echo "Getting apps with tag:subgraph..."
           apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
@@ -35,12 +40,12 @@ jobs:
           while IFS= read -r APP; do
             echo "Releasing $APP..."
 
-            echo "${{vars.SERVER_HOST}} - ${{vars.SERVER_USER}} - $APP - /${{ vars.SERVER_USER }}/${{ vars.APPS_PATH }}/"
+            echo "$SERVER_HOST - $SERVER_USER - $APP - /$SERVER_USER/$APPS_PATH/"
 
             pnpm nx run "$APP:build:production"
 
             rsync -avz \
               -e "ssh -i ~/.ssh/id_rsa" \
               ./dist/apps/"$APP"/ \
-              ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }}:/${{ vars.SERVER_USER }}/${{ vars.APPS_PATH }}/
+              $SERVER_USER@$SERVER_HOST:/$SERVER_USER/$APPS_PATH/
           done <<< "$apps"
