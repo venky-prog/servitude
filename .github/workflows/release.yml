@@ -47,5 +47,5 @@ jobs:
             rsync -avz \
               -e "ssh -i ~/.ssh/id_rsa" \
               ./dist/apps/"$APP"/ \
-              $SERVER_USER@$SERVER_HOST:/$SERVER_USER/$APPS_PATH/
+              $SERVER_USER@$SERVER_HOST:/$SERVER_USER/$APPS_PATH/$APP/
           done <<< "$apps"
