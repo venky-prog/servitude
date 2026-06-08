@@ -51,7 +51,7 @@ jobs:
               --registry.accessToken "${HIVE_REGISTRY_TOKEN}" \
               --target ${HIVE_WORKSPACE}/${HIVE_PROJECT}/production \
               --service $APP \
-              ./apps/$APP/src/schema/$APP.graphql
+              ./apps/$APP/src/schema/$APP.graphql \
               --github
 
             rsync -avz \
