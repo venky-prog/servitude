@@ -48,8 +48,8 @@ jobs:
             pnpm nx run "$APP:build:production"
 
             pnpm hive schema:publish \
-              --registry.accessToken "${HIVE_REGISTRY_TOKEN}" \
-              --target ${HIVE_WORKSPACE}/${HIVE_PROJECT}/production \
+              --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
+              --target $HIVE_WORKSPACE/$HIVE_PROJECT/production \
               --service $APP \
               ./apps/$APP/src/schema/$APP.graphql \
               --github
