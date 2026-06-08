@@ -47,6 +47,15 @@ jobs:
 
             pnpm nx run "$APP:build:production"
 
+            echo "Publishing schema for $APP to Hive registry..."
+
+            echo "pnpm hive schema:publish \
+              --registry.accessToken \"$HIVE_REGISTRY_TOKEN\" \
+              --target $HIVE_WORKSPACE/$HIVE_PROJECT/production \
+              --service $APP \
+              ./apps/$APP/src/schema/$APP.graphql \
+              --github"
+
             pnpm hive schema:publish \
               --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
               --target $HIVE_WORKSPACE/$HIVE_PROJECT/production \
