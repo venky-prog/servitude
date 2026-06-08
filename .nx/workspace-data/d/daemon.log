@@ -23712,3 +23712,6 @@ DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-loc
 [NX v22.6.5 Daemon Server] - 2026-06-08T10:23:16.733Z - Closed a connection. Number of open connections: 2
 [NX v22.6.5 Daemon Server] - 2026-06-08T10:23:16.733Z - Received raw message of length 42
 [NX v22.6.5 Daemon Server] - 2026-06-08T10:23:16.734Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-06-08T11:02:52.201Z - [WATCHER]: .github/workflows/release.yml was modified
+[NX v22.6.5 Daemon Server] - 2026-06-08T11:02:52.205Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-06-08T11:02:52.206Z - [WATCHER]: Processing file changes in outputs

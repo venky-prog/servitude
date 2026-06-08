@@ -40,31 +40,26 @@ jobs:
 
           mkdir -p releases
 
-          while IFS= read -r APP; do
-            echo "Releasing $APP..."
+          apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
 
-            echo "$SERVER_HOST - $SERVER_USER - $APP - /$SERVER_USER/$APPS_PATH/"
+          ORDER="users accounts transactions"
 
-            pnpm nx run "$APP:build:production"
+          for APP in $ORDER; do
+            if echo "$apps" | grep -qx "$APP"; then
+              echo "Releasing $APP..."
 
-            echo "Publishing schema for $APP to Hive registry..."
+              pnpm nx run "$APP:build:production"
 
-            echo "pnpm hive schema:publish \
-              --registry.accessToken \"$HIVE_REGISTRY_TOKEN\" \
-              --target $HIVE_WORKSPACE/$HIVE_PROJECT/production \
-              --service $APP \
-              ./apps/$APP/src/schema/$APP.graphql \
-              --github"
+              pnpm hive schema:publish \
+                --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
+                --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
+                --service "$APP" \
+                "./apps/$APP/src/schema/$APP.graphql" \
+                --github
 
-            pnpm hive schema:publish \
-              --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
-              --target $HIVE_WORKSPACE/$HIVE_PROJECT/production \
-              --service $APP \
-              ./apps/$APP/src/schema/$APP.graphql \
-              --github
-
-            rsync -avz \
-              -e "ssh -i ~/.ssh/id_rsa" \
-              ./dist/apps/"$APP"/ \
-              $SERVER_USER@$SERVER_HOST:/$SERVER_USER/$APPS_PATH/$APP/
-          done <<< "$apps"
+              rsync -avz \
+                -e "ssh -i ~/.ssh/id_rsa" \
+                "./dist/apps/$APP/" \
+                "$SERVER_USER@$SERVER_HOST:/$SERVER_USER/$APPS_PATH/$APP/"
+            fi
+          done
