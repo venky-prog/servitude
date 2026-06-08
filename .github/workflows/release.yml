@@ -42,6 +42,8 @@ jobs:
 
           apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
 
+          echo "Token length: ${#HIVE_REGISTRY_TOKEN}"
+
           ORDER="users accounts transactions"
 
           for APP in $ORDER; do
