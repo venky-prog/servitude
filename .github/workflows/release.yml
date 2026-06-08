@@ -20,6 +20,9 @@ jobs:
           SERVER_HOST: ${{ vars.SERVER_HOST }}
           SERVER_USER: ${{ vars.SERVER_USER }}
           APPS_PATH: ${{ vars.APPS_PATH }}
+          HIVE_REGISTRY_TOKEN: ${{ secrets.HIVE_REGISTRY_TOKEN }}
+          HIVE_WORKSPACE: ${{ vars.HIVE_WORKSPACE }}
+          HIVE_PROJECT: ${{ vars.HIVE_PROJECT }}
         run: |
           # Setup SSH key
           mkdir -p ~/.ssh
@@ -43,6 +46,13 @@ jobs:
             echo "$SERVER_HOST - $SERVER_USER - $APP - /$SERVER_USER/$APPS_PATH/"
 
             pnpm nx run "$APP:build:production"
+
+            pnpm hive schema:publish \
+              --registry.accessToken "${HIVE_REGISTRY_TOKEN}" \
+              --target ${HIVE_WORKSPACE}/${HIVE_PROJECT}/production \
+              --service $APP \
+              ./apps/$APP/src/schema/$APP.graphql
+              --github
 
             rsync -avz \
               -e "ssh -i ~/.ssh/id_rsa" \
