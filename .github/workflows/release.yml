@@ -52,11 +52,19 @@ jobs:
 
               pnpm nx run "$APP:build:production"
 
+              echo "print schema check command"
+
+              echo "pnpm hive schema:check --registry.accessToken \"$HIVE_REGISTRY_TOKEN\" --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" ./apps/$APP/src/schema/$APP.graphql --service $APP"
+
               pnpm hive schema:check \                
                 --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 ./apps/$APP/src/schema/$APP.graphql \
                 --service $APP
+
+              echo "print schema publish command"
+
+              echo "pnpm hive schema:publish --registry.accessToken \"$HIVE_REGISTRY_TOKEN\" --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" --service \"$APP\" ./apps/$APP/src/schema/$APP.graphql --github"
 
               pnpm hive schema:publish \
                 --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
