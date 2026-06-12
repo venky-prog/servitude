@@ -13,14 +13,13 @@ jobs:
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
 
-
       - name: Release app
-        env: 
+        env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SERVER_HOST: ${{ vars.SERVER_HOST }}
           SERVER_USER: ${{ vars.SERVER_USER }}
           APPS_PATH: ${{ vars.APPS_PATH }}
-          HIVE_REGISTRY_TOKEN: ${{ secrets.HIVE_REGISTRY_TOKEN }}
+          HIVE_TOKEN: ${{ secrets.HIVE_TOKEN }}
           HIVE_WORKSPACE: ${{ vars.HIVE_WORKSPACE }}
           HIVE_PROJECT: ${{ vars.HIVE_PROJECT }}
         run: |
@@ -29,7 +28,7 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H $SERVER_HOST >> ~/.ssh/known_hosts 2>/dev/null
-          
+
           echo "Getting apps with tag:subgraph..."
           apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
           echo "$apps"
@@ -42,7 +41,7 @@ jobs:
 
           apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
 
-          echo "Token length: ${#HIVE_REGISTRY_TOKEN}"
+          echo "Token length: ${#HIVE_TOKEN}"
 
           ORDER="users accounts transactions"
 
@@ -54,20 +53,18 @@ jobs:
 
               echo "print schema check command"
 
-              echo "pnpm hive schema:check --registry.accessToken \"$HIVE_REGISTRY_TOKEN\" --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" ./apps/$APP/src/schema/$APP.graphql --service $APP"
+              echo "pnpm hive schema:check --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" ./apps/$APP/src/schema/$APP.graphql --service $APP"
 
-              pnpm hive schema:check \                
-                --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
+              pnpm hive schema:check \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 ./apps/$APP/src/schema/$APP.graphql \
                 --service $APP
 
               echo "print schema publish command"
 
-              echo "pnpm hive schema:publish --registry.accessToken \"$HIVE_REGISTRY_TOKEN\" --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" --service \"$APP\" ./apps/$APP/src/schema/$APP.graphql --github"
+              echo "pnpm hive schema:publish --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" --service \"$APP\" ./apps/$APP/src/schema/$APP.graphql --github"
 
               pnpm hive schema:publish \
-                --registry.accessToken "$HIVE_REGISTRY_TOKEN" \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 --service "$APP" \
                 "./apps/$APP/src/schema/$APP.graphql" \
