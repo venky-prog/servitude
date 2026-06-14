@@ -23,7 +23,6 @@ jobs:
           HIVE_WORKSPACE: ${{ vars.HIVE_WORKSPACE }}
           HIVE_PROJECT: ${{ vars.HIVE_PROJECT }}
         run: |
-          # Setup SSH key
           mkdir -p ~/.ssh
           echo "$SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
@@ -39,12 +38,9 @@ jobs:
 
           mkdir -p releases
 
-          apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
-
           echo "Token length: ${#HIVE_TOKEN}"
-          
+
           ORDER="users accounts transactions"
-          PORTS=("6000" "6001" "6002")
 
           declare -A SERVICE_PORTS
           SERVICE_PORTS["users"]=6000
@@ -52,14 +48,14 @@ jobs:
           SERVICE_PORTS["transactions"]=6002
 
           for APP in $ORDER; do
-            if echo "$apps" | grep -qx "$APP"; do
+            if echo "$apps" | grep -qx "$APP"; then
               echo "Releasing $APP..."
 
               pnpm nx run "$APP:build:production"
 
-              SERVICE_URL="http://$localhost:${SERVICE_PORTS[$APP]}/graphql"
+              SERVICE_URL="http://$SERVER_HOST:${SERVICE_PORTS[$APP]}/graphql"
 
-              echo "Running schema check for $APP..."
+              echo "Running schema check for $APP (url: $SERVICE_URL)..."
               pnpm hive schema:check \
                 --registry.accessToken "$HIVE_TOKEN" \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
