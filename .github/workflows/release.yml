@@ -57,7 +57,7 @@ jobs:
 
               pnpm nx run "$APP:build:production"
 
-              SERVICE_URL="http://$SERVER_HOST:${SERVICE_PORTS[$APP]}/graphql"
+              SERVICE_URL="http://$localhost:${SERVICE_PORTS[$APP]}/graphql"
 
               echo "Running schema check for $APP..."
               pnpm hive schema:check \
@@ -79,6 +79,6 @@ jobs:
               rsync -avz \
                 -e "ssh -i ~/.ssh/id_rsa" \
                 "./dist/apps/$APP/" \
-                "$SERVER_USER@$SERVER_HOST:/$SERVER_USER/$APPS_PATH/$APP/"
+                "$SERVER_USER@$SERVER_HOST:$APPS_PATH/$APP/"
             fi
           done
