@@ -67,8 +67,7 @@ jobs:
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 --service "$APP" \
                 --url "$SERVICE_URL" \
-                "./apps/$APP/src/schema/$APP.graphql" \
-                --github
+                "./apps/$APP/src/schema/$APP.graphql"
 
               rsync -avz \
                 -e "ssh -i ~/.ssh/id_rsa" \
