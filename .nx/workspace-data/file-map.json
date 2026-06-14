@@ -193,7 +193,7 @@
       },
       {
         "file": ".github/workflows/release.yml",
-        "hash": "3541103554500670947"
+        "hash": "7160920626575377249"
       },
       {
         "file": ".gitignore",
@@ -576,10 +576,6 @@
         "hash": "13523171150140489984"
       },
       {
-        "file": "supergraph.graphql",
-        "hash": "10212811778349138052"
-      },
-      {
         "file": "tmp/accounts/main-with-require-overrides.js",
         "hash": "1638951863890793903"
       },
@@ -601,14 +597,14 @@
       }
     ],
     "projectFileMap": {
-      "my-plugin": [
+      "database": [
         {
-          "file": "tools/my-plugin/README.md",
-          "hash": "12505939002744208438"
+          "file": "libs/database/README.md",
+          "hash": "9759918918454671098"
         },
         {
-          "file": "tools/my-plugin/eslint.config.mjs",
-          "hash": "15383257627638319511",
+          "file": "libs/database/eslint.config.mjs",
+          "hash": "4313095032450400554",
           "deps": [
             [
               "npm:jsonc-eslint-parser",
@@ -617,98 +613,345 @@
           ]
         },
         {
-          "file": "tools/my-plugin/executors.json",
-          "hash": "4576394550197882709"
+          "file": "libs/database/jest.config.cts",
+          "hash": "11308084085433635133"
         },
         {
-          "file": "tools/my-plugin/package.json",
-          "hash": "5482366254203684335",
+          "file": "libs/database/package.json",
+          "hash": "4642412792894219853",
           "deps": [
-            "npm:@nx/devkit",
             "npm:tslib"
           ]
         },
         {
-          "file": "tools/my-plugin/project.json",
-          "hash": "16540655493032823421"
+          "file": "libs/database/project.json",
+          "hash": "14086500527044851475"
         },
         {
-          "file": "tools/my-plugin/src/executors/apollo-codegen/apollo-codegen.spec.ts",
-          "hash": "16708176637181540978",
+          "file": "libs/database/src/index.ts",
+          "hash": "5340423904165830726"
+        },
+        {
+          "file": "libs/database/src/lib/connect-to-db.ts",
+          "hash": "11909466562024327927",
           "deps": [
-            "npm:@nx/devkit"
+            "npm:mongoose",
+            "logger"
           ]
         },
         {
-          "file": "tools/my-plugin/src/executors/apollo-codegen/apollo-codegen.ts",
-          "hash": "6568575205388343695",
+          "file": "libs/database/tsconfig.json",
+          "hash": "2840670722752396445"
+        },
+        {
+          "file": "libs/database/tsconfig.lib.json",
+          "hash": "13731893420473560347"
+        },
+        {
+          "file": "libs/database/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
+      "logger": [
+        {
+          "file": "libs/logger/README.md",
+          "hash": "12685608216422532280"
+        },
+        {
+          "file": "libs/logger/eslint.config.mjs",
+          "hash": "4313095032450400554",
           "deps": [
-            "npm:@nx/devkit"
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
           ]
         },
         {
-          "file": "tools/my-plugin/src/executors/apollo-codegen/schema.d.ts",
-          "hash": "1919283545202777730"
+          "file": "libs/logger/jest.config.cts",
+          "hash": "12959925153718810649"
         },
         {
-          "file": "tools/my-plugin/src/executors/apollo-codegen/schema.json",
-          "hash": "15492841523934152026"
-        },
-        {
-          "file": "tools/my-plugin/src/executors/schema-check/schema-check.spec.ts",
-          "hash": "3680092179459319490",
+          "file": "libs/logger/package.json",
+          "hash": "1273945434895725846",
           "deps": [
-            "npm:@nx/devkit"
+            "npm:tslib"
           ]
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-check/schema-check.ts",
-          "hash": "4127687617280758223",
+          "file": "libs/logger/project.json",
+          "hash": "2270570484216757549"
+        },
+        {
+          "file": "libs/logger/src/index.ts",
+          "hash": "6313578261647711379"
+        },
+        {
+          "file": "libs/logger/src/lib/logger.spec.ts",
+          "hash": "17203541498996544023"
+        },
+        {
+          "file": "libs/logger/src/lib/logger.ts",
+          "hash": "15163253527467129604",
           "deps": [
-            "npm:@nx/devkit"
+            "npm:winston"
           ]
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-check/schema.d.ts",
-          "hash": "2620662403201940374"
+          "file": "libs/logger/tsconfig.json",
+          "hash": "2840670722752396445"
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-check/schema.json",
-          "hash": "6264983075749852056"
+          "file": "libs/logger/tsconfig.lib.json",
+          "hash": "13731893420473560347"
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-publish/schema-publish.spec.ts",
-          "hash": "7895017212229849950",
+          "file": "libs/logger/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
+      "config": [
+        {
+          "file": "libs/config/README.md",
+          "hash": "14955561250727493101"
+        },
+        {
+          "file": "libs/config/eslint.config.mjs",
+          "hash": "4313095032450400554",
           "deps": [
-            "npm:@nx/devkit"
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
           ]
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-publish/schema-publish.ts",
-          "hash": "10109474561648466864",
+          "file": "libs/config/jest.config.cts",
+          "hash": "2038699535955830273"
+        },
+        {
+          "file": "libs/config/package.json",
+          "hash": "12504125438522643295",
           "deps": [
-            "npm:@nx/devkit"
+            "npm:tslib"
           ]
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-publish/schema.d.ts",
-          "hash": "12712459833474283605"
+          "file": "libs/config/project.json",
+          "hash": "10862052501756373461"
         },
         {
-          "file": "tools/my-plugin/src/executors/schema-publish/schema.json",
-          "hash": "9915424506399440256"
+          "file": "libs/config/src/index.ts",
+          "hash": "13800684883655633219"
         },
         {
-          "file": "tools/my-plugin/src/index.ts",
+          "file": "libs/config/src/lib/context.ts",
+          "hash": "11404985537623422237",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "libs/config/src/lib/create-app.ts",
+          "hash": "612274087564511245",
+          "deps": [
+            "npm:@apollo/server",
+            "npm:express",
+            "npm:@as-integrations/express5"
+          ]
+        },
+        {
+          "file": "libs/config/src/lib/errors.ts",
+          "hash": "14216318038320451072",
+          "deps": [
+            "npm:graphql"
+          ]
+        },
+        {
+          "file": "libs/config/src/lib/load-typedefs.ts",
+          "hash": "10230891378772991562",
+          "deps": [
+            "npm:graphql-tag",
+            "logger"
+          ]
+        },
+        {
+          "file": "libs/config/src/lib/token.ts",
+          "hash": "13234355041620954680",
+          "deps": [
+            "logger",
+            "npm:jose"
+          ]
+        },
+        {
+          "file": "libs/config/tsconfig.json",
+          "hash": "7450039135051461349"
+        },
+        {
+          "file": "libs/config/tsconfig.lib.json",
+          "hash": "13731893420473560347"
+        },
+        {
+          "file": "libs/config/tsconfig.spec.json",
+          "hash": "11011431583980985399"
+        }
+      ],
+      "gateway": [
+        {
+          "file": "apps/gateway/.env",
+          "hash": "825889980652007455"
+        },
+        {
+          "file": "apps/gateway/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/gateway/gateway.ts",
+          "hash": "18258258369952420795",
+          "deps": [
+            "npm:@graphql-hive/gateway"
+          ]
+        },
+        {
+          "file": "apps/gateway/project.json",
+          "hash": "12195552484118743995"
+        },
+        {
+          "file": "apps/gateway/src/assets/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
-          "file": "tools/my-plugin/tsconfig.json",
-          "hash": "14490782888307098276"
+          "file": "apps/gateway/src/compose.ts",
+          "hash": "6505330664910057717",
+          "deps": [
+            "npm:@theguild/federation-composition",
+            "npm:graphql-tag"
+          ]
         },
         {
-          "file": "tools/my-plugin/tsconfig.lib.json",
-          "hash": "12722383387264320257"
+          "file": "apps/gateway/src/supergraph.graphql",
+          "hash": "15922653423014356778"
+        },
+        {
+          "file": "apps/gateway/tsconfig.app.json",
+          "hash": "663763413802756907"
+        },
+        {
+          "file": "apps/gateway/tsconfig.json",
+          "hash": "3025378044812449119"
+        }
+      ],
+      "transactions": [
+        {
+          "file": "apps/transactions/.env",
+          "hash": "10024201480674881534"
+        },
+        {
+          "file": "apps/transactions/codegen.ts",
+          "hash": "7408596235073112350",
+          "deps": [
+            "npm:@graphql-codegen/cli"
+          ]
+        },
+        {
+          "file": "apps/transactions/eslint.config.mjs",
+          "hash": "2624537849564014525"
+        },
+        {
+          "file": "apps/transactions/jest.config.cts",
+          "hash": "8427008007628693271"
+        },
+        {
+          "file": "apps/transactions/project.json",
+          "hash": "717092153920830317"
+        },
+        {
+          "file": "apps/transactions/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/transactions/src/generated/graphql.ts",
+          "hash": "11373159130383275501",
+          "deps": [
+            "npm:graphql",
+            "config"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/main.ts",
+          "hash": "11904754524738130084",
+          "deps": [
+            "config",
+            "npm:@apollo/server",
+            "database",
+            "npm:@apollo/subgraph"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/models/transactions.model.ts",
+          "hash": "884150396007969681",
+          "deps": [
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/resolvers/create-transaction.ts",
+          "hash": "15925224981636075142",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/resolvers/delete-transaction.ts",
+          "hash": "17361285491935104100",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/resolvers/get-transaction.ts",
+          "hash": "10921766066500304532",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/resolvers/index.ts",
+          "hash": "16732429054479312709",
+          "deps": [
+            "npm:graphql-scalars"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/resolvers/list-transactions.ts",
+          "hash": "14863963510502070879",
+          "deps": [
+            "logger",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/resolvers/update-transaction.ts",
+          "hash": "8037751049733660829",
+          "deps": [
+            "logger"
+          ]
+        },
+        {
+          "file": "apps/transactions/src/schema/transactions.graphql",
+          "hash": "10353211770341081"
+        },
+        {
+          "file": "apps/transactions/tsconfig.app.json",
+          "hash": "808439928447687057"
+        },
+        {
+          "file": "apps/transactions/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/transactions/tsconfig.spec.json",
+          "hash": "11011431583980985399"
         }
       ],
       "accounts": [
@@ -830,14 +1073,14 @@
           "hash": "11011431583980985399"
         }
       ],
-      "logger": [
+      "my-plugin": [
         {
-          "file": "libs/logger/README.md",
-          "hash": "12685608216422532280"
+          "file": "tools/my-plugin/README.md",
+          "hash": "12505939002744208438"
         },
         {
-          "file": "libs/logger/eslint.config.mjs",
-          "hash": "4313095032450400554",
+          "file": "tools/my-plugin/eslint.config.mjs",
+          "hash": "15383257627638319511",
           "deps": [
             [
               "npm:jsonc-eslint-parser",
@@ -846,345 +1089,98 @@
           ]
         },
         {
-          "file": "libs/logger/jest.config.cts",
-          "hash": "12959925153718810649"
+          "file": "tools/my-plugin/executors.json",
+          "hash": "4576394550197882709"
         },
         {
-          "file": "libs/logger/package.json",
-          "hash": "1273945434895725846",
+          "file": "tools/my-plugin/package.json",
+          "hash": "5482366254203684335",
           "deps": [
+            "npm:@nx/devkit",
             "npm:tslib"
           ]
         },
         {
-          "file": "libs/logger/project.json",
-          "hash": "2270570484216757549"
+          "file": "tools/my-plugin/project.json",
+          "hash": "16540655493032823421"
         },
         {
-          "file": "libs/logger/src/index.ts",
-          "hash": "6313578261647711379"
-        },
-        {
-          "file": "libs/logger/src/lib/logger.spec.ts",
-          "hash": "17203541498996544023"
-        },
-        {
-          "file": "libs/logger/src/lib/logger.ts",
-          "hash": "15163253527467129604",
+          "file": "tools/my-plugin/src/executors/apollo-codegen/apollo-codegen.spec.ts",
+          "hash": "16708176637181540978",
           "deps": [
-            "npm:winston"
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "libs/logger/tsconfig.json",
-          "hash": "2840670722752396445"
-        },
-        {
-          "file": "libs/logger/tsconfig.lib.json",
-          "hash": "13731893420473560347"
-        },
-        {
-          "file": "libs/logger/tsconfig.spec.json",
-          "hash": "11011431583980985399"
-        }
-      ],
-      "database": [
-        {
-          "file": "libs/database/README.md",
-          "hash": "9759918918454671098"
-        },
-        {
-          "file": "libs/database/eslint.config.mjs",
-          "hash": "4313095032450400554",
+          "file": "tools/my-plugin/src/executors/apollo-codegen/apollo-codegen.ts",
+          "hash": "6568575205388343695",
           "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "libs/database/jest.config.cts",
-          "hash": "11308084085433635133"
+          "file": "tools/my-plugin/src/executors/apollo-codegen/schema.d.ts",
+          "hash": "1919283545202777730"
         },
         {
-          "file": "libs/database/package.json",
-          "hash": "4642412792894219853",
+          "file": "tools/my-plugin/src/executors/apollo-codegen/schema.json",
+          "hash": "15492841523934152026"
+        },
+        {
+          "file": "tools/my-plugin/src/executors/schema-check/schema-check.spec.ts",
+          "hash": "3680092179459319490",
           "deps": [
-            "npm:tslib"
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "libs/database/project.json",
-          "hash": "14086500527044851475"
-        },
-        {
-          "file": "libs/database/src/index.ts",
-          "hash": "5340423904165830726"
-        },
-        {
-          "file": "libs/database/src/lib/connect-to-db.ts",
-          "hash": "11909466562024327927",
+          "file": "tools/my-plugin/src/executors/schema-check/schema-check.ts",
+          "hash": "4127687617280758223",
           "deps": [
-            "npm:mongoose",
-            "logger"
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "libs/database/tsconfig.json",
-          "hash": "2840670722752396445"
+          "file": "tools/my-plugin/src/executors/schema-check/schema.d.ts",
+          "hash": "2620662403201940374"
         },
         {
-          "file": "libs/database/tsconfig.lib.json",
-          "hash": "13731893420473560347"
+          "file": "tools/my-plugin/src/executors/schema-check/schema.json",
+          "hash": "6264983075749852056"
         },
         {
-          "file": "libs/database/tsconfig.spec.json",
-          "hash": "11011431583980985399"
-        }
-      ],
-      "transactions": [
-        {
-          "file": "apps/transactions/.env",
-          "hash": "10024201480674881534"
-        },
-        {
-          "file": "apps/transactions/codegen.ts",
-          "hash": "7408596235073112350",
+          "file": "tools/my-plugin/src/executors/schema-publish/schema-publish.spec.ts",
+          "hash": "7895017212229849950",
           "deps": [
-            "npm:@graphql-codegen/cli"
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "apps/transactions/eslint.config.mjs",
-          "hash": "2624537849564014525"
+          "file": "tools/my-plugin/src/executors/schema-publish/schema-publish.ts",
+          "hash": "10109474561648466864",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
         },
         {
-          "file": "apps/transactions/jest.config.cts",
-          "hash": "8427008007628693271"
+          "file": "tools/my-plugin/src/executors/schema-publish/schema.d.ts",
+          "hash": "12712459833474283605"
         },
         {
-          "file": "apps/transactions/project.json",
-          "hash": "717092153920830317"
+          "file": "tools/my-plugin/src/executors/schema-publish/schema.json",
+          "hash": "9915424506399440256"
         },
         {
-          "file": "apps/transactions/src/assets/.gitkeep",
+          "file": "tools/my-plugin/src/index.ts",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/transactions/src/generated/graphql.ts",
-          "hash": "11373159130383275501",
-          "deps": [
-            "npm:graphql",
-            "config"
-          ]
+          "file": "tools/my-plugin/tsconfig.json",
+          "hash": "14490782888307098276"
         },
         {
-          "file": "apps/transactions/src/main.ts",
-          "hash": "11904754524738130084",
-          "deps": [
-            "config",
-            "npm:@apollo/server",
-            "database",
-            "npm:@apollo/subgraph"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/models/transactions.model.ts",
-          "hash": "884150396007969681",
-          "deps": [
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/resolvers/create-transaction.ts",
-          "hash": "15925224981636075142",
-          "deps": [
-            "logger"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/resolvers/delete-transaction.ts",
-          "hash": "17361285491935104100",
-          "deps": [
-            "logger"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/resolvers/get-transaction.ts",
-          "hash": "10921766066500304532",
-          "deps": [
-            "logger"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/resolvers/index.ts",
-          "hash": "16732429054479312709",
-          "deps": [
-            "npm:graphql-scalars"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/resolvers/list-transactions.ts",
-          "hash": "14863963510502070879",
-          "deps": [
-            "logger",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/resolvers/update-transaction.ts",
-          "hash": "8037751049733660829",
-          "deps": [
-            "logger"
-          ]
-        },
-        {
-          "file": "apps/transactions/src/schema/transactions.graphql",
-          "hash": "10353211770341081"
-        },
-        {
-          "file": "apps/transactions/tsconfig.app.json",
-          "hash": "808439928447687057"
-        },
-        {
-          "file": "apps/transactions/tsconfig.json",
-          "hash": "3490524966360018312"
-        },
-        {
-          "file": "apps/transactions/tsconfig.spec.json",
-          "hash": "11011431583980985399"
-        }
-      ],
-      "gateway": [
-        {
-          "file": "apps/gateway/.env",
-          "hash": "825889980652007455"
-        },
-        {
-          "file": "apps/gateway/eslint.config.mjs",
-          "hash": "2624537849564014525"
-        },
-        {
-          "file": "apps/gateway/gateway.ts",
-          "hash": "18258258369952420795",
-          "deps": [
-            "npm:@graphql-hive/gateway"
-          ]
-        },
-        {
-          "file": "apps/gateway/project.json",
-          "hash": "12195552484118743995"
-        },
-        {
-          "file": "apps/gateway/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/gateway/src/compose.ts",
-          "hash": "6505330664910057717",
-          "deps": [
-            "npm:@theguild/federation-composition",
-            "npm:graphql-tag"
-          ]
-        },
-        {
-          "file": "apps/gateway/src/supergraph.graphql",
-          "hash": "15922653423014356778"
-        },
-        {
-          "file": "apps/gateway/tsconfig.app.json",
-          "hash": "663763413802756907"
-        },
-        {
-          "file": "apps/gateway/tsconfig.json",
-          "hash": "3025378044812449119"
-        }
-      ],
-      "config": [
-        {
-          "file": "libs/config/README.md",
-          "hash": "14955561250727493101"
-        },
-        {
-          "file": "libs/config/eslint.config.mjs",
-          "hash": "4313095032450400554",
-          "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "libs/config/jest.config.cts",
-          "hash": "2038699535955830273"
-        },
-        {
-          "file": "libs/config/package.json",
-          "hash": "12504125438522643295",
-          "deps": [
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "libs/config/project.json",
-          "hash": "10862052501756373461"
-        },
-        {
-          "file": "libs/config/src/index.ts",
-          "hash": "13800684883655633219"
-        },
-        {
-          "file": "libs/config/src/lib/context.ts",
-          "hash": "11404985537623422237",
-          "deps": [
-            "npm:express"
-          ]
-        },
-        {
-          "file": "libs/config/src/lib/create-app.ts",
-          "hash": "612274087564511245",
-          "deps": [
-            "npm:@apollo/server",
-            "npm:express",
-            "npm:@as-integrations/express5"
-          ]
-        },
-        {
-          "file": "libs/config/src/lib/errors.ts",
-          "hash": "14216318038320451072",
-          "deps": [
-            "npm:graphql"
-          ]
-        },
-        {
-          "file": "libs/config/src/lib/load-typedefs.ts",
-          "hash": "10230891378772991562",
-          "deps": [
-            "npm:graphql-tag",
-            "logger"
-          ]
-        },
-        {
-          "file": "libs/config/src/lib/token.ts",
-          "hash": "13234355041620954680",
-          "deps": [
-            "logger",
-            "npm:jose"
-          ]
-        },
-        {
-          "file": "libs/config/tsconfig.json",
-          "hash": "7450039135051461349"
-        },
-        {
-          "file": "libs/config/tsconfig.lib.json",
-          "hash": "13731893420473560347"
-        },
-        {
-          "file": "libs/config/tsconfig.spec.json",
-          "hash": "11011431583980985399"
+          "file": "tools/my-plugin/tsconfig.lib.json",
+          "hash": "12722383387264320257"
         }
       ],
       "users": [

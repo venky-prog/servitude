@@ -42,31 +42,37 @@ jobs:
           apps=$(pnpm nx show projects --type=app --projects tag:subgraph)
 
           echo "Token length: ${#HIVE_TOKEN}"
-
+          
           ORDER="users accounts transactions"
+          PORTS=("6000" "6001" "6002")
+
+          declare -A SERVICE_PORTS
+          SERVICE_PORTS["users"]=6000
+          SERVICE_PORTS["accounts"]=6001
+          SERVICE_PORTS["transactions"]=6002
 
           for APP in $ORDER; do
-            if echo "$apps" | grep -qx "$APP"; then
+            if echo "$apps" | grep -qx "$APP"; do
               echo "Releasing $APP..."
 
               pnpm nx run "$APP:build:production"
 
-              echo "print schema check command"
+              SERVICE_URL="http://$SERVER_HOST:${SERVICE_PORTS[$APP]}/graphql"
 
-              echo "pnpm hive schema:check --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" ./apps/$APP/src/schema/$APP.graphql --service $APP"
-
+              echo "Running schema check for $APP..."
               pnpm hive schema:check \
-                --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
-                ./apps/$APP/src/schema/$APP.graphql \
-                --service $APP
-
-              echo "print schema publish command"
-
-              echo "pnpm hive schema:publish --target \"$HIVE_WORKSPACE/$HIVE_PROJECT/production\" --service \"$APP\" ./apps/$APP/src/schema/$APP.graphql --github"
-
-              pnpm hive schema:publish \
+                --registry.accessToken "$HIVE_TOKEN" \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 --service "$APP" \
+                --url "$SERVICE_URL" \
+                "./apps/$APP/src/schema/$APP.graphql"
+
+              echo "Running schema publish for $APP..."
+              pnpm hive schema:publish \
+                --registry.accessToken "$HIVE_TOKEN" \
+                --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
+                --service "$APP" \
+                --url "$SERVICE_URL" \
                 "./apps/$APP/src/schema/$APP.graphql" \
                 --github
 
