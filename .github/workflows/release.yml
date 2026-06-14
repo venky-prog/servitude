@@ -53,11 +53,10 @@ jobs:
 
               pnpm nx run "$APP:build:production"
 
-              SERVICE_URL="http://$SERVER_HOST:${SERVICE_PORTS[$APP]}/graphql"
+              SERVICE_URL="http://localhost:${SERVICE_PORTS[$APP]}/graphql"
 
               echo "Running schema check for $APP (url: $SERVICE_URL)..."
               pnpm hive schema:check \
-                --registry.accessToken "$HIVE_TOKEN" \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 --service "$APP" \
                 --url "$SERVICE_URL" \
@@ -65,7 +64,6 @@ jobs:
 
               echo "Running schema publish for $APP..."
               pnpm hive schema:publish \
-                --registry.accessToken "$HIVE_TOKEN" \
                 --target "$HIVE_WORKSPACE/$HIVE_PROJECT/production" \
                 --service "$APP" \
                 --url "$SERVICE_URL" \
