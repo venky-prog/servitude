@@ -20800,6 +20800,21 @@
     "type": "static"
   },
   {
+    "source": "npm:migrate-mongo",
+    "target": "npm:cli-table3",
+    "type": "static"
+  },
+  {
+    "source": "npm:migrate-mongo",
+    "target": "npm:commander",
+    "type": "static"
+  },
+  {
+    "source": "npm:migrate-mongo",
+    "target": "npm:mongodb",
+    "type": "static"
+  },
+  {
     "source": "npm:mime-types@2.1.35",
     "target": "npm:mime-db@1.52.0",
     "type": "static"

@@ -1,0 +1,15 @@
+> nx run users:serve:development
+
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mDebugger listening on ws://localhost:9229/f4b0cd50-3a3c-4fec-8825-d46ce3e2816b
+For help, see: https://nodejs.org/en/docs/inspector
+[39m[22m
+Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
+[ ready ] http://localhost:3000
+2026-06-19T14:51:44.354Z [[31merror[39m]: Error: User not found!
+    at me (/home/venky/repos/servitude/dist/apps/users/main.js:242:13)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+----------------------- from user service 69e7b269d9d92e31e9cd73b8
+2026-06-19T14:55:23.304Z [[31merror[39m]: Error: User not found!
+    at me (/home/venky/repos/servitude/dist/apps/users/main.js:242:13)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)

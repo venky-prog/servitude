@@ -33,6 +33,8 @@ input UpdateUserInput {
   lastName: String
   dob: String
   password: String
+  isEmailVerified: Boolean
+  isActive: Boolean
 }
 
 type User @key(fields: "_id") {
@@ -41,7 +43,8 @@ type User @key(fields: "_id") {
   firstName: String! @shareable
   lastName: String! @shareable
   dob: String! @shareable
-  
+  isEmailVerified: Boolean! @shareable
+  isActive: Boolean! @shareable
 }
 
 # (Subgraph schemas include

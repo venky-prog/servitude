@@ -11538,6 +11538,15 @@
         "hash": "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA=="
       }
     },
+    "npm:migrate-mongo": {
+      "type": "npm",
+      "name": "npm:migrate-mongo",
+      "data": {
+        "version": "14.0.7",
+        "packageName": "migrate-mongo",
+        "hash": "sha512-+p7XfJDNaXPTHeo7v/ldYmVLMy8xYda0KMXSqkMUzlVndS39rMGBQHfyLrdmOKMjgciWyWpjekXzRQuj1B7HqA=="
+      }
+    },
     "npm:mime-db@1.52.0": {
       "type": "npm",
       "name": "npm:mime-db@1.52.0",
@@ -18475,6 +18484,9 @@
     ],
     "micromatch@4.0.8": [
       "npm:micromatch"
+    ],
+    "migrate-mongo@14.0.7(mongodb@7.1.1(socks@2.8.9))": [
+      "npm:migrate-mongo"
     ],
     "mime-db@1.52.0": [
       "npm:mime-db@1.52.0"

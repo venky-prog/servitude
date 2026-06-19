@@ -12926,6 +12926,15 @@
         "hash": "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA=="
       }
     },
+    "npm:migrate-mongo": {
+      "type": "npm",
+      "name": "npm:migrate-mongo",
+      "data": {
+        "version": "14.0.7",
+        "packageName": "migrate-mongo",
+        "hash": "sha512-+p7XfJDNaXPTHeo7v/ldYmVLMy8xYda0KMXSqkMUzlVndS39rMGBQHfyLrdmOKMjgciWyWpjekXzRQuj1B7HqA=="
+      }
+    },
     "npm:mime-db@1.52.0": {
       "type": "npm",
       "name": "npm:mime-db@1.52.0",
@@ -38538,6 +38547,23 @@
         "type": "static"
       }
     ],
+    "npm:migrate-mongo": [
+      {
+        "source": "npm:migrate-mongo",
+        "target": "npm:cli-table3",
+        "type": "static"
+      },
+      {
+        "source": "npm:migrate-mongo",
+        "target": "npm:commander",
+        "type": "static"
+      },
+      {
+        "source": "npm:migrate-mongo",
+        "target": "npm:mongodb",
+        "type": "static"
+      }
+    ],
     "npm:mime-types@2.1.35": [
       {
         "source": "npm:mime-types@2.1.35",
@@ -41851,5 +41877,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1781801013963
+  "computedAt": 1781877955349
 }

@@ -8,6 +8,8 @@ interface IUser extends mongoose.Document<string> {
   email: string;
   password: string;
   dob: string;
+  isEmailVerified?: boolean;
+  isActive?: boolean;
 }
 
 interface IUserMethods {
@@ -37,6 +39,14 @@ const userSchema = new mongoose.Schema<IUser, Model<IUser>, IUserMethods>({
   dob: {
     type: String,
     required: true,
+  },
+  isEmailVerified: {
+    type: Boolean,
+    default: true,
+  },
+  isActive: {
+    type: Boolean,
+    default: true,
   },
 });
 
