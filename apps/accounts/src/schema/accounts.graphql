@@ -1,8 +1,8 @@
 scalar Date
 
 type Query {
-  listAccounts(filter: ListAccountsFilter): [Account!]!
-  getAccount(id: ID!): Account
+  listAccounts(filter: ListAccountsFilter): [AccountBase!]!
+  getAccount(id: ID!): AccountBase
 }
 
 type Mutation {
@@ -53,7 +53,7 @@ input ListAccountsFilter {
   offset: Int
 }
 
-type Account @key(fields: "_id") {
+interface AccountBase {
   _id: ID!
   name: String!
   accountType: AccountType!
@@ -62,26 +62,44 @@ type Account @key(fields: "_id") {
   lastFourDigits: String!
 }
 
-type SavingsAccount  {
+type Account implements AccountBase @key(fields: "_id") {
   _id: ID!
   name: String!
   accountType: AccountType!
+  userId: ID!
+  user: User
+  lastFourDigits: String!
+}
+
+type SavingsAccount implements AccountBase {
+  _id: ID!
+  name: String!
+  accountType: AccountType!
+  userId: ID!
+  user: User
+  lastFourDigits: String!
   interestRate: Float!
   balance: Float!
 }
 
-type CreditCardAccount  {
+type CreditCardAccount implements AccountBase {
   _id: ID!
   name: String!
   accountType: AccountType!
+  userId: ID!
+  user: User
+  lastFourDigits: String!
   limit: Float!
   billDate: Int!
 }
 
-type LoanAccount  {
+type LoanAccount implements AccountBase {
   _id: ID!
   name: String!
   accountType: AccountType!
+  userId: ID!
+  user: User
+  lastFourDigits: String!
   date: Date!
   emiStartDate: Date!
   totalEMIs: Int!
@@ -89,10 +107,13 @@ type LoanAccount  {
   totalAmount: Float!
 }
 
-type EMIAccount  {
+type EMIAccount implements AccountBase {
   _id: ID!
   name: String!
   accountType: AccountType!
+  userId: ID!
+  user: User
+  lastFourDigits: String!
   date: Date!
   emiStartDate: Date!
   totalEMIs: Int!

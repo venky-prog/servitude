@@ -1,65 +1,21 @@
 {
   "run": {
-    "command": "nx run users:serve",
-    "startTime": "2026-06-19T14:50:46.611Z",
-    "endTime": "2026-06-19T14:57:40.601Z",
+    "command": "nx run accounts:codegen",
+    "startTime": "2026-07-12T06:06:40.824Z",
+    "endTime": "2026-07-12T06:06:46.078Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "logger:build",
-      "target": "build",
-      "projectName": "logger",
-      "hash": "8797858864251291236",
-      "startTime": "2026-06-19T14:50:46.714Z",
-      "endTime": "2026-06-19T14:50:48.583Z",
+      "taskId": "accounts:codegen",
+      "target": "codegen",
+      "projectName": "accounts",
+      "hash": "15364449677433344356",
+      "startTime": "2026-07-12T06:06:40.906Z",
+      "endTime": "2026-07-12T06:06:46.074Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
-    },
-    {
-      "taskId": "database:build",
-      "target": "build",
-      "projectName": "database",
-      "hash": "4678276900099721927",
-      "startTime": "2026-06-19T14:50:48.593Z",
-      "endTime": "2026-06-19T14:50:50.621Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "config:build",
-      "target": "build",
-      "projectName": "config",
-      "hash": "13165812932156981992",
-      "startTime": "2026-06-19T14:50:48.593Z",
-      "endTime": "2026-06-19T14:50:51.013Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "users:build:production",
-      "target": "build",
-      "projectName": "users",
-      "hash": "17681252219050869283",
-      "startTime": "2026-06-19T14:50:51.021Z",
-      "endTime": "2026-06-19T14:50:52.096Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "users:serve:development",
-      "target": "serve",
-      "projectName": "users",
-      "hash": "17018529466145573160",
-      "startTime": "2026-06-19T14:50:52.104Z",
-      "endTime": "2026-06-19T14:57:40.600Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 1
     }
   ]
 }
