@@ -1,8 +1,8 @@
 scalar Date
 
 type Query {
-  listAccounts(filter: ListAccountsFilter): [AccountBase!]!
-  getAccount(id: ID!): AccountBase
+  listAccounts(filter: ListAccountsFilter): [Account!]!
+  getAccount(id: ID!): Account
 }
 
 type Mutation {
