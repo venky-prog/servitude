@@ -32937,3 +32937,1570 @@ DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-loc
 [NX v22.6.5 Daemon Server] - 2026-07-12T06:33:33.116Z - Closed a connection. Number of open connections: 2
 [NX v22.6.5 Daemon Server] - 2026-07-12T06:33:33.116Z - Received raw message of length 42
 [NX v22.6.5 Daemon Server] - 2026-07-12T06:33:33.116Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:00.665Z - [WATCHER]: apps/accounts/src/schema/accounts.graphql was modified
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:00.666Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:00.666Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.068Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.068Z - [REQUEST]: apps/accounts/src/schema/accounts.graphql
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.068Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.181Z - Time taken for 'hash changed files from watcher' 1.4066610001027584ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.581Z - Time taken for 'start-plugin-worker:nx/core/package-json' 426.7583939996548ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.584Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 477.961457000114ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.585Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 447.77944599976763ms
+Time taken for 'plugin worker 23806 code loading' 260.833359ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.591Z - Time taken for 'start-plugin-worker:nx/core/project-json' 422.3237459999509ms
+Time taken for 'plugin worker 23795 code loading' 285.835453ms
+Time taken for 'plugin worker 23793 code loading' 307.283122ms
+Time taken for 'plugin worker 23811 code loading' 275.645848ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.607Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 482.6062719998881ms
+Time taken for 'plugin worker 23794 code loading' 325.537153ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 16.00795100000005ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.783Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.783Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.784Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.784Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.786Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.786Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.787Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.816Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.816Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.816Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.816Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.818Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.818Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.819Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.13363300000003164ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.906Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.906Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.929Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.929Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.929Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.929Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.929Z - Handled json message HASH_GLOB. Handling time: 23. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:01.930Z - [Messenger] Received message, length: 136
+Time taken for 'daemon-message-serialization-GLOB' 0.29293300000006184ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.938Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.938Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.999Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.999Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:01.999Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.000Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.000Z - Handled json message GLOB. Handling time: 60. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:02.000Z - [Messenger] Received message, length: 4349
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.002Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:02.006Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:02.007Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.008Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.008Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.068Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.069Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.069Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.069Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.069Z - Handled json message HASH_GLOB. Handling time: 60. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:02.070Z - [Messenger] Received message, length: 382
+Time taken for 'GLOB round trip' 183.14351699999997ms
+Time taken for 'deserialize daemon response - GLOB' 0.5681260000000066ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.30583999999998923ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.257Z - Time taken for 'build-project-configs' 1148.158092000056ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.257Z - Time taken for 'createNodes:merge' 3.2498010001145303ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.257Z - Time taken for 'get-all-workspace-files' 0.21250199992209673ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.272Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.295Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.295Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.295Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.295Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.303Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.304Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.305Z - Time taken for 'total execution time for createProjectGraph()' 44.34705500025302ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.305Z - Time taken for 'createDependencies' 38.13973299972713ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.305Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 38.02075899997726ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.305Z - Time taken for 'createMetadata' 0.026903999969363213ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.305Z - Time taken for 'serialize graph' 4.00322400033474ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.309Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:02.310Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 0. Response time: 15.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:02.311Z - [Messenger] Received message, length: 924215
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.326Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.326Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.326Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.326Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.326Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.327Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.327Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.327Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.327Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.327Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.327Z - [Messenger] Received message, length: 20495
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.327Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.349Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.350Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.353Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.353Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.354Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.354Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.354Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.354Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:37:03.354Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.355Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:37:03.355Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.656Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.656Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.657Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.661Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.662Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.662Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.663Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.664Z - [Messenger] Sending message type: GET_NX_CONSOLE_STATUS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.665Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.806Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.806Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.806Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.806Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.806Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.807Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.807Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.807Z - [Messenger] Received message, length: 22
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.995Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:35.995Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.996Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:35.999Z - Time taken for 'total for creating and serializing project graph' 0.6037610000930727ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.003Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.003Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 7.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:36.005Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:36.017Z - [Messenger] Sending message type: PRE_TASKS_EXECUTION
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:36.018Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.018Z - Received raw message of length 747
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.018Z - Received json message of type PRE_TASKS_EXECUTION
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.019Z - Serializing response for PRE_TASKS_EXECUTION message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.019Z - Responding to PRE_TASKS_EXECUTION message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.019Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.019Z - Done responding to the client handleRunPreTasksExecution
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.019Z - Handled json message PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.019Z - Time taken for 'preTasksExecution' 0.37787700025364757ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:36.020Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:36.025Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.151Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.159Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.160Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.161Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.161Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.161Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.163Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.164Z - [Messenger] Sending message type: GET_NX_CONSOLE_STATUS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.166Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.294Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.295Z - [Messenger] Received message, length: 22
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.366Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.366Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.367Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.367Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.367Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.367Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.368Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.368Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.368Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.370Z - Time taken for 'total for creating and serializing project graph' 0.5597859998233616ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.372Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.372Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 4.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.374Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.384Z - [Messenger] Sending message type: PRE_TASKS_EXECUTION
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.385Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.385Z - Received raw message of length 749
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.385Z - Received json message of type PRE_TASKS_EXECUTION
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.386Z - Serializing response for PRE_TASKS_EXECUTION message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.386Z - Responding to PRE_TASKS_EXECUTION message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.386Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.386Z - Done responding to the client handleRunPreTasksExecution
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.386Z - Handled json message PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.386Z - Time taken for 'preTasksExecution' 0.3719730000011623ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.388Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.533Z - [Messenger] Sending message type: HASH_TASKS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.534Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.534Z - Received raw message of length 10593
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.534Z - Received json message of type HASH_TASKS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.535Z - Reusing in-memory cached project graph because no files changed.
+DEBUG nx::native::tasks::hash_planner: get_plans_internal COMPLETED in 11.340249ms - processed 5 tasks (setup: 4.715884ms, parallel_planning: 6.614957ms)
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset with inputs: Adding "8162517705973769566" (".gitignore") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset with inputs: Adding "14069730223483982355" ("nx.json") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset with inputs: Hash Value: "3726993059139817862"
+DEBUG nx::native::tasks::task_hasher: hash_plans COMPLETED in 15.119271ms - processed 5 plans (setup: 761.848µs, hashing: 14.355453ms, assembly: 4.273704ms)
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.582Z - Serializing response for HASH_TASKS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.583Z - Responding to HASH_TASKS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.583Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.583Z - Done responding to the client handleHashTasks
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.583Z - Handled json message HASH_TASKS. Handling time: 48. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.584Z - [Messenger] Received message, length: 135608
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.627Z - [Messenger] Sending message type: GET_ESTIMATED_TASK_TIMINGS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.628Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.628Z - Received raw message of length 304
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.628Z - Received json message of type GET_ESTIMATED_TASK_TIMINGS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.629Z - Serializing response for GET_ESTIMATED_TASK_TIMINGS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.629Z - Responding to GET_ESTIMATED_TASK_TIMINGS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.629Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.629Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:40.629Z - Handled json message GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:40.631Z - [Messenger] Received message, length: 104
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:41.872Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:41.875Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 8 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:41.876Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:41.977Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:41.977Z - [REQUEST]: tmp/libs/logger/build/tsconfig.generated.559af657-0cf9-401a-b558-622053a5eea8.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:41.977Z - [REQUEST]: dist/libs/logger/src/index.js,dist/libs/logger/src/lib/logger.js,dist/libs/logger/libs/logger/README.md,dist/libs/logger/src/index.js.map,dist/libs/logger/package.json,dist/libs/logger/src/lib/logger.js.map,dist/libs/logger/src/index.d.ts,dist/libs/logger/src/lib/logger.d.ts
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.091Z - Time taken for 'hash changed files from watcher' 0.798638999927789ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.442Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 442.7148219998926ms
+Time taken for 'plugin worker 24571 code loading' 242.63731400000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.453Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 430.2630410003476ms
+Time taken for 'plugin worker 24572 code loading' 252.308486ms
+Time taken for 'plugin worker 24573 code loading' 242.80432700000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.466Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 425.52743799984455ms
+Time taken for 'plugin worker 24584 code loading' 240.72305599999999ms
+Time taken for 'plugin worker 24586 code loading' 237.32394399999998ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.488Z - Time taken for 'start-plugin-worker:nx/core/package-json' 427.36208599992096ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.488Z - Time taken for 'start-plugin-worker:nx/core/project-json' 411.191368999891ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 16.893723999999906ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.750Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.750Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.750Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.750Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.768Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.768Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.769Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.818Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.818Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.819Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.819Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.820Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.820Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.821Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.18962099999998827ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.938Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.939Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.959Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.959Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.959Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.959Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.959Z - Handled json message HASH_GLOB. Handling time: 20. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.959Z - [Messenger] Received message, length: 136
+Time taken for 'daemon-message-serialization-GLOB' 0.1247920000000704ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.961Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.961Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.965Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.965Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.965Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.965Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.965Z - Handled json message GLOB. Handling time: 4. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.966Z - [Messenger] Received message, length: 4207
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.968Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:42.969Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.969Z - Received raw message of length 1507
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:42.969Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.015Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.015Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.015Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.015Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.015Z - Handled json message HASH_GLOB. Handling time: 46. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.015Z - [Messenger] Received message, length: 361
+Time taken for 'GLOB round trip' 145.86196799999993ms
+Time taken for 'deserialize daemon response - GLOB' 0.1740740000000187ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.13305900000000292ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.017Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.354Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.354Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.355Z - Received raw message of length 99
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.355Z - Received json message of type RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.361Z - Serializing response for RECORD_OUTPUTS_HASH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.361Z - Responding to RECORD_OUTPUTS_HASH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.361Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.362Z - Done responding to the client recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.362Z - Handled json message RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.362Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.363Z - [WATCHER]: 8 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.363Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.363Z - [WATCHER]: Processing file changes in outputs
+Time taken for 'HASH_MULTI_GLOB round trip' 47.414895ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.07396099999994021ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.465Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.465Z - [REQUEST]: tmp/libs/logger/build/tsconfig.generated.559af657-0cf9-401a-b558-622053a5eea8.json,dist/libs/logger/src/index.d.ts,dist/libs/logger/src/lib/logger.d.ts,dist/libs/logger/src/lib/logger.js.map,dist/libs/logger/src/index.js,dist/libs/logger/package.json,dist/libs/logger/src/index.js.map,dist/libs/logger/README.md,dist/libs/logger/src/lib/logger.js
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.465Z - [REQUEST]: dist/libs/logger/libs/logger/README.md
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.543Z - Time taken for 'hash changed files from watcher' 1.6007039998658001ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 12.614827000000105ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.834Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 343.17136600008234ms
+Time taken for 'plugin worker 24796 code loading' 194.34203100000002ms
+Time taken for 'plugin worker 24797 code loading' 187.96074900000002ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.855Z - Time taken for 'start-plugin-worker:nx/core/package-json' 344.0706670000218ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.883Z - Time taken for 'start-plugin-worker:nx/core/project-json' 356.13660300010815ms
+Time taken for 'plugin worker 24803 code loading' 203.53747400000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.996Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.997Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:43.997Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.998Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.999Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:43.999Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:44.000Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.16260799999997744ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.154Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.154Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.173Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.173Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.173Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.173Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.173Z - Handled json message HASH_GLOB. Handling time: 19. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:44.173Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.186Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.517Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 28 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.518Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.518Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.620Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.620Z - [REQUEST]: tmp/libs/logger/build/tsconfig.generated.559af657-0cf9-401a-b558-622053a5eea8.json,dist/libs/logger/src/index.d.ts,dist/libs/logger/src/lib/logger.d.ts,dist/libs/logger/src/lib/logger.js.map,dist/libs/logger/src/index.js,dist/libs/logger/package.json,dist/libs/logger/src/index.js.map,dist/libs/logger/README.md,dist/libs/logger/src/lib/logger.js,tmp/libs/database/build/tsconfig.generated.71944ec7-470b-4321-9323-ff76e38d744e.json,tmp/libs/config/build/tsconfig.generated.d7b1d032-2e79-4f53-b105-342abb323673.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.620Z - [REQUEST]: dist/libs/logger/libs/logger/README.md,dist/libs/database/src/index.js,dist/libs/config/libs/config/README.md,dist/libs/config/src/lib/errors.d.ts,dist/libs/config/package.json,dist/libs/config/src/lib/create-app.js,dist/libs/config/src/lib/create-app.js.map,dist/libs/config/src/index.js,dist/libs/config/src/lib/load-typedefs.js,dist/libs/config/src/lib/token.js.map,dist/libs/database/src/lib/connect-to-db.js.map,dist/libs/config/src/index.js.map,dist/libs/config/src/lib/load-typedefs.js.map,dist/libs/database/src/lib/connect-to-db.js,dist/libs/config/src/lib/context.js,dist/libs/config/src/lib/context.d.ts,dist/libs/database/package.json,dist/libs/config/src/lib/token.js,dist/libs/config/src/lib/token.d.ts,dist/libs/config/src/lib/errors.js,dist/libs/database/src/lib/connect-to-db.d.ts,dist/libs/config/src/lib/errors.js.map,dist/libs/database/src/index.js.map,dist/libs/config/src/lib/context.js.map,dist/libs/database/libs/database/README.md,dist/libs/config/src/index.d.ts,dist/libs/database/src/index.d.ts,dist/libs/config/src/lib/create-app.d.ts,dist/libs/config/src/lib/load-typedefs.d.ts
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:44.695Z - Time taken for 'hash changed files from watcher' 2.0597089999355376ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 10.770440000000235ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:45.273Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:45.253Z - Time taken for 'build-project-configs' 616.0104789999314ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:38:48.251Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:48.172Z - Time taken for 'createNodes:merge' 6.320043999701738ms
+Time taken for '@nx/eslint/plugin:createNodes' 2433.75888ms
+Time taken for 'daemon-message-serialization-GLOB' 179.42785300000014ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:38:56.709Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:39:01.561Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:39:03.309Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:39:07.792Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:39:12.739Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:39:13.334Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:39:13.510Z - Handled json message GLOB. Handling time: 854. Response time: 10225.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:39:13.577Z - [Messenger] Received message, length: 3717
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:39:17.638Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:39:25.364Z - [Messenger] Message sent
+Creating project graph nodes with 5 plugins
+Creating project graph nodes with 5 plugins
+Time taken for 'GLOB round trip' 31778.678910999995ms
+Time taken for 'deserialize daemon response - GLOB' 199.14879599999404ms
+Time taken for 'daemon-message-serialization-GLOB' 3325.8476979999978ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:18.029Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:25.345Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.558Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.594Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.595Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.595Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.595Z - Handled json message GLOB. Handling time: 497. Response time: 37.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.596Z - [Messenger] Received message, length: 3717
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.601Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.602Z - [Messenger] Message sent
+Time taken for 'GLOB round trip' 69015.053361ms
+Time taken for 'deserialize daemon response - GLOB' 0.08213500000420026ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.143685999995796ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.609Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.609Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.630Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.630Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.630Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.631Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.631Z - Handled json message HASH_GLOB. Handling time: 21. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.631Z - [Messenger] Received message, length: 384
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.633Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.634Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.634Z - Received raw message of length 1427
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.634Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.641Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.641Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.641Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.642Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.642Z - Handled json message HASH_GLOB. Handling time: 7. Response time: 1.
+Time taken for 'HASH_MULTI_GLOB round trip' 29.905998999995063ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.050243999998201616ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.11041900000418536ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.661Z - [Messenger] Sending message type: RECORD_TASK_RUNS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.661Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.662Z - Received raw message of length 541
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.662Z - Received json message of type RECORD_TASK_RUNS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.678Z - Serializing response for RECORD_TASK_RUNS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.678Z - Responding to RECORD_TASK_RUNS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.678Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.678Z - Done responding to the client handleRecordTaskRuns
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.678Z - Handled json message RECORD_TASK_RUNS. Handling time: 16. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.688Z - [Messenger] Received message, length: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.691Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 102046.86473700032ms
+Time taken for 'plugin worker 24955 code loading' 101813.749295ms
+Time taken for 'plugin worker 24956 code loading' 101821.85609300001ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.703Z - Time taken for 'start-plugin-worker:nx/core/package-json' 102037.85128000006ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:26.714Z - [Messenger] Received message, length: 338
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.718Z - Time taken for 'build-project-configs' 102081.16139600007ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.718Z - Time taken for 'createNodes:merge' 3.401386999990791ms
+Time taken for '@nx/eslint/plugin:createNodes' 101447.462323ms
+Time taken for 'HASH_MULTI_GLOB round trip' 81.8602350000001ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.05470999999670312ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.722Z - Time taken for 'start-plugin-worker:nx/core/project-json' 102041.98227500031ms
+Time taken for 'plugin worker 24957 code loading' 101842.907687ms
+Creating project graph nodes with 3 plugins
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:26.789Z - Closed a connection. Number of open connections: 3
+Creating project graph nodes with 2 plugins
+Creating project graph nodes with @nx/jest/plugin
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.231Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.231Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.232Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.232Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.255Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.256Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.256Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.11206400000082795ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.348Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.348Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.367Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.367Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.367Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.367Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.367Z - Handled json message HASH_GLOB. Handling time: 18. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.368Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.384Z - Time taken for 'build-project-configs' 102737.186094ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.384Z - Time taken for 'createNodes:merge' 2.1566579998470843ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.384Z - Time taken for 'get-all-workspace-files' 0.17527900030836463ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.393Z - Closed a connection. Number of open connections: 3
+Time taken for 'build typescript dependencies' 0.39058000000659376ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.412Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.412Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.412Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.413Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.416Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.416Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.417Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.418Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.418Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.418Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.418Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.418Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.418Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.440Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.441Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.441Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.445Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.445Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.445Z - Time taken for 'total execution time for createProjectGraph()' 33.053132000379264ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.445Z - Time taken for 'createDependencies' 26.70859199995175ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.445Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 26.57702900003642ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.446Z - Time taken for 'createMetadata' 0.02546000014990568ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.446Z - Time taken for 'serialize graph' 4.208901000209153ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.454Z - [Messenger] Received message, length: 924215
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.493Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.493Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 0. Response time: 80.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.498Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.498Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.498Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 0. Response time: 80.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:27.498Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 23. Response time: 57.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.500Z - [Messenger] Received message, length: 924215
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:27.507Z - [Messenger] Received message, length: 924215
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.519Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.519Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.519Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.520Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.521Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.521Z - [Messenger] Received message, length: 18661
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.644Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.644Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.648Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.648Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.648Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:28.648Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.648Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.651Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.651Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.651Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:28.651Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:43.472Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.560Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.566Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.566Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.566Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.566Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.567Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.579Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.580Z - [Messenger] Sending message type: GET_NX_CONSOLE_STATUS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.582Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.712Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.713Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.713Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.713Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.713Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.713Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.713Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.714Z - [Messenger] Received message, length: 22
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.960Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.961Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.961Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.961Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.961Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.962Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.962Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.962Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.962Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.964Z - Time taken for 'total for creating and serializing project graph' 0.9145929999649525ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.968Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.968Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 6.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.970Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.983Z - [Messenger] Sending message type: PRE_TASKS_EXECUTION
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.983Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.984Z - Received raw message of length 750
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.984Z - Received json message of type PRE_TASKS_EXECUTION
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.984Z - Serializing response for PRE_TASKS_EXECUTION message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.985Z - Responding to PRE_TASKS_EXECUTION message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.985Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.985Z - Done responding to the client handleRunPreTasksExecution
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.985Z - Handled json message PRE_TASKS_EXECUTION. Handling time: 0. Response time: 1.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:47.985Z - Time taken for 'preTasksExecution' 0.39860299974679947ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:47.987Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:48.108Z - [Messenger] Sending message type: HASH_TASKS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:48.108Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.109Z - Received raw message of length 10588
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.110Z - Received json message of type HASH_TASKS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.110Z - Reusing in-memory cached project graph because no files changed.
+DEBUG nx::native::tasks::hash_planner: get_plans_internal COMPLETED in 16.408589ms - processed 5 tasks (setup: 6.535273ms, parallel_planning: 9.863287ms)
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset with inputs: Adding "8162517705973769566" (".gitignore") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset with inputs: Adding "14069730223483982355" ("nx.json") to hash
+DEBUG nx::native::tasks::hashers::hash_workspace_files: Hashing workspace fileset with inputs: Hash Value: "3726993059139817862"
+DEBUG nx::native::tasks::task_hasher: hash_plans COMPLETED in 21.026977ms - processed 5 plans (setup: 1.071496ms, hashing: 19.952949ms, assembly: 4.570311ms)
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.169Z - Serializing response for HASH_TASKS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.170Z - Responding to HASH_TASKS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.170Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.171Z - Done responding to the client handleHashTasks
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.171Z - Handled json message HASH_TASKS. Handling time: 59. Response time: 2.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:48.171Z - [Messenger] Received message, length: 135608
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:48.209Z - [Messenger] Sending message type: GET_ESTIMATED_TASK_TIMINGS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:48.210Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.210Z - Received raw message of length 304
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.210Z - Received json message of type GET_ESTIMATED_TASK_TIMINGS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.212Z - Serializing response for GET_ESTIMATED_TASK_TIMINGS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.212Z - Responding to GET_ESTIMATED_TASK_TIMINGS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.212Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.212Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:48.212Z - Handled json message GET_ESTIMATED_TASK_TIMINGS. Handling time: 2. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:48.212Z - [Messenger] Received message, length: 118
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.670Z - [WATCHER]: 7 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.671Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.671Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:50.709Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:50.709Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.709Z - Received raw message of length 99
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.710Z - Received json message of type RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.715Z - Serializing response for RECORD_OUTPUTS_HASH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.715Z - Responding to RECORD_OUTPUTS_HASH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.715Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.715Z - Done responding to the client recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.715Z - Handled json message RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:50.715Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.773Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.773Z - [REQUEST]: dist/libs/logger/src/lib/logger.d.ts,dist/libs/logger/src/index.js,dist/libs/logger/src/index.js.map,dist/libs/logger/README.md,dist/libs/logger/src/index.d.ts,dist/libs/logger/src/lib/logger.js.map,dist/libs/logger/src/lib/logger.js
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.774Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:50.954Z - Time taken for 'hash changed files from watcher' 1.9064459996297956ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.253Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 440.9633399997838ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.253Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 358.53970799967647ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.253Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 347.0019410001114ms
+Time taken for 'plugin worker 28229 code loading' 207.486043ms
+Time taken for 'plugin worker 28230 code loading' 207.363859ms
+Time taken for 'plugin worker 28231 code loading' 204.228956ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.265Z - Time taken for 'start-plugin-worker:nx/core/package-json' 343.64588299999014ms
+Time taken for 'plugin worker 28242 code loading' 191.46177ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.286Z - Time taken for 'start-plugin-worker:nx/core/project-json' 348.3465770003386ms
+Time taken for 'plugin worker 28249 code loading' 198.366399ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 16.08390499999996ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.431Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.432Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.432Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.432Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.433Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.433Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.434Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.490Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.490Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.491Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.491Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.492Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.492Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.493Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.1333280000000059ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.567Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.567Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.587Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.587Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.587Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.587Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.587Z - Handled json message HASH_GLOB. Handling time: 20. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.588Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.602Z - Closed a connection. Number of open connections: 4
+Time taken for 'daemon-message-serialization-GLOB' 0.13138899999989917ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.610Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.610Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.613Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.613Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.613Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.613Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.613Z - Handled json message GLOB. Handling time: 3. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.613Z - [Messenger] Received message, length: 3717
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.615Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.616Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.616Z - Received raw message of length 1427
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.616Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.661Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.661Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.661Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.661Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:51.661Z - Handled json message HASH_GLOB. Handling time: 45. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:51.661Z - [Messenger] Received message, length: 338
+Time taken for 'GLOB round trip' 121.56754000000001ms
+Time taken for 'deserialize daemon response - GLOB' 0.16483099999993556ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.08452500000009877ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.070Z - Time taken for 'build-project-configs' 1252.2867360003293ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.070Z - Time taken for 'createNodes:merge' 2.624618999660015ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.070Z - Time taken for 'get-all-workspace-files' 0.2676490000449121ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.085Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.098Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.099Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.099Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.099Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.103Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.103Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.104Z - Time taken for 'total execution time for createProjectGraph()' 33.36683499999344ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.105Z - Time taken for 'createDependencies' 27.35799300018698ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.105Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 27.20429199980572ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.105Z - Time taken for 'createMetadata' 0.03317399974912405ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.105Z - Time taken for 'serialize graph' 4.156956000253558ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.116Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:52.117Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 0. Response time: 18.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:52.131Z - [Messenger] Received message, length: 924215
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.064Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.064Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.064Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.064Z - [WATCHER]: 8 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.064Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.064Z - Received raw message of length 101
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.065Z - Received json message of type RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.068Z - Serializing response for RECORD_OUTPUTS_HASH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.068Z - Responding to RECORD_OUTPUTS_HASH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.068Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.068Z - Done responding to the client recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.068Z - Handled json message RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.068Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.149Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.150Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.150Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.150Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.150Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.150Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.151Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.152Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.152Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.152Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.152Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.152Z - [Messenger] Received message, length: 18661
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.170Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.170Z - [REQUEST]: dist/libs/database/README.md,dist/libs/database/src/lib/connect-to-db.d.ts,dist/libs/database/package.json,dist/libs/database/src/lib/connect-to-db.js.map,dist/libs/database/src/index.js.map,dist/libs/database/src/index.d.ts,dist/libs/database/src/index.js,dist/libs/database/src/lib/connect-to-db.js
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.170Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.337Z - Time taken for 'hash changed files from watcher' 4.0610540001653135ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.349Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.349Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.353Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.353Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.353Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.353Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.353Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.353Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.354Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.354Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.354Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+Time taken for 'plugin worker 28486 code loading' 204.44836600000002ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.654Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 444.8365360000171ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.654Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 420.84937499975786ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.654Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 398.60092999972403ms
+Time taken for 'plugin worker 28488 code loading' 211.433115ms
+Time taken for 'plugin worker 28487 code loading' 224.718139ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.657Z - Time taken for 'start-plugin-worker:nx/core/package-json' 371.7129929997027ms
+Time taken for 'plugin worker 28489 code loading' 211.99113699999998ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.674Z - Time taken for 'start-plugin-worker:nx/core/project-json' 351.79630800010636ms
+Time taken for 'plugin worker 28505 code loading' 206.410314ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 15.240748999999994ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.813Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.814Z - [WATCHER]: 20 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.814Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.850Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.850Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.851Z - Received raw message of length 100
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.851Z - Received json message of type RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.860Z - Serializing response for RECORD_OUTPUTS_HASH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.860Z - Responding to RECORD_OUTPUTS_HASH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.860Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.860Z - Done responding to the client recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.860Z - Handled json message RECORD_OUTPUTS_HASH. Handling time: 8. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.861Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.892Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.894Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.895Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.895Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.898Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.899Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:53.900Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.919Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.920Z - [REQUEST]: dist/libs/database/README.md,dist/libs/database/src/lib/connect-to-db.d.ts,dist/libs/database/package.json,dist/libs/database/src/lib/connect-to-db.js.map,dist/libs/database/src/index.js.map,dist/libs/database/src/index.d.ts,dist/libs/database/src/index.js,dist/libs/database/src/lib/connect-to-db.js,dist/libs/config/src/lib/create-app.js.map,dist/libs/config/package.json,dist/libs/config/src/lib/token.js.map,dist/libs/config/src/lib/load-typedefs.js,dist/libs/config/src/lib/context.js,dist/libs/config/src/lib/errors.js,dist/libs/config/src/lib/create-app.js,dist/libs/config/src/lib/token.d.ts,dist/libs/config/src/lib/token.js,dist/libs/config/src/lib/errors.d.ts,dist/libs/config/src/index.js.map,dist/libs/config/README.md,dist/libs/config/src/lib/errors.js.map,dist/libs/config/src/lib/context.js.map,dist/libs/config/src/lib/load-typedefs.js.map,dist/libs/config/src/lib/context.d.ts,dist/libs/config/src/index.js,dist/libs/config/src/index.d.ts,dist/libs/config/src/lib/load-typedefs.d.ts,dist/libs/config/src/lib/create-app.d.ts
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.920Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:53.988Z - Time taken for 'hash changed files from watcher' 4.0200749998912215ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 7.578645000000051ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.002Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.003Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.003Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.003Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.005Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.006Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.006Z - Closed a connection. Number of open connections: 5
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.15110600000002705ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.047Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.047Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.069Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.069Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.069Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.069Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.069Z - Handled json message HASH_GLOB. Handling time: 22. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.069Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.071Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.071Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.071Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.071Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.090Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.090Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.090Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.090Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.091Z - Handled json message HASH_GLOB. Handling time: 19. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.091Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.103Z - Closed a connection. Number of open connections: 4
+Time taken for 'daemon-message-serialization-GLOB' 0.10538500000006934ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.121Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.121Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.126Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.126Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.126Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.126Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.126Z - Handled json message GLOB. Handling time: 5. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.126Z - [Messenger] Received message, length: 4349
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.128Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.128Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.129Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.129Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.133Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.133Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.133Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.133Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.133Z - Handled json message GLOB. Handling time: 4. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.133Z - [Messenger] Received message, length: 4349
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.134Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+Time taken for 'GLOB round trip' 123.624417ms
+Time taken for 'deserialize daemon response - GLOB' 0.11177599999996346ms
+Time taken for 'daemon-message-serialization-GLOB' 0.03469699999993736ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.135Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.135Z - Received raw message of length 1507
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.135Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.193Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.193Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.194Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.194Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.194Z - Handled json message HASH_GLOB. Handling time: 58. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.195Z - [Messenger] Received message, length: 360
+Time taken for 'GLOB round trip' 5.347203000000036ms
+Time taken for 'deserialize daemon response - GLOB' 0.04286400000000867ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.044354999999995925ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.197Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.197Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.197Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.198Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.258Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.258Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.258Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.258Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.258Z - Handled json message HASH_GLOB. Handling time: 60. Response time: 0.
+Time taken for 'plugin worker 28692 code loading' 225.84324400000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.335Z - Time taken for 'start-plugin-worker:nx/core/package-json' 371.3159719998948ms
+Time taken for 'plugin worker 28693 code loading' 235.93436999999997ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.355Z - Time taken for 'start-plugin-worker:nx/core/project-json' 379.97638799995184ms
+Time taken for 'HASH_MULTI_GLOB round trip' 60.57138999999995ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.05471699999998236ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.06874900000002526ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:54.500Z - [Messenger] Received message, length: 382
+Time taken for 'HASH_MULTI_GLOB round trip' 303.84566900000004ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.032363999999915904ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.986Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 3 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.986Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:54.987Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.091Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.091Z - [REQUEST]: dist/libs/database/README.md,dist/libs/database/src/lib/connect-to-db.d.ts,dist/libs/database/package.json,dist/libs/database/src/lib/connect-to-db.js.map,dist/libs/database/src/index.js.map,dist/libs/database/src/index.d.ts,dist/libs/database/src/index.js,dist/libs/database/src/lib/connect-to-db.js,dist/libs/config/src/lib/create-app.js.map,dist/libs/config/package.json,dist/libs/config/src/lib/token.js.map,dist/libs/config/src/lib/load-typedefs.js,dist/libs/config/src/lib/context.js,dist/libs/config/src/lib/errors.js,dist/libs/config/src/lib/create-app.js,dist/libs/config/src/lib/token.d.ts,dist/libs/config/src/lib/token.js,dist/libs/config/src/lib/errors.d.ts,dist/libs/config/src/index.js.map,dist/libs/config/README.md,dist/libs/config/src/lib/errors.js.map,dist/libs/config/src/lib/context.js.map,dist/libs/config/src/lib/load-typedefs.js.map,dist/libs/config/src/lib/context.d.ts,dist/libs/config/src/index.js,dist/libs/config/src/index.d.ts,dist/libs/config/src/lib/load-typedefs.d.ts,dist/libs/config/src/lib/create-app.d.ts,dist/apps/accounts/schema/accounts.graphql,dist/apps/accounts/assets/.gitkeep,tmp/apps/accounts/build/tsconfig.generated.ed1b6e2f-e9fd-410e-a251-1e98216aeef2.json,dist/apps/accounts/package.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.091Z - [REQUEST]: dist/apps/accounts/pnpm-lock.yaml,dist/apps/accounts/main.js,dist/apps/accounts/main.js.map
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.156Z - Time taken for 'hash changed files from watcher' 3.6227480000816286ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 14.723619999999983ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.499Z - Time taken for 'start-plugin-worker:nx/core/package-json' 370.47237000009045ms
+Time taken for 'plugin worker 28801 code loading' 230.388602ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.539Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 424.514824999962ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.539Z - Time taken for 'start-plugin-worker:nx/core/project-json' 397.7883580001071ms
+Time taken for 'plugin worker 28802 code loading' 241.883649ms
+Time taken for 'plugin worker 28800 code loading' 251.22285800000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.719Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.720Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.720Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:55.720Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:55.721Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:55.722Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:55.722Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.12041799999997238ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.844Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.845Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.874Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.875Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.875Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.875Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.875Z - Handled json message HASH_GLOB. Handling time: 29. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:55.875Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:55.909Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.178Z - Time taken for 'build-project-configs' 1072.0658779996447ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.178Z - Time taken for 'createNodes:merge' 3.2139159999787807ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.215Z - Time taken for 'build-project-configs' 1109.0201929998584ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.216Z - Time taken for 'createNodes:merge' 2.7800670000724494ms
+Time taken for '@nx/eslint/plugin:createNodes' 2174.87324ms
+Time taken for '@nx/eslint/plugin:createNodes' 2212.310219ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.220Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.221Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.221Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.221Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.225Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.225Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.225Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.225Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.225Z - Handled json message GLOB. Handling time: 4. Response time: 0.
+Time taken for 'daemon-message-serialization-GLOB' 0.04377799999974741ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.225Z - [Messenger] Received message, length: 4320
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.227Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.227Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.227Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.228Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.282Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.282Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.282Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.282Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.282Z - Handled json message HASH_GLOB. Handling time: 54. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.283Z - [Messenger] Received message, length: 381
+Time taken for 'GLOB round trip' 5.1919410000000425ms
+Time taken for 'deserialize daemon response - GLOB' 0.07011199999988094ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.06864700000005541ms
+Time taken for 'HASH_MULTI_GLOB round trip' 55.9030130000001ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.030758999999761727ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.321Z - Time taken for 'build-project-configs' 1206.1165179996751ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.321Z - Time taken for 'createNodes:merge' 1.8445930001325905ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.321Z - Time taken for 'get-all-workspace-files' 0.19673899980261922ms
+Time taken for 'build typescript dependencies' 0.38795600000003105ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.346Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.348Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.348Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.348Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.352Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.352Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.353Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.354Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.354Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.354Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.355Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.355Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.355Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.361Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.361Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.361Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - Time taken for 'total execution time for createProjectGraph()' 28.07391700008884ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - Time taken for 'createDependencies' 23.605636999942362ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 23.468309999909252ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - Time taken for 'createMetadata' 0.02841399982571602ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.366Z - Time taken for 'serialize graph' 4.129525000229478ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.368Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.370Z - [Messenger] Received message, length: 924215
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.372Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.372Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 0. Response time: 24.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.377Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.378Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.378Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 1. Response time: 23.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:56.378Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 6. Response time: 17.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.380Z - [Messenger] Received message, length: 924215
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:56.390Z - [Messenger] Received message, length: 924215
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.402Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.403Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.403Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.403Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.403Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.403Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.404Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.404Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.404Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.405Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.405Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.405Z - [Messenger] Received message, length: 20743
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.449Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.449Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.452Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.452Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.452Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.453Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:57.453Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.453Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.453Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.453Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:57.454Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:58.665Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:58.665Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.666Z - Received raw message of length 102
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.666Z - Received json message of type RECORD_OUTPUTS_HASH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.671Z - Serializing response for RECORD_OUTPUTS_HASH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.671Z - Responding to RECORD_OUTPUTS_HASH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.671Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.672Z - Done responding to the client recordOutputsHash
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.672Z - Handled json message RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:58.672Z - [Messenger] Received message, length: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.674Z - [WATCHER]: tmp/apps/accounts/build/tsconfig.generated.ed1b6e2f-e9fd-410e-a251-1e98216aeef2.json was deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.674Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.674Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.876Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.876Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.876Z - [REQUEST]: tmp/apps/accounts/build/tsconfig.generated.ed1b6e2f-e9fd-410e-a251-1e98216aeef2.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:58.987Z - Time taken for 'hash changed files from watcher' 0.3330950001254678ms
+Time taken for 'plugin worker 28952 code loading' 239.26963299999997ms
+Time taken for 'plugin worker 28954 code loading' 232.003321ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.316Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 413.93566900026053ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.316Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 391.07529099984095ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.316Z - Time taken for 'start-plugin-worker:nx/core/project-json' 345.7027809997089ms
+Time taken for 'plugin worker 28972 code loading' 197.598256ms
+Time taken for 'plugin worker 28953 code loading' 237.831043ms
+Time taken for 'plugin worker 28965 code loading' 216.049152ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.320Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 382.2378799999133ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.320Z - Time taken for 'start-plugin-worker:nx/core/package-json' 366.2838889998384ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 14.950936000000013ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.524Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.525Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.525Z - Established a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.525Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.532Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.532Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.532Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.601Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.602Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.602Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.602Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.603Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.603Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.603Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.11292700000001332ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.664Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.664Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.683Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.684Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.684Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.684Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.684Z - Handled json message HASH_GLOB. Handling time: 19. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.684Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.699Z - Closed a connection. Number of open connections: 4
+Time taken for 'daemon-message-serialization-GLOB' 0.09459800000001906ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.736Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.736Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.739Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.740Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.740Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.740Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.740Z - Handled json message GLOB. Handling time: 3. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.740Z - [Messenger] Received message, length: 4320
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.742Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.742Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.742Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.743Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.813Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.814Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.814Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.814Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.814Z - Handled json message HASH_GLOB. Handling time: 70. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.814Z - [Messenger] Received message, length: 382
+Time taken for 'GLOB round trip' 137.290747ms
+Time taken for 'deserialize daemon response - GLOB' 0.16750700000000052ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.05957899999998517ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.901Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.902Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:40:59.902Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.903Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.903Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.904Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:40:59.905Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.048Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.048Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.048Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.049Z - Recomputing project graph because of 0 updated and 1 deleted files.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.049Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.049Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.049Z - [REQUEST]: tmp/apps/accounts/build/tsconfig.generated.ed1b6e2f-e9fd-410e-a251-1e98216aeef2.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.105Z - Time taken for 'hash changed files from watcher' 0.45546900015324354ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 12.87082200000009ms
+Time taken for 'HASH_MULTI_GLOB round trip' 72.19360400000005ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.06584299999997256ms
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.192Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.192Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.192Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.192Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.196Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.196Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.196Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.196Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.196Z - Handled json message GLOB. Handling time: 4. Response time: 0.
+Time taken for 'daemon-message-serialization-GLOB' 0.0379929999999149ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.382Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 309.58971300022677ms
+Time taken for 'plugin worker 29160 code loading' 176.00697199999996ms
+Time taken for 'plugin worker 29161 code loading' 171.71480899999997ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.392Z - Time taken for 'start-plugin-worker:nx/core/package-json' 308.2635869998485ms
+Time taken for 'plugin worker 29162 code loading' 171.563897ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.402Z - Time taken for 'start-plugin-worker:nx/core/project-json' 308.76452299999073ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.531Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.534Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.534Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.534Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.535Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.535Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.536Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.10189900000000307ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.674Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.674Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.696Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.696Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.696Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.696Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.696Z - Handled json message HASH_GLOB. Handling time: 22. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:00.696Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:00.708Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.558Z - [Messenger] Received message, length: 4320
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.559Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.559Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.561Z - Time taken for 'build-project-configs' 1494.5233189999126ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.561Z - Time taken for 'createNodes:merge' 3.1635420001111925ms
+Time taken for '@nx/eslint/plugin:createNodes' 1366.6235840000002ms
+Time taken for 'GLOB round trip' 1366.4694550000002ms
+Time taken for 'deserialize daemon response - GLOB' 0.03718300000036834ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.05644200000006094ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.561Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.561Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.618Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.618Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.618Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.618Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.618Z - Handled json message HASH_GLOB. Handling time: 57. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.618Z - [Messenger] Received message, length: 382
+Time taken for 'HASH_MULTI_GLOB round trip' 59.2871140000002ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.03025500000012471ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.660Z - Time taken for 'build-project-configs' 1585.3041799999774ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.660Z - Time taken for 'createNodes:merge' 2.436099000275135ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.660Z - Time taken for 'get-all-workspace-files' 0.20548000000417233ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.727Z - Wrote project graph cache to /home/venky/repos/servitude/.nx/workspace-data/project-graph.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.727Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.728Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.728Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.728Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.728Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.728Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.730Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.735Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.735Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.737Z - Time taken for 'total for creating and serializing project graph' 1679.2897510002367ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.737Z - Time taken for 'total execution time for createProjectGraph()' 27.981591999996454ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.737Z - Time taken for 'createDependencies' 22.56060800002888ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.737Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 22.441666999831796ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.738Z - Time taken for 'createMetadata' 0.031109000090509653ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.738Z - Time taken for 'serialize graph' 3.478296000044793ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.738Z - Time taken for 'write cache' 42.365455999970436ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.739Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.740Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.741Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 1680. Response time: 13.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.741Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.741Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 2. Response time: 11.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.743Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.743Z - [Messenger] Received message, length: 924215
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.755Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.755Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.755Z - [Messenger] Sending message type: REGISTER_FILE_WATCHER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.755Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.755Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.776Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.776Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.777Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.777Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.777Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.777Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.777Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.777Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.778Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.778Z - Time taken for 'total for creating and serializing project graph' 0.6198330000042915ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.779Z - Received raw message of length 100
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.779Z - Received json message of type REGISTER_FILE_WATCHER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.780Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.780Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.781Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.786Z - [Messenger] Sending message type: REGISTER_FILE_WATCHER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:01.786Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.787Z - Received raw message of length 72
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.787Z - Received json message of type REGISTER_FILE_WATCHER
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.818Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.818Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.819Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.921Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.921Z - [REQUEST]: tmp/apps/accounts/serve/tsconfig.generated.f2b0aa6b-c49e-4631-bbfc-31909c11ceed.json,dist/apps/accounts/assets/.gitkeep,dist/apps/accounts/schema/accounts.graphql,dist/apps/accounts/package.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.921Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:01.995Z - Time taken for 'hash changed files from watcher' 1.9198940000496805ms
+Time taken for 'plugin worker 29276 code loading' 192.04405000000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.268Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 326.30587500007823ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.291Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 338.11227099969983ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.291Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 329.59878799971193ms
+Time taken for 'plugin worker 29277 code loading' 203.67388599999998ms
+Time taken for 'plugin worker 29278 code loading' 198.962904ms
+Time taken for 'plugin worker 29284 code loading' 206.657295ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.324Z - Time taken for 'start-plugin-worker:nx/core/package-json' 353.7967509999871ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.332Z - Time taken for 'start-plugin-worker:nx/core/project-json' 349.96750199981034ms
+Time taken for 'plugin worker 29296 code loading' 209.46004599999998ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 18.96311000000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.453Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.456Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.457Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.457Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.458Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.458Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.459Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.473Z - Established a connection. Number of open connections: 7
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.474Z - Closed a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.474Z - Established a connection. Number of open connections: 7
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.474Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.475Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.475Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.475Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.17041899999998122ms
+Time taken for 'daemon-message-serialization-GLOB' 0.10562700000002678ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.609Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.609Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.630Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.631Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.631Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.631Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.631Z - Handled json message HASH_GLOB. Handling time: 21. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.631Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.632Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.632Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.635Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.635Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.635Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.635Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.635Z - Handled json message GLOB. Handling time: 3. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.636Z - [Messenger] Received message, length: 4320
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.638Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.638Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.638Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.638Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.690Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.690Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.690Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.690Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.690Z - Handled json message HASH_GLOB. Handling time: 51. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.691Z - [Messenger] Received message, length: 382
+Time taken for 'GLOB round trip' 160.99246800000003ms
+Time taken for 'deserialize daemon response - GLOB' 0.17836099999999533ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.0526159999999436ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.691Z - Closed a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.758Z - Established a connection. Number of open connections: 7
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.758Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.758Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.758Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.758Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.759Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.759Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.759Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.759Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.759Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.759Z - [Messenger] Received message, length: 20743
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.760Z - Closed a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.808Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.808Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.817Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.817Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.817Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.817Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.817Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:02.818Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.818Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.818Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:02.818Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+Time taken for 'HASH_MULTI_GLOB round trip' 53.18916999999999ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.046625000000062755ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.939Z - Time taken for 'build-project-configs' 1992.047230000142ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.940Z - Time taken for 'createNodes:merge' 1.8944220002740622ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.940Z - Time taken for 'get-all-workspace-files' 0.21294600004330277ms
+Time taken for 'build typescript dependencies' 0.5082549999999628ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.971Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.972Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.972Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.974Z - Serializing response for PROJECT_GRAPH_UPDATED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.978Z - Responding to PROJECT_GRAPH_UPDATED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.978Z - [REQUEST]: Responding to the client. Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.979Z - Serializing response for FILE-WATCH-CHANGED message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.979Z - Responding to FILE-WATCH-CHANGED message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.979Z - [REQUEST]: Responding to the client. File watch changed
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.979Z - Done responding to the client File watch changed
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.979Z - Handled json message FILE-WATCH-CHANGED. Handling time: 6. Response time: 0.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.979Z - Time taken for 'total execution time for createProjectGraph()' 35.59518499998376ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.980Z - Time taken for 'createDependencies' 30.26992700016126ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.980Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 29.97125899977982ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.983Z - Time taken for 'createMetadata' 0.03720899997279048ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.983Z - Time taken for 'serialize graph' 4.701524999924004ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.983Z - Time taken for 'changed-projects' 0.22128199972212315ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.986Z - Done responding to the client Project graph updated
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.986Z - Handled json message PROJECT_GRAPH_UPDATED. Handling time: 2. Response time: 12.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:03.993Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:03.988Z - [Messenger] Received message, length: 924215
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.023Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.023Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.024Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.024Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.024Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.025Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.025Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.025Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.025Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.025Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.025Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.025Z - [Messenger] Received message, length: 20743
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.147Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.147Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.150Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.150Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.150Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:05.150Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.150Z - Established a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.150Z - Established a connection. Number of open connections: 6
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.150Z - Closed a connection. Number of open connections: 5
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.150Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:05.150Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:54.999Z - [Messenger] Sending message type: RECORD_TASK_RUNS
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:41:55.041Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.083Z - Received raw message of length 937
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.170Z - Received json message of type RECORD_TASK_RUNS
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.294Z - Serializing response for RECORD_TASK_RUNS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.337Z - Responding to RECORD_TASK_RUNS message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.378Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.412Z - Done responding to the client handleRecordTaskRuns
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:55.437Z - Handled json message RECORD_TASK_RUNS. Handling time: 80. Response time: 143.
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:59.106Z - Socket error: read ECONNRESET
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:41:59.148Z - Closed a connection. Number of open connections: 4
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:00.046Z - [Messenger] Received message, length: 342
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.156Z - Closed a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.218Z - [WATCHER]: tmp/apps/accounts/serve/tsconfig.generated.f2b0aa6b-c49e-4631-bbfc-31909c11ceed.json was deleted
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.218Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.218Z - [WATCHER]: Processing file changes in outputs
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.341Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.422Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.422Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.422Z - [REQUEST]: tmp/apps/accounts/serve/tsconfig.generated.f2b0aa6b-c49e-4631-bbfc-31909c11ceed.json
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.590Z - Time taken for 'hash changed files from watcher' 0.9655960001982749ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:00.729Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:00.729Z - [ProjectGraphListener] Socket closed, triggering reconnection
+Time taken for 'plugin worker 29579 code loading' 1377.730498ms
+Time taken for 'plugin worker 29581 code loading' 1378.6224869999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.146Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 1684.5968069997616ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.146Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 1649.1246379995719ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.146Z - Time taken for 'start-plugin-worker:nx/js/dependencies-and-lockfile' 1633.9899319997057ms
+Time taken for 'plugin worker 29580 code loading' 1383.458936ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.227Z - Time taken for 'start-plugin-worker:nx/core/project-json' 1662.418990000151ms
+Time taken for 'plugin worker 29583 code loading' 1444.059342ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.233Z - Time taken for 'start-plugin-worker:nx/core/package-json' 1699.0501159997657ms
+Time taken for 'plugin worker 29582 code loading' 1477.482564ms
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 34.57628900000009ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.733Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.747Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.747Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:02.748Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:02.762Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:02.763Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:02.764Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.7824350000000777ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.940Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.940Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.981Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.982Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.982Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.983Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:02.983Z - Handled json message HASH_GLOB. Handling time: 40. Response time: 2.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:02.984Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.028Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.283Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.302Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.303Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.303Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.307Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.309Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.310Z - [Messenger] Message sent
+Time taken for 'daemon-message-serialization-GLOB' 0.862416999999823ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.481Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.481Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.484Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.485Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.485Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.485Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.485Z - Handled json message GLOB. Handling time: 3. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.485Z - [Messenger] Received message, length: 4320
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.492Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.492Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.493Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.493Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.599Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.599Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.599Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.599Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:03.599Z - Handled json message HASH_GLOB. Handling time: 106. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-12T06:42:03.600Z - [Messenger] Received message, length: 382
+Time taken for 'GLOB round trip' 178.13604599999962ms
+Time taken for 'deserialize daemon response - GLOB' 0.4530149999995956ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.21243299999969167ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.567Z - Time taken for 'build-project-configs' 5080.140448000282ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.568Z - Time taken for 'createNodes:merge' 12.701743999961764ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.568Z - Time taken for 'get-all-workspace-files' 0.6224190001375973ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.595Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.669Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.672Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.672Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.672Z - Time taken for 'total execution time for createProjectGraph()' 118.42148900032043ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.672Z - Time taken for 'createDependencies' 97.59058899991214ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.672Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 97.25387700041756ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.673Z - Time taken for 'createMetadata' 0.06203299993649125ms
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.673Z - Time taken for 'serialize graph' 15.869615999981761ms
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-12T06:42:05.832Z - Closed a connection. Number of open connections: 0
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:01.778Z - [Client] Starting new daemon server in background
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:01.785Z - [Client] Waiting for server (max: 6000 attempts, 10ms interval)
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.194Z - Time taken for 'workspace context init' 1.2807770000000005ms
+DEBUG nx::native::telemetry: Telemetry service initialized successfully
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.206Z - New daemon starting from: /home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/daemon/server/server.js
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.207Z - New daemon __dirname: /home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/daemon/server
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.207Z - New daemon nxVersion: 22.6.5
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.207Z - New daemon getInstalledNxVersion(): 22.6.5
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.215Z - [Server] Starting outdated check interval (20ms)
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.217Z - Started listening on: /tmp/bf096d76a09ef6b52136/d.sock
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.221Z - [WATCHER]: Subscribed to changes within: /home/venky/repos/servitude (native)
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.222Z - [LATEST-NX]: Pulling latest Nx...
+Fetching nx...
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.241Z - [AI-AGENTS]: Starting agent configuration status computation
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:02.251Z - [Client] Server available
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:02.251Z - [Client] Daemon server started, pid=3005
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.251Z - Established a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.252Z - Closed a connection. Number of open connections: 0
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:02.338Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:02.339Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:02.346Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:02.351Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.383Z - Established a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.390Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.390Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.497Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.499Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.499Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.713Z - Time taken for 'start-plugin-worker:/home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/plugins/js' 376.275074ms
+Time taken for 'plugin worker 3126 code loading' 221.58473600000002ms
+Time taken for 'plugin worker 3128 code loading' 247.20717000000002ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.748Z - Time taken for 'start-plugin-worker:/home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 393.2202739999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.760Z - Time taken for 'start-plugin-worker:@nx/eslint/plugin' 396.819038ms
+Time taken for 'plugin worker 3134 code loading' 249.386848ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.779Z - Time taken for 'start-plugin-worker:/home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/plugins/package-json' 432.70142799999996ms
+Time taken for 'plugin worker 3127 code loading' 273.311233ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.790Z - Time taken for 'start-plugin-worker:@nx/jest/plugin' 418.1898719999999ms
+Time taken for 'plugin worker 3140 code loading' 248.10895699999998ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.842Z - Time taken for 'Load Nx Plugin: /home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/plugins/js' 517.4578309999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.847Z - Time taken for 'Load Nx Plugin: /home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 520.1825699999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.893Z - Time taken for 'loadDefaultNxPlugins' 568.6683449999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:02.893Z - Time taken for 'Load Nx Plugin: /home/venky/repos/servitude/node_modules/.pnpm/nx@22.6.5_@swc-node+register@1.11.1_@emnapi+core@1.10.0_@emnapi+runtime@1.10.0_@swc+cor_26f8a5e623910dc042f9602a3e963d01/node_modules/nx/src/plugins/package-json' 566.467759ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.042Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 711.1867589999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.144Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.144Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.144Z - [REQUEST]: 
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.159Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.186Z - Time taken for 'loadSpecifiedNxPlugins' 815.9887529999999ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.186Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 815.874863ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.187Z - Time taken for 'hash changed files from watcher' 0.5706239999999525ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.199Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.200Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.200Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.200Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.201Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.202Z - [Messenger] Sending message type: GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.203Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.205Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.205Z - Closed a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.206Z - Established a connection. Number of open connections: 3
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.206Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.207Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.207Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.208Z - [Messenger] Message sent
+Time taken for 'nx/js/dependencies-and-lockfile:createNodes' 19.29328899999996ms
+Time taken for 'daemon-message-serialization-GLOB' 0.22382999999990716ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.291Z - Received raw message of length 73
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.291Z - Received json message of type GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.295Z - Serializing response for GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.295Z - Responding to GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.296Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.296Z - Done responding to the client handleGlob
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.296Z - Handled json message GLOB. Handling time: 4. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.296Z - [Messenger] Received message, length: 4349
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.16316299999994044ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.296Z - Received raw message of length 176
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.297Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.300Z - [Messenger] Sending message type: HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.300Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.316Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.316Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.316Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.316Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.316Z - Handled json message HASH_GLOB. Handling time: 19. Response time: 0.
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.316Z - [Messenger] Received message, length: 136
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.317Z - Received raw message of length 1583
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.318Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.381Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.381Z - Responding to HASH_GLOB message
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.381Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.381Z - Done responding to the client handleHashMultiGlob
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.381Z - Handled json message HASH_GLOB. Handling time: 62. Response time: 1.
+Time taken for 'GLOB round trip' 94.950421ms
+Time taken for 'deserialize daemon response - GLOB' 0.20796699999993962ms
+Time taken for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.07869399999992766ms
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:03.381Z - [Messenger] Received message, length: 382
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:03.392Z - Closed a connection. Number of open connections: 2
+Time taken for 'HASH_MULTI_GLOB round trip' 81.82599700000003ms
+Time taken for 'deserialize daemon response - HASH_MULTI_GLOB' 0.05645300000003317ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.266Z - Time taken for 'build-project-configs' 3074.2864600000003ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.266Z - Time taken for 'createNodes:merge' 443.4242409999997ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.266Z - Time taken for 'native-file-deps' 0.02124900000035268ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.267Z - Time taken for 'get-workspace-files' 4.851216000000022ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.267Z - Time taken for 'get-all-workspace-files' 0.2285970000002635ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.267Z - Time taken for 'read cache' 1.5821860000005472ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.283Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.302Z - [SYNC]: collect registered sync generators
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.316Z - Wrote project graph cache to /home/venky/repos/servitude/.nx/workspace-data/project-graph.json
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.317Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.317Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.317Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'total for creating and serializing project graph' 3817.3197069999997ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'total execution time for createProjectGraph()' 47.91448499999933ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'createDependencies' 34.86804900000061ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'nx/js/dependencies-and-lockfile:createDependencies' 34.521162000000004ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'createMetadata' 0.0744990000002872ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'serialize graph' 4.174117999999908ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.319Z - Time taken for 'write cache' 13.191107999999986ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.330Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.330Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 3818. Response time: 13.
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.333Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.359Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.360Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.360Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.360Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.361Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.361Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.361Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.362Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.362Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.388Z - [Messenger] Received message, length: 20707
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.757Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.758Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.758Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.758Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.758Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.759Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-18T09:00:06.760Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.765Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:06.765Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+DEBUG nx::native::telemetry::service: Sent 1 events: [nx/js/dependencies-and-lockfile:createDe]
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:15.363Z - [LATEST-NX]: Successfully pulled latest Nx to /tmp/tmp-3005-jzVrq6DFMlm8
+[NX v23.1.0 Daemon Server] - 2026-07-18T09:00:15.587Z - [NX-CONSOLE]: Using local implementation (NX_USE_LOCAL=true or inner call)
+DEBUG nx::native::ide::install: Detected editor: Unknown
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:15.619Z - [NX-CONSOLE]: Console status check completed, shouldPrompt: false
+DEBUG nx::native::ide::install: Editor command 'code' is installed
+DEBUG nx::native::ide::install: Editor command 'code-insiders' not found
+DEBUG nx::native::ide::install: Checking if Nx Console extension is installed with: code --list-extensions
+DEBUG nx::native::ide::install: Nx Console extension is installed
+DEBUG nx::native::ide::install: Editor command 'code' is installed
+DEBUG nx::native::ide::install: Checking if Nx Console extension is installed with: code --list-extensions
+DEBUG nx::native::ide::install: Nx Console extension is installed
+DEBUG nx::native::ide::install: Editor command 'code-insiders' not found
+DEBUG nx::native::ide::install: Cursor extension installation not supported on this platform
+DEBUG nx::native::ide::install: No command available for editor: Cursor
+DEBUG nx::native::ide::install: Cursor extension installation not supported on this platform
+[NX v22.6.5 Daemon Server] - 2026-07-18T09:00:20.494Z - [AI-AGENTS]: Agent configuration status computation completed: 2 fully configured, 0 outdated, 1 partially configured, 2 non-configured
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:26:10.415Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:26:10.416Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:26:12.563Z - Closed a connection. Number of open connections: 0
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.116Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.116Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.117Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.118Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.121Z - Established a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.131Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.134Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.135Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.136Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.208Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.208Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.210Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.213Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.215Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.215Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.215Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.237Z - Time taken for 'total for creating and serializing project graph' 4.419090999988839ms
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.240Z - Done responding to the client project-graph
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.240Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 7. Response time: 25.
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.242Z - [Messenger] Received message, length: 924222
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.252Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.252Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.252Z - Received raw message of length 32
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.253Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.256Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.257Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.257Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.258Z - Done responding to the client handleContextFileData
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.258Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 3. Response time: 2.
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.258Z - [Messenger] Received message, length: 20707
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.318Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.320Z - [Messenger] Setting up socket listeners
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.320Z - Closed a connection. Number of open connections: 1
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.320Z - [Messenger] listen() complete
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.320Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.320Z - Established a connection. Number of open connections: 2
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:28:09.320Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.323Z - Received raw message of length 42
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:28:09.323Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:32:13.291Z - [Messenger] Sending message type: GET_CONFIGURE_AI_AGENTS_STATUS
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:32:13.292Z - [Messenger] Message sent
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.293Z - Received raw message of length 41
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.294Z - Received json message of type GET_CONFIGURE_AI_AGENTS_STATUS
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.299Z - [AI-AGENTS]: Returning cached agent configuration status
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.299Z - Serializing response for GET_CONFIGURE_AI_AGENTS_STATUS message in json mode
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.300Z - Responding to GET_CONFIGURE_AI_AGENTS_STATUS message
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.300Z - [REQUEST]: Responding to the client. handleGetConfigureAiAgentsStatus
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.300Z - Done responding to the client handleGetConfigureAiAgentsStatus
+[NX v22.6.5 Daemon Server] - 2026-07-18T13:32:13.300Z - Handled json message GET_CONFIGURE_AI_AGENTS_STATUS. Handling time: 0. Response time: 1.
+[NX v22.6.5 Daemon Client] - 2026-07-18T13:32:13.300Z - [Messenger] Received message, length: 340

@@ -1,21 +1,65 @@
 {
   "run": {
-    "command": "nx run accounts:codegen",
-    "startTime": "2026-07-12T06:06:40.824Z",
-    "endTime": "2026-07-12T06:06:46.078Z",
+    "command": "nx run accounts:serve",
+    "startTime": "2026-07-12T06:40:48.176Z",
+    "endTime": "2026-07-12T06:41:54.916Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "accounts:codegen",
-      "target": "codegen",
-      "projectName": "accounts",
-      "hash": "15364449677433344356",
-      "startTime": "2026-07-12T06:06:40.906Z",
-      "endTime": "2026-07-12T06:06:46.074Z",
+      "taskId": "logger:build",
+      "target": "build",
+      "projectName": "logger",
+      "hash": "8797858864251291236",
+      "startTime": "2026-07-12T06:40:48.216Z",
+      "endTime": "2026-07-12T06:40:50.709Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
+    },
+    {
+      "taskId": "database:build",
+      "target": "build",
+      "projectName": "database",
+      "hash": "4678276900099721927",
+      "startTime": "2026-07-12T06:40:50.720Z",
+      "endTime": "2026-07-12T06:40:53.063Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "config:build",
+      "target": "build",
+      "projectName": "config",
+      "hash": "13165812932156981992",
+      "startTime": "2026-07-12T06:40:50.720Z",
+      "endTime": "2026-07-12T06:40:53.849Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "accounts:build:production",
+      "target": "build",
+      "projectName": "accounts",
+      "hash": "15295203290546494258",
+      "startTime": "2026-07-12T06:40:53.867Z",
+      "endTime": "2026-07-12T06:40:58.664Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "accounts:serve:development",
+      "target": "serve",
+      "projectName": "accounts",
+      "hash": "8613472014143323631",
+      "startTime": "2026-07-12T06:40:58.677Z",
+      "endTime": "2026-07-12T06:41:51.488Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
     }
   ]
 }
