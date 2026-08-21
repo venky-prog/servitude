@@ -1,0 +1,21 @@
+FROM node:24-bookworm
+
+WORKDIR /app
+
+# Enable pnpm
+RUN corepack enable
+
+# Copy dependency files first
+COPY package.json pnpm-lock.yaml ./
+
+# Install dependencies
+RUN pnpm install
+
+# Copy the rest of the monorepo
+COPY . .
+
+# Default app
+ARG APP=users
+ENV APP=${APP}
+
+CMD ["sh", "-c", "pnpm nx serve ${APP}"]

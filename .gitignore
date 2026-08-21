@@ -1,5 +1,8 @@
-.nx/polygraph
-.claude/worktrees
-.claude/settings.local.json
+.nx
+.claude
 node_modules
 releases
+
+dist
+
+.env

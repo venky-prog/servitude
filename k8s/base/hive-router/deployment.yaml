@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: hive-router
+
+spec:
+  replica: 1
+
+  selector:
+    matchLabels:
+      app: hive-router
+
+  template:
+    metadata:
+      labels:
+        app: hive-router
+
+    spec:
+      container:
+        - name: hive-router
+          image: ghcr.io/graphql-hive/router
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 3001

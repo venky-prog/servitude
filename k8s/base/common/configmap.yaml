@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: servitude-common-config
+
+data:
+  NODE_ENV: development
+  LOG_LEVEL: info
+  TIMEZONE: Asia/Kolkata

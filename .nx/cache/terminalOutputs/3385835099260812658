@@ -1,4 +1,0 @@
-> nx run database:build
-
-Compiling TypeScript files for project "database"...
-Done compiling TypeScript files for project "database".

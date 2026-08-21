@@ -6,7 +6,6 @@ const runExecutor: PromiseExecutor<SchemaPublishExecutorSchema> = async (
   options,
   ctx,
 ) => {
-  console.log(process.env.HIVE_REGISTRY_TOKEN, 'token from env');
   if (!ctx.projectName) {
     throw new Error(
       'Getting error while getting project name. Please make sure attach the executor to the project configuration.',
@@ -14,6 +13,8 @@ const runExecutor: PromiseExecutor<SchemaPublishExecutorSchema> = async (
   }
 
   const projectConfig = ctx.projectsConfigurations.projects[ctx.projectName];
+
+  console.log('Project config:', projectConfig.name);
 
   console.log('Executor ran for SchemaPublish', options);
 

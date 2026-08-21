@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: StatefulSet
+
+metadata:
+  name: users-mongodb
+
+spec:
+  serviceName: users-mongodb
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: users-mongodb
+
+  template:
+    metadata:
+      labels:
+        app: users-mongodb
+
+    spec:
+      containers:
+        - name: mongodb
+          image: mongo:8
+
+          ports:
+            - containerPort: 27017
+
+          volumeMounts:
+            - name: mongodb-data
+              mountPath: /data/db
+
+  volumeClaimTemplates:
+    - metadata:
+        name: mongodb-data
+
+      spec:
+        accessModes:
+          - ReadWriteOnce
+
+        resources:
+          requests:
+            storage: 1Gi

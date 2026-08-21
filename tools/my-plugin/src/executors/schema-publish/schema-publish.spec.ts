@@ -3,7 +3,12 @@ import { ExecutorContext } from '@nx/devkit';
 import { SchemaPublishExecutorSchema } from './schema';
 import executor from './schema-publish';
 
-const options: SchemaPublishExecutorSchema = {};
+const options: SchemaPublishExecutorSchema = {
+  org: 'falcon-head',
+  project: 'servitude',
+  target: 'development',
+  url: 'http://localhost:3000/graphql',
+};
 const context: ExecutorContext = {
   root: '',
   cwd: process.cwd(),

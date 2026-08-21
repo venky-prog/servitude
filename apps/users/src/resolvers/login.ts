@@ -21,8 +21,6 @@ export const login: MutationResolvers['login'] = async (parent, args, context) =
     // Generate a JWT token
     const token = await user.generateAuthToken();
 
-    console.log('----------------------- from user service', user._id.toString())
-
     return {
         token,
         user: {

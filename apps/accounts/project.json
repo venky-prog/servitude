@@ -102,11 +102,10 @@
     },
     "schema:publish": {
       "executor": "@servitude/my-plugin:schema-publish",
-      "cache": false,
       "defaultConfiguration": "development",
       "options": {
-        "org": "servitude",
-        "project": "trackme"
+        "org": "falcon-head",
+        "project": "servitude"
       },
       "configurations": {
         "development": {
@@ -115,5 +114,6 @@
         }
       }
     }
+    
   }
 }

@@ -12,7 +12,7 @@ export function createApp(apolloServer: ApolloServer): Express {
       return { userId: payload?.userId, req };
     },
   }));
-  app.use('/test', (req, res) => {
+  app.use('/ping', (req, res) => {
     res.send({ message: 'Hello API' });
   });
   return app;

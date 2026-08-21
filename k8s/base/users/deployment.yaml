@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: users
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: users
+
+  template:
+    metadata:
+      labels:
+        app: users
+
+    spec:
+      containers:
+        - name: users
+          image: servitude-users
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 3000
+
+          envFrom:
+            - configMapRef:
+                name: servitude-users-config
+            - secretRef:
+                name: servitude-users-secret
+            - configMapRef:
+                name: servitude-common-config
+            - secretRef:
+                name: servitude-common-secret
+
+    

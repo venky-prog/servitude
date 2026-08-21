@@ -1,0 +1,4 @@
+FROM ghcr.io/graphql-hive/router:latest
+
+WORKDIR /app
+

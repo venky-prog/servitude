@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: transactions
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: transactions
+
+  template:
+    metadata:
+      labels:
+        app: transactions
+
+    spec:
+      containers:
+        - name: transactions
+          image: servitude-transactions
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 3002
+
+          envFrom:
+            - configMapRef:
+                name: servitude-transactions-config
+            - secretRef:
+                name: servitude-transactions-secret
+            - configMapRef:
+                name: servitude-common-config
+            - secretRef:
+                name: servitude-common-secret
+
+    

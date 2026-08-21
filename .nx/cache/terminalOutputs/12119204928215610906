@@ -1,8 +1,0 @@
-> nx run transactions:serve:development
-
-[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠼[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠴[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠦[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠧[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠇[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠏[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠋[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠙[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠹[39m Calculating the project graph on the Nx Daemon[2K[1G[36m⠸[39m Calculating the project graph on the Nx Daemon[2K[1G[ [32mwatch[39m ] build succeeded, watching for changes...
-[1m[31mDebugger listening on ws://localhost:9229/1f4dc4a7-7f44-49e5-8402-e14e43c0722a
-For help, see: https://nodejs.org/en/docs/inspector
-[39m[22m
-Enabling inline tracing for this subgraph. To disable, use ApolloServerPluginInlineTraceDisabled.
-[ ready ] http://localhost:3000

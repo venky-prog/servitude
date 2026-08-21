@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: accounts
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: accounts
+
+  template:
+    metadata:
+      labels:
+        app: accounts
+
+    spec:
+      containers:
+        - name: accounts
+          image: servitude-accounts
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 3001
+
+          envFrom:
+            - configMapRef:
+                name: servitude-accounts-config
+            - secretRef:
+                name: servitude-accounts-secret
+            - configMapRef:
+                name: servitude-common-config
+            - secretRef:
+                name: servitude-common-secret
+
+    

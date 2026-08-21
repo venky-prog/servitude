@@ -106,8 +106,8 @@
       "executor": "@servitude/my-plugin:schema-publish",
       "defaultConfiguration": "development",
       "options": {
-        "org": "servitude",
-        "project": "trackme"
+        "org": "falcon-head",
+        "project": "servitude"
       },
       "configurations": {
         "development": {

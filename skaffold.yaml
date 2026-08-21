@@ -1,0 +1,87 @@
+apiVersion: skaffold/v4beta14
+kind: Config
+
+metadata:
+  name: servitude
+
+build:
+  local:
+    push: false
+
+  artifacts:
+    - image: servitude-users
+      sync:
+        infer:
+          - 'apps/users/src/**/*.ts'
+          - 'apps/users/src/**/*.js'
+          - 'apps/users/src/**/*.json'
+          - 'libs/**/src/**/*.ts'
+      docker:
+        dockerfile: Dockerfile.dev
+        buildArgs:
+          NODE_ENV: development
+          APP: users
+
+    - image: servitude-accounts
+      sync:
+        infer:
+          - 'apps/accounts/src/**/*.ts'
+          - 'apps/accounts/src/**/*.js'
+          - 'apps/accounts/src/**/*.json'
+          - 'libs/**/src/**/*.ts'
+      docker:
+        dockerfile: Dockerfile.dev
+        buildArgs:
+          NODE_ENV: development
+          APP: accounts
+
+    - image: servitude-transactions
+      sync:
+        infer:
+          - 'apps/transactions/src/**/*.ts'
+          - 'apps/transactions/src/**/*.js'
+          - 'apps/transactions/src/**/*.json'
+          - 'libs/**/src/**/*.ts'
+      docker:
+        dockerfile: Dockerfile.dev
+        buildArgs:
+          NODE_ENV: development
+          APP: transactions
+        
+
+manifests:
+  kustomize:
+    paths:
+      - k8s/overlays/dev
+
+profiles:
+  - name: users
+    manifests:
+      kustomize:
+        paths:
+          - k8s/overlays/dev
+  - name: accounts
+    manifests:
+      kustomize:
+        paths:
+          - k8s/overlays/dev
+
+deploy:
+  kubectl: {}
+
+portForward:
+  - resourceType: service
+    resourceName: users
+    namespace: servitude-dev
+    port: 3000
+    localPort: 3000
+  - resourceType: service
+    resourceName: accounts
+    namespace: servitude-dev
+    port: 3001
+    localPort: 3001
+  - resourceType: service
+    resourceName: transactions
+    namespace: servitude-dev
+    port: 3002
+    localPort: 3002

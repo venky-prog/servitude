@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: servitude-accounts-config
+
+data:
+  SERVICE_NAME: accounts
