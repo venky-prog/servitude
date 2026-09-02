@@ -1,4 +1,23 @@
+FROM node:24-alpine AS supergraph
+
+ARG HIVE_REGISTRY_TOKEN
+ARG HIVE_TARGET=falcon-head/servitude/development
+
+WORKDIR /build
+
+RUN npm install --global @graphql-hive/cli@0.59.1
+
+RUN test -n "$HIVE_REGISTRY_TOKEN" \
+	&& hive schema:fetch \
+		--registry.accessToken "$HIVE_REGISTRY_TOKEN" \
+		--target "$HIVE_TARGET" \
+		--type supergraph \
+		--write supergraph.graphql
+
 FROM ghcr.io/graphql-hive/router:latest
 
 WORKDIR /app
+
+COPY router.config.yaml /app/router.config.yaml
+COPY --from=supergraph /build/supergraph.graphql /app/supergraph.graphql
 

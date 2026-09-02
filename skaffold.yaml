@@ -48,6 +48,11 @@ build:
           NODE_ENV: development
           APP: transactions
         
+    - image: servitude-router
+      docker:
+        dockerfile: Dockerfile.hive-router
+        buildArgs: 
+          HIVE_REGISTRY_TOKEN: '{{.HIVE_REGISTRY_TOKEN}}'
 
 manifests:
   kustomize:
@@ -75,13 +80,21 @@ portForward:
     namespace: servitude-dev
     port: 3000
     localPort: 3000
+
   - resourceType: service
     resourceName: accounts
     namespace: servitude-dev
     port: 3001
     localPort: 3001
+
   - resourceType: service
     resourceName: transactions
     namespace: servitude-dev
     port: 3002
     localPort: 3002
+
+  - resourceType: service
+    resourceName: hive-router
+    namespace: servitude-dev
+    port: 4000
+    localPort: 4000

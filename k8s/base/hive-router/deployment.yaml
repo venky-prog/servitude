@@ -5,7 +5,7 @@ metadata:
   name: hive-router
 
 spec:
-  replica: 1
+  replicas: 1
 
   selector:
     matchLabels:
@@ -17,10 +17,10 @@ spec:
         app: hive-router
 
     spec:
-      container:
+      containers:
         - name: hive-router
-          image: ghcr.io/graphql-hive/router
+          image: servitude-router
           imagePullPolicy: IfNotPresent
 
           ports:
-            - containerPort: 3001
+            - containerPort: 4000
