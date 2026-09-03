@@ -109,7 +109,7 @@
       },
       "configurations": {
         "development": {
-          "url": "http://localhost:3001/graphql",
+          "url": "http://accounts:3001/graphql",
           "target": "development"
         }
       }
